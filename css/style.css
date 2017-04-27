@@ -1,0 +1,43 @@
+body {
+    font-family: "Franklin Gothic Book";
+}
+
+.textbox {
+    margin: 50px;
+}
+
+.banner {
+    font-family: "Franklin Gothic Book";
+    font-size: 14px;
+    text-align: center;
+    background-color: gray;
+    font-weight: 400;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: red;
+    font-weight: 400;
+    color: white;
+    margin-top:15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* color & format nav header and footer */
+nav {
+    font-family: "Franklin Gothic Book";
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+nav a {
+    color: black;
+}
