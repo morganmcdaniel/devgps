@@ -45,8 +45,36 @@
     </div>
 
     <div class="textbox">
-        Analysis - Under construction
+        Part One: Check out the ENR values across the country. Morgan doesn't understand what this is necessarily so this dummy text is not very helpful.
     </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="options">Show:</label>
+                    <select class="form-control" id="options">
+                        <option value="enr2015">2015</option>
+                        <option value="enr2014">2014</option>
+                        <option value="enr2010">2010</option>
+                        <option value="enr2005">2005</option>
+                        <option value="enr2003">2003</option>
+                        <option value="enr1yr">1-Year</option>
+                        <option value="enr5yr">5-Year</option>
+                        <option value="enr10yr">10-Year</option>
+                        <option value="enr12yr">12-Year</option>
+                        <option value="enrcurrent">Current</option>
+                        <option value="enrshort">Short Term</option>
+                        <option value="enrmid">Mid Term</option>
+                        <option value="enrlong">Long Term</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8" id="title"></div>
+    </div>
+
+    <div id="choropleth"></div>
 
     <div class="footer">
         <p>© 2017, DevGPS</p>
@@ -59,11 +87,12 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/d3.min.js"></script>
 <script src="js/d3-legend.min.js"></script>
-<script src="js/topojson.v1.min.js"></script>
+<script src="js/topojson.v2.min.js"></script>
 <script src="js/queue.v1.min.js"></script>
 <script src="js/queue.min.js"></script>
 <script src="js/d3.tip.js"></script>
 <script src="js/colorbrewer.min.js"></script>
+<script src="js/vis-choropleth.js"></script>
 
 </body>
 </html>
