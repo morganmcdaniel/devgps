@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevGPS</title>
+
+    <!-- Load Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/colorbrewer.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- add favicon(s) -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <nav class="navbar">
+        <a href="../index.html" class="navbar-left"><img src="../img/devgps.png" height=50></a>
+        <a href="../index.html" class="navbar-left"><img src="../img/logo_screengrab.png" height=50></a>
+        <ul class="nav navbar-nav">
+            <li><a href="analysis.html">ANALYSIS</a></li>
+            <li><a href="howto.html">HOW TO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <p>Create new jobs and economic growth in your community</p>
+    </div>
+
+    <div class="textbox">
+        Part One: Check out the ENR values across the country. Morgan doesn't understand what this is necessarily so this dummy text is not very helpful.
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="options">Show:</label>
+                    <select class="form-control" id="options">
+                        <option value="enr2015">2015</option>
+                        <option value="enr2014">2014</option>
+                        <option value="enr2010">2010</option>
+                        <option value="enr2005">2005</option>
+                        <option value="enr2003">2003</option>
+                        <option value="enr1yr">1-Year</option>
+                        <option value="enr5yr">5-Year</option>
+                        <option value="enr10yr">10-Year</option>
+                        <option value="enr12yr">12-Year</option>
+                        <option value="enrcurrent">Current</option>
+                        <option value="enrshort">Short Term</option>
+                        <option value="enrmid">Mid Term</option>
+                        <option value="enrlong">Long Term</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8" id="title"></div>
+    </div>
+
+    <div id="choropleth"></div>
+
+    <div class="footer">
+        <p>© 2017, DevGPS</p>
+    </div>
+
+</div>
+
+<!-- Load JS libraries -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/d3.min.js"></script>
+<script src="../js/d3-legend.min.js"></script>
+<script src="../js/topojson.v2.min.js"></script>
+<script src="../js/queue.v1.min.js"></script>
+<script src="../js/queue.min.js"></script>
+<script src="../js/d3.tip.js"></script>
+<script src="../js/colorbrewer.min.js"></script>
+<script src="../js/choropleth.js"></script>
+
+</body>
+</html>

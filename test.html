@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    .counties {
+        fill: none;
+        stroke: black;
+    }
+
+    .states {
+        fill: yellow;
+        stroke: #fff;
+        stroke-linejoin: round;
+    }
+
+</style>
+<svg width="960" height="600"></svg>
+<script src="js/d3.min.js"></script>
+<script src="js/topojson.v2.min.js"></script>
+<script src="js/queue.min.js"></script>
+<script>
+
+    var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+    var path = d3.geo.path();
+
+    var g = svg.append("g")
+            .attr("class", "key")
+            .attr("transform", "translate(0,40)");
+
+    queue()
+            .defer(d3.json, "data/africa.topo.json")
+            .await(ready);
+
+    function ready(error, us) {
+        if (error) throw error;
+
+        dataGeo = topojson.feature(us, us.objects.collection).features;
+
+        svg.append("g")
+                .attr("class", "counties")
+                .selectAll("path")
+                .data(dataGeo)
+                .enter().append("path")
+                .attr("d", path);
+    }
+
+</script>

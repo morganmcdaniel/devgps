@@ -44,10 +44,28 @@ nav a {
 
 /* Choropleth */
 
- path {
+ .select path {
      fill: gray;
-     stroke: white;
+     stroke: none;
  }
+
+ .states {
+     cursor: pointer;
+ }
+
+ .states.active {
+     fill: orange;
+ }
+
+.states path {
+    fill: #f6f6f6;
+    stroke: blue;
+}
+
+.nation path {
+    fill: none;
+    stroke: black;
+}
 
 #legend {
     padding: 1.5em 0 0 1.5em;
@@ -69,4 +87,9 @@ div.tooltip {
 
 #title {
     font-weight: bold;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
 }
