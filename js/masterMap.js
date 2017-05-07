@@ -46,7 +46,7 @@ MasterMap.prototype.initVis = function() {
     //     .on("click", vis.clicked);
 
     vis.projection = d3.geo.albers()
-        .scale(1000)
+        .scale(1250)
         .translate([vis.width / 2, vis.height / 2]);
 
     vis.path = d3.geo.path()
@@ -120,8 +120,6 @@ MasterMap.prototype.updateMap = function() {
     var vis = this;
 
     vis.selectGroup.remove();
-
-    // Populate Title
 
     vis.switchData(vis.selection);
 
@@ -275,8 +273,6 @@ MasterMap.prototype.switchData = function() {
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
 
-    console.log(vis.counties);
-
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
         .selectAll("path")
@@ -424,6 +420,5 @@ MasterMap.prototype.drawMSA = function() {
 // TO DO
 //
 // Implement zoom function
-// Figure out why tooltip states are undefined and fix
 // Improve structure of code in general
 // Style tooltips

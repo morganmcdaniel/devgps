@@ -114,13 +114,9 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
             if (FIPS == enrFIPS) {
                 counties[z].properties.statecode = USPScode;
                 counties[z].properties.statename = statename;
-
-                break;
             }
         }
     }
-
-    console.log(counties);
 
     for (var k = 0; k < enrTimeCo.length; k++) {
 
@@ -157,7 +153,6 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
             }
         }
     }
-    console.log(counties);
 }
 
 // update visualization to select filter for node coloring
