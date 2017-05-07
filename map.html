@@ -44,12 +44,6 @@
         <p>Create new jobs and economic growth in your community</p>
     </div>
 
-    <div class="textbox">
-        <p>MASTER MAP</p>
-    </div>
-
-
-
     <div class="row">
 
         <div class="col-md-4">
@@ -72,10 +66,10 @@
             <form class="form-inline">
                 <div class="form-group">
                 <label for="yearOptions">Show Year:</label>
-                <select class="form-control" id="yearOptions">
+                <select class="form-control" id="yearOptions" onchange="masterMap.onChangeYear()">
                     <option value="enr2014">2014</option>
+                    <option value="enr2009">2009</option>
                     <option value="enr2004">2004</option>
-                    <option value="enr2003">2003</option>
                     <option value="enr1999">1999</option>
                 </select>
                 </div>
@@ -86,7 +80,7 @@
             <form class="form-inline">
                 <div class="form-group">
                 <label for="trendOptions">Show Trend:</label>
-                <select class="form-control" id="trendOptions">
+                <select class="form-control" id="trendOptions" onchange="masterMap.onChangeTrend()">
                     <option value="none">Not available for counties</option>
                 </select>
                 </div>

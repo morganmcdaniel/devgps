@@ -72,7 +72,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
         var enrmid = enrTime[i].MidTerm;
         var enrlong = enrTime[i].LongTerm;
 
-        // Find the corresponding state inside the GeoJSON
+        // Find the corresponding MSA inside the GeoJSON
         for (var j = 0; j < msa.length; j++) {
             var jsonId = msa[j].properties.GEOID;
 
@@ -93,7 +93,6 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
                 msa[j].properties.enrmid = +enrmid;
                 msa[j].properties.enrlong = +enrlong;
 
-                // Stop looking through the JSON
                 break;
             }
         }
@@ -101,18 +100,20 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
     // Copy ENR data in Counties GeoJSON
 
+    for (var y = 0; y < stateCodes.length; y++) {
 
-    for (var z = 0; z < counties.length; z++) {
-        counties[z].properties.Market = counties[z].properties.STATE + counties[z].properties.COUNTY;
+        var FIPS = stateCodes[y].FIPSCode;
+        var USPScode = stateCodes[y].USPSCode;
+        var statename = stateCodes[y].Name;
 
-        var enrFIPS = counties[z].properties.STATE;
+        for (var z = 0; z < counties.length; z++) {
+            counties[z].properties.Market = counties[z].properties.STATE + counties[z].properties.COUNTY;
 
-        for (var y = 0; y < stateCodes.length; y++) {
-            var FIPS = stateCodes[y].FIPSCode;
+            var enrFIPS = counties[z].properties.STATE;
 
             if (FIPS == enrFIPS) {
-                counties[z].properties.statecode = stateCodes[y].USPSCode;
-                counties[z].properties.statename = stateCodes[y].Name;
+                counties[z].properties.statecode = USPScode;
+                counties[z].properties.statename = statename;
 
                 break;
             }
@@ -122,7 +123,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
     for (var k = 0; k < enrTimeCo.length; k++) {
 
         // Grab County ID Name
-        enrMarket = enrTimeCo[k].Market;
+        enrMarket = +enrTimeCo[k].Market;
 
         // Grab data value
         enr2014 = enrTimeCo[k].y14;
@@ -159,4 +160,5 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 // update visualization to select filter for node coloring
 function dataManipulation() {
     masterMap.changeData();
+
 }

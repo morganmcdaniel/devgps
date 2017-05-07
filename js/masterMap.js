@@ -67,6 +67,25 @@ MasterMap.prototype.initVis = function() {
 
     vis.selectData = "counties";
 
+    // National boundaries
+
+    vis.nationGroup = vis.svg.append("g")
+        .attr("class", "nation")
+        .selectAll('.nation')
+        .data(vis.nation)
+        .enter().append("path")
+        .attr("d", vis.path);
+
+    // State boundaries
+
+    vis.statesGroup = vis.svg.append("g")
+        .attr("class", "states")
+        .selectAll("path")
+        .data(vis.states)
+        .enter().append("path")
+        .attr("d", vis.path)
+        .on("click", vis.clicked);
+
     // Legend
 
     vis.legend = vis.svg.selectAll('g.legend')
@@ -95,55 +114,39 @@ MasterMap.prototype.initVis = function() {
         .data(vis.counties);
 
     vis.updateMap(vis.selection);
-
-    d3.select("#options").on("change", vis.onChange);
-
 };
 
 MasterMap.prototype.updateMap = function() {
     var vis = this;
 
-    console.log(vis.selectGroup);
-    console.log(vis.legend);
-
     vis.selectGroup.remove();
-
-    // MSA boundaries and color based on ENR
-
-    // National boundaries
-
-    vis.nationGroup = vis.svg.append("g")
-        .attr("class", "nation")
-        .selectAll('.nation')
-        .data(vis.nation)
-        .enter().append("path")
-        .attr("d", vis.path);
-
-
-    // State boundaries
-
-    vis.statesGroup = vis.svg.append("g")
-        .attr("class", "states")
-        .selectAll("path")
-        .data(vis.states)
-        .enter().append("path")
-        .attr("d", vis.path)
-        .on("click", vis.clicked);
-
-    vis.switchData();
 
     // Populate Title
 
-    document.getElementById("title").innerHTML = vis.titleText();
+    vis.switchData(vis.selection);
 
 };
 
-MasterMap.prototype.onChange = function() {
+MasterMap.prototype.onChangeYear = function() {
     var vis = this;
 
-    vis.selection = d3.select("#options").property("value");
+    vis.selection = d3.select("#yearOptions").property("value");
 
     console.log(vis.selection);
+
+    document.getElementById("title").innerHTML = vis.titleText();
+
+    vis.updateMap(vis.selection);
+};
+
+MasterMap.prototype.onChangeTrend = function() {
+    var vis = this;
+
+    vis.selection = d3.select("#trendOptions").property("value");
+
+    console.log(vis.selection);
+
+    document.getElementById("title").innerHTML = vis.titleText();
 
     vis.updateMap(vis.selection);
 };
@@ -155,7 +158,11 @@ MasterMap.prototype.titleText = function() {
         enr2015: "2015 ENR",
         enr2014: "2014 ENR",
         enr2010: "2015 ENR",
+        enr2009: "2009 ENR",
         enr2005: "2005 ENR",
+        enr2004: "2004 ENR",
+        enr2003: "2003 ENR",
+        enr1999: "1999 ENR",
         enrcurrent: "Current ENR Projection",
         enrshort: "Short-Term ENR Projection",
         enrmid: "Mid-Term ENR Projection",
@@ -170,9 +177,8 @@ MasterMap.prototype.changeData = function() {
 
     vis.selectData = $('input[name="options"]:checked', '#type').val();
 
-    console.log(vis.selectData);
-
     vis.changeOptions();
+
     vis.updateMap();
 };
 
@@ -182,10 +188,29 @@ MasterMap.prototype.changeOptions = function() {
     vis.yearOptions = document.getElementById('yearOptions');
     vis.trendOptions = document.getElementById('trendOptions');
 
-    vis.msaYears = [2015,2014,2010,2005,2003];
-    vis.msaTrends = ["Current","Short Term","Mid Term","Long Term"];
-    vis.countyYears = [2014,2004,2003,1999];
-    vis.countyTrends = ["Not available for counties"];
+    vis.msaYears = [
+        {text: "2015", value: "enr2015"},
+        {text: "2014", value: "enr2014"},
+        {text: "2010", value: "enr2010"},
+        {text: "2005", value: "enr2005"},
+        {text: "2003", value: "enr2003"}
+    ];
+
+    vis.msaTrends = [
+        {text: "Current", value: "enrcurrent"},
+        {text: "Short Term", value: "enrshort"},
+        {text: "Mid Term", value: "enrmid"},
+        {text: "Long Term", value: "enrlong"}
+    ];
+
+    vis.countyYears = [
+        {text: "2014", value: "enr2014"},
+        {text: "2009", value: "enr2009"},
+        {text: "2004", value: "enr2004"},
+        {text: "1999", value: "enr1999"}
+    ];
+
+    vis.countyTrends = [{text: "Not available for counties", value: "none"}];
 
     if (vis.selectData == 'msa') {
 
@@ -193,7 +218,7 @@ MasterMap.prototype.changeOptions = function() {
             vis.yearOptions.remove(0);
         }
         for (i = 0; i < vis.msaYears.length; i++) {
-            var year = new Option(vis.msaYears[i], i);
+            var year = new Option(vis.msaYears[i].text, vis.msaYears[i].value);
             vis.yearOptions.options.add(year);
         }
 
@@ -201,7 +226,7 @@ MasterMap.prototype.changeOptions = function() {
             vis.trendOptions.remove(0);
         }
         for (i = 0; i < vis.msaTrends.length; i++) {
-            var trend = new Option(vis.msaTrends[i], i);
+            var trend = new Option(vis.msaTrends[i].text, vis.msaTrends[i].value);
             vis.trendOptions.options.add(trend);
         }
     }
@@ -212,7 +237,7 @@ MasterMap.prototype.changeOptions = function() {
             vis.yearOptions.remove(0);
         }
         for (i = 0; i < vis.countyYears.length; i++) {
-            year = new Option(vis.countyYears[i], i);
+            year = new Option(vis.countyYears[i].text, vis.countyYears[i].value);
             vis.yearOptions.options.add(year);
         }
 
@@ -220,7 +245,7 @@ MasterMap.prototype.changeOptions = function() {
             vis.trendOptions.remove(0);
         }
         for (i = 0; i < vis.countyTrends.length; i++) {
-            trend = new Option(vis.countyTrends[i], i);
+            trend = new Option(vis.countyTrends[i].text, vis.countyTrends[i].value);
             vis.trendOptions.options.add(trend);
         }
     }
@@ -230,9 +255,15 @@ MasterMap.prototype.switchData = function() {
     var vis = this;
 
     if (vis.selectData == "counties") {
+        // vis.selection = "enr2014";
+
+        document.getElementById("title").innerHTML = vis.titleText();
         vis.drawCounties();
     }
     else if (vis.selectData == "msa") {
+        // vis.selection = "enr2015";
+
+        document.getElementById("title").innerHTML = vis.titleText();
         vis.drawMSA();
     }
 };
@@ -250,7 +281,7 @@ MasterMap.prototype.drawCounties = function() {
     vis.selectGroup
         .attr("d", vis.path)
         .style("fill", function(d) {
-            return vis.color(d.properties[vis.selection]); ////////
+            return vis.color(d.properties[vis.selection]);
         })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
@@ -259,10 +290,10 @@ MasterMap.prototype.drawCounties = function() {
                 .style("opacity", 1);
             vis.div.text(function() {
                 if (d.properties[vis.selection]) {
-                    return (d.properties.NAME + ", " + d.properties.statecode + ": " + d.properties[vis.selection]);
+                    return (d.properties.NAME + ", " + d.properties.statecode + ": " + d.properties[vis.selection].toFixed(2));
                 }
                 else {
-                    return (d.properties.NAME + ": No Data")
+                    return (d.properties.NAME + ", " + d.properties.statecode + ": No Data")
                 }
             })
                 .style("left", (d3.event.pageX) + "px")
@@ -282,7 +313,7 @@ MasterMap.prototype.drawCounties = function() {
 MasterMap.prototype.drawMSA = function() {
     var vis = this;
 
-    document.getElementById("title").innerHTML = vis.titleText();
+    console.log(vis.msa);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -389,7 +420,5 @@ MasterMap.prototype.drawMSA = function() {
 // TO DO
 //
 // Implement zoom function
-// Fix error when selecting year/trend
-// Fix county tooltips
-// Round county ENR values
+// Find a way to intialize title and year/trend when data is switched
 // Style tooltips
