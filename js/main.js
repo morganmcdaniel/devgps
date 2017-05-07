@@ -120,6 +120,8 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
         }
     }
 
+    console.log(counties);
+
     for (var k = 0; k < enrTimeCo.length; k++) {
 
         // Grab County ID Name
@@ -155,6 +157,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
             }
         }
     }
+    console.log(counties);
 }
 
 // update visualization to select filter for node coloring

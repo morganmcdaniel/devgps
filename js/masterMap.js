@@ -56,9 +56,6 @@ MasterMap.prototype.initVis = function() {
         .domain([-2, -1, .1, 2])
         .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
 
-    vis.legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
-    vis.legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','Gray'];
-
     vis.div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
@@ -87,6 +84,9 @@ MasterMap.prototype.initVis = function() {
         .on("click", vis.clicked);
 
     // Legend
+
+    vis.legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
+    vis.legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','Gray'];
 
     vis.legend = vis.svg.selectAll('g.legend')
         .data(vis.legendColor)
@@ -229,6 +229,8 @@ MasterMap.prototype.changeOptions = function() {
             var trend = new Option(vis.msaTrends[i].text, vis.msaTrends[i].value);
             vis.trendOptions.options.add(trend);
         }
+
+        vis.selection = "enr2015";
     }
 
     else if (vis.selectData == 'counties') {
@@ -248,6 +250,8 @@ MasterMap.prototype.changeOptions = function() {
             trend = new Option(vis.countyTrends[i].text, vis.countyTrends[i].value);
             vis.trendOptions.options.add(trend);
         }
+
+        vis.selection = "enr2014";
     }
 };
 
@@ -270,6 +274,8 @@ MasterMap.prototype.switchData = function() {
 
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
+
+    console.log(vis.counties);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -312,8 +318,6 @@ MasterMap.prototype.drawCounties = function() {
 
 MasterMap.prototype.drawMSA = function() {
     var vis = this;
-
-    console.log(vis.msa);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -420,5 +424,6 @@ MasterMap.prototype.drawMSA = function() {
 // TO DO
 //
 // Implement zoom function
-// Find a way to intialize title and year/trend when data is switched
+// Figure out why tooltip states are undefined and fix
+// Improve structure of code in general
 // Style tooltips
