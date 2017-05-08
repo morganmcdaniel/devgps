@@ -33,6 +33,7 @@ body {
 }
 
 /* color & format nav header and footer */
+
 nav {
     font-family: "Franklin Gothic Book";
     font-weight: 400;
@@ -94,4 +95,13 @@ div.tooltip {
 .background {
     fill: none;
     pointer-events: all;
+}
+
+/* Scatter Plot */
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
 }

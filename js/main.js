@@ -39,7 +39,7 @@ function loadData() {
             // INSTANTIATE VISUALIZATIONS
 
             scatter = new Scatter("scatter", enrGdp);
-            choropleth = new Choropleth("choropleth", msa);
+            choropleth = new Choropleth("choropleth", msa, states, nation);
             tree = new Tree("tree");
             bar = new Bar("bar");
             network = new Network("network");
@@ -47,6 +47,10 @@ function loadData() {
             masterMap = new MasterMap("masterMap", msa, counties, states, nation);
 
         });
+}
+
+function wrangleScatterData(enrGdp, stateCodes) {
+
 }
 
 function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
