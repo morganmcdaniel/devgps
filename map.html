@@ -54,27 +54,39 @@
 
         <div class="col-md-3">
 
-            <form id="type" onchange="dataManipulation()">
-                <label>Display by: </label>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                        <input type="radio" name="options" value="counties" autocomplete="off" checked>Counties
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" name="options" value="msa" autocomplete="off">Large Cities
-                    </label>
-                </div>
-            </form>
+            <div class="row">
+                <form id="type" onchange="dataManipulation()">
+                    <label>Display by: </label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" value="counties" autocomplete="off" checked>Counties
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" value="msa" autocomplete="off">Large Cities
+                        </label>
+                    </div>
+                </form>
+            </div>
 
             <br>
-            <fieldset  data-role="controlgroup">
-                <form name="yearOptions" id="yearOptions">
-                    <input type="radio" name="year" value="enr2014" onclick="masterMap.onChangeYear(this);" checked> 2014<br>
-                    <input type="radio" name="year" value="enr2009" onclick="masterMap.onChangeYear(this);"> 2009<br>
-                    <input type="radio" name="year" value="enr2004" onclick="masterMap.onChangeYear(this);"> 2004<br>
-                    <input type="radio" name="year" value="enr1999" onclick="masterMap.onChangeYear(this);"> 1999<br>
-                </form>
-            </fieldset>
+
+            <div class="row">
+                <div data-role="fieldcontain" id="radiobtn" onclick="masterMap.onChangeYear()">
+                    <fieldset data-role="controlgroup" id="radiodiv">
+                        <input type="radio" name="year" class="year" value="enr2014" checked> 2014<br>
+                        <input type="radio" name="year" class="year" value="enr2009"> 2009<br>
+                        <input type="radio" name="year" class="year" value="enr2004"> 2004<br>
+                        <input type="radio" name="year" class="year" value="enr1999"> 1999<br>
+                    </fieldset>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div id="choroLegend"></div>
+            </div>
 
 
             <!--<form class="form-inline">-->
@@ -132,6 +144,7 @@
 <script src="js/network.js"></script>
 <script src="js/recommended.js"></script>
 <script src="js/masterMap.js"></script>
+<script src="js/choroLegend.js"></script>
 
 
 

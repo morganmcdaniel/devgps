@@ -45,6 +45,7 @@ function loadData() {
             network = new Network("network");
             recommended = new Recommended("recommended");
             masterMap = new MasterMap("masterMap", msa, counties, states, nation);
+            choroLegend = new ChoroLegend('choroLegend');
 
         });
 }
@@ -161,6 +162,9 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
 // update visualization to select filter for node coloring
 function dataManipulation() {
-    masterMap.changeData();
+    var x = $('input[name="options"]:checked', '#type').val();
+
+    masterMap.changeData(x);
+    masterMap.changeOptions(x);
 
 }
