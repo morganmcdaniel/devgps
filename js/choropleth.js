@@ -109,12 +109,10 @@ Choropleth.prototype.updateChoropleth = function() {
 
     vis.selectGroup.enter().append("path");
 
-    console.log(vis.msa);
-
     vis.selectGroup
         .attr("d", vis.path)
         .attr("class", "select")
-        .attr("id", function(d) { return "msa " + d.properties.GEOID; })
+        .attr("id", function(d) { return "msa" + d.properties.GEOID; })
         .style("fill", function(d) {
             return vis.color(d.properties[vis.selection]);
         })
@@ -134,8 +132,13 @@ Choropleth.prototype.updateChoropleth = function() {
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY -30) + "px");
 
-            var s = d.properties.GEOID;
-            d3.select("#dot " + s).style('fill', "#ff0000");
+            vis.s = d.properties.GEOID;
+            d3.select("#dot" + vis.s)
+                .moveToFront()
+                .attr("r", 5)
+                .style('fill', "#ff0000")
+                .style("stroke", "black")
+                .style("opacity", 1);
         })
         .on("mouseout", function() {
             d3.select(this)
@@ -144,7 +147,12 @@ Choropleth.prototype.updateChoropleth = function() {
             vis.div.transition().duration(300)
                 .style("opacity", 0);
 
-            d3.selectAll(".dot").style("fill", function(d) { return scatter.color(d.region); });
+            d3.select("#dot" + vis.s)
+                .attr("r", 3.5)
+                .style("stroke", "none")
+                .style('fill', function (d) {
+                    return vis.color(d.region);
+                });
         });
 
     vis.selectGroup.exit().remove();

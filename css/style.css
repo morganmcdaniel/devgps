@@ -2,6 +2,12 @@ body {
     font-family: "Franklin Gothic Book";
 }
 
+h1 {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
 .textbox {
     margin: 50px;
 }
@@ -49,7 +55,7 @@ nav a {
 
  .select path {
      fill: gray;
-     stroke: none;
+     stroke: #D3D3D3;
  }
 
  .states {
@@ -61,10 +67,14 @@ nav a {
  }
 
 .states path {
-    fill: #f6f6f6;
-    stroke: blue;
+    fill: gray;
+    stroke: #424242;
 }
 
+.statesLine {
+    stroke: #424242;
+    fill: none;
+}
 .nation path {
     fill: none;
     stroke: black;

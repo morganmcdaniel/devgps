@@ -23,7 +23,7 @@ Scatter.prototype.initVis = function() {
     vis.margin = {top: 20, right: 20, bottom: 30, left: 40};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-        vis.height = 500 - vis.margin.top - vis.margin.bottom;
+        vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
     vis.x = d3.scale.linear()
         .range([0, vis.width]);
@@ -137,8 +137,6 @@ Scatter.prototype.wrangleData = function() {
 
     });
 
-    console.log(vis.wrangleEnr);
-
     vis.updateScatter();
 };
 
@@ -179,31 +177,89 @@ Scatter.prototype.updateScatter = function() {
         .data(vis.wrangleEnr)
         .enter().append("circle")
         .attr("class", "dot")
-        .attr("id", function(d) { return "dot " + d.Market; })
+        .attr("id", function(d) { return "dot" + d.Market; })
         .attr("r", 3.5)
         .attr("cx", function(d) {  return vis.x(d.ENI); })
         .attr("cy", function(d) { return vis.y(d.Log_PerCapita); })
         .style("fill", function(d) { return vis.color(d.region); })
-        .style("opacity", 0.5)
+        .style("opacity", 0.8)
+
         .on("mouseover", function(d) {
-            d3.select(this).transition().duration(300).style("opacity", 1);
-            vis.div.transition().duration(300)
+            d3.select(this)
+                .attr("r", 5)
+                .style('fill', "#ff0000")
+                .style("stroke", "black")
                 .style("opacity", 1);
+                // .moveToFront();
+
+            vis.div.transition().duration(300)
+                .style('fill', "#ff0000")
+                .attr("r", 5)
+                .style("opacity", 1);
+
             vis.div.text(d.City)
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY -30) + "px");
 
-            var s = d.Market;
-            d3.select("#msa " + s).style('fill', "#ff0000");
+            vis.s = d.Market;
+            d3.select("#msa" + vis.s).style('fill', "#ff0000");
 
         })
+
         .on("mouseout", function() {
             d3.select(this)
-                .transition().duration(300)
-                .style("opacity", 0.8);
+                .style("opacity", 0.8)
+                .attr("r", 3.5)
+                .style("stroke", "none")
+                .style('fill', function (d) {
+                    return vis.color(d.region);
+                });
+
             vis.div.transition().duration(300)
                 .style("opacity", 0);
+
+            d3.select("#msa" + vis.s).style("fill", function (d) {
+                return vis.color(d.properties[vis.selection]);
+
+                // d3.selectAll(".select").style("fill", function(d) { return scatter.color(d.region); });
+            });
         });
+
+    // $('.dot').bind('mouseover', function(d) {
+    //     d3.select(this)
+    //         .moveToFront()
+    //         .attr("r", 5)
+    //         .attr("opacity", 1)
+    //         .style('fill', "#ff0000")
+    //         .style("stroke", "black");
+    //
+    //     var s = d.Market;
+    //     d3.select("#msa" + s).style('fill', "#ff0000");
+    //
+    //     d3.select(this).transition().duration(300).style("opacity", 1);
+    //     vis.div.transition().duration(300)
+    //         .style("opacity", 1);
+    //     vis.div.text(d.City)
+    //         .style("left", (d3.event.pageX) + "px")
+    //         .style("top", (d3.event.pageY -30) + "px");
+    //
+    // });
+    //
+    // $('.dot').bind('mouseout', function(d) {
+    //     d3.select(this)
+    //         .attr("r", 3.5)
+    //         .attr("opacity", 0.8)
+    //         .style("stroke", "none")
+    //         .style('fill', function(d) { return vis.color(d.region); });
+    //
+    //     d3.select(this)
+    //         .transition().duration(300)
+    //         .style("opacity", 0.8);
+    //     vis.div.transition().duration(300)
+    //         .style("opacity", 0);
+    //
+    // });
+
 
     // draw legend
     vis.legend = vis.svg.selectAll(".legend")
@@ -237,4 +293,10 @@ Scatter.prototype.updateScatter = function() {
         .style("text-anchor", "end")
         .text(function(d) { return d });
 
+};
+
+d3.selection.prototype.moveToFront = function() {
+    return this.each(function(){
+        this.parentNode.appendChild(this);
+    });
 };
