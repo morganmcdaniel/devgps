@@ -45,7 +45,7 @@ MasterMap.prototype.initVis = function() {
     //     .attr("height", vis.height)
     //     .on("click", vis.clicked);
 
-    vis.projection = d3.geo.albers()
+    vis.projection = d3.geo.albersUsa()
         .scale(1000)
         .translate([vis.width / 2, vis.height / 2]);
 
@@ -133,14 +133,7 @@ MasterMap.prototype.drawCounties = function() {
             d3.select(this).transition().duration(300).style("opacity", 1);
             vis.div.transition().duration(300)
                 .style("opacity", 1);
-            vis.div.text(function() {
-                if (d.properties[vis.selection]) {
-                    return (d.properties.NAME + ", " + d.properties.statecode + ": " + d.properties[vis.selection].toFixed(2));
-                }
-                else {
-                    return (d.properties.NAME + ", " + d.properties.statecode + ": No Data")
-                }
-            })
+            vis.div.text(function() { return (d.properties.NAME + ", " + d.properties.statecode); })
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY -30) + "px")
         })
@@ -192,25 +185,16 @@ MasterMap.prototype.drawMSA = function() {
 
     vis.selectGroup
         .attr("d", vis.path)
-        .style("fill", function(d) {
-            return vis.color(d.properties[vis.selection]);
-        })
+        .style("fill", function(d) { return vis.color(d.properties[vis.selection]); })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
             d3.select(this).transition().duration(300).style("opacity", 1);
             vis.div.transition().duration(300)
                 .style("opacity", 1);
-            vis.div.text(function() {
-                if (d.properties[vis.selection]) {
-                    return (d.properties.NAME + ": " + d.properties[vis.selection]);
-                }
-                else {
-                    return (d.properties.NAME + ": No Data")
-                }
-            })
+            vis.div.text(function () { return (d.properties.NAME); })
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY -30) + "px")
-        })
+            })
         .on("mouseout", function() {
             d3.select(this)
                 .transition().duration(300)
@@ -295,6 +279,9 @@ MasterMap.prototype.changeOptions = function(x) {
         {text: "2010", value: "enr2010"},
         {text: "2005", value: "enr2005"},
         {text: "2003", value: "enr2003"},
+    ];
+
+    vis.msaTrend = [
         {text: "Current", value: "enrcurrent"},
         {text: "Short Term", value: "enrshort"},
         {text: "Mid Term", value: "enrmid"},
@@ -315,8 +302,15 @@ MasterMap.prototype.changeOptions = function(x) {
 
             $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
 
-            for (i = 0; i < vis.msaYears.length; i++) {
+            $('<h2>Year:</h2>').appendTo('#radiodiv');
+            $('<input type="radio" name="year" class="year" value="' + vis.msaYears[0].value + '" checked> ' + vis.msaYears[0].text + '<br>').appendTo('#radiodiv');
+            for (i = 1; i < vis.msaYears.length; i++) {
                 $('<input type="radio" name="year" class="year" value="' + vis.msaYears[i].value + '"> ' + vis.msaYears[i].text + '<br>').appendTo('#radiodiv');
+            }
+
+            $('<h2>Trend:</h2>').appendTo('#radiodiv');
+            for (i = 0; i < vis.msaTrend.length; i++) {
+                $('<input type="radio" name="year" class="year" value="' + vis.msaTrend[i].value + '"> ' + vis.msaTrend[i].text + '<br>').appendTo('#radiodiv');
             }
         });
     }
@@ -328,7 +322,9 @@ MasterMap.prototype.changeOptions = function(x) {
 
             $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
 
-            for (i = 0; i < vis.countyYears.length; i++) {
+            $('<h2>Year:</h2>').appendTo('#radiodiv');
+            $('<input type="radio" name="year" class="year" value="' + vis.countyYears[0].value + '" checked> ' + vis.countyYears[0].text + '<br>').appendTo('#radiodiv');
+            for (i = 1; i < vis.countyYears.length; i++) {
                 $('<input type="radio" name="year" class="year" value="' + vis.countyYears[i].value + '"> ' + vis.countyYears[i].text + '<br>').appendTo('#radiodiv');
             }
         });
