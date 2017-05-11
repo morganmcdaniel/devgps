@@ -21,7 +21,6 @@ MasterMap = function(_parentElement, _msa, _counties, _states, _nation) {
  */
 
 MasterMap.prototype.initVis = function() {
-
     var vis = this;
 
     vis.margin = {top: 0, right: 0, bottom: 0, left: 0};
@@ -52,15 +51,15 @@ MasterMap.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.threshold()
-        .domain([-2, -1, .1, 2])
+    vis.color = d3.scale.quantile()
+        // .domain([-2, -1, 1, 2])
         .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
 
     vis.div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    vis.selection = "enr2014";
+    vis.selection = "enr2015";
 
     vis.selectData = "counties";
 
@@ -73,13 +72,6 @@ MasterMap.prototype.initVis = function() {
         .enter().append("path")
         .attr("d", vis.path)
         .on("click", vis.clicked);
-
-    vis.divider = vis.svg.append("line")
-        .attr("x1", vis.width - 2)
-        .attr("y1", vis.height)
-        .attr("x2", vis.width - 2)
-        .attr("y2", 0)
-        .style("stroke", "#424242");
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -116,6 +108,13 @@ MasterMap.prototype.updateMap = function() {
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
 
+    console.log(vis.counties);
+
+    vis.color.domain([
+        d3.min(vis.counties, function(d) { return d.properties[vis.selection]; }),
+        d3.max(vis.counties, function(d) { return d.properties[vis.selection]; })
+    ]);
+
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
         .selectAll("path")
@@ -125,9 +124,7 @@ MasterMap.prototype.drawCounties = function() {
 
     vis.selectGroup
         .attr("d", vis.path)
-        .style("fill", function(d) {
-            return vis.color(d.properties[vis.selection]);
-        })
+        .style("fill", function(d) { return vis.color(d.properties[vis.selection]); })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
             d3.select(this).transition().duration(300).style("opacity", 1);
@@ -175,6 +172,13 @@ MasterMap.prototype.drawCounties = function() {
 
 MasterMap.prototype.drawMSA = function() {
     var vis = this;
+
+    vis.color.domain([
+        d3.min(vis.msa, function(d) { return d.properties[vis.selection]; }),
+        d3.max(vis.msa, function(d) { return d.properties[vis.selection]; })
+    ]);
+
+    console.log(vis.color.domain());
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -238,15 +242,6 @@ MasterMap.prototype.changeData = function(x) {
 
     console.log(vis.selectData);
 
-    if (vis.selectData == "counties") {
-
-        vis.selection = "enr2014";
-    }
-    else if (vis.selectData == "msa") {
-
-        vis.selection = "enr2015";
-    }
-
     vis.updateMap();
 };
 
@@ -261,78 +256,78 @@ MasterMap.prototype.onChangeYear = function() {
 
     console.log(vis.selection);
 
-    vis.updateMap(vis.selection);
+    vis.updateMap();
 };
 
 /*
  *  Called to change the radio button options
  */
 
-MasterMap.prototype.changeOptions = function(x) {
-    var vis = this;
-
-    vis.selectData = x;
-
-    vis.msaYears = [
-        {text: "2015", value: "enr2015"},
-        {text: "2014", value: "enr2014"},
-        {text: "2010", value: "enr2010"},
-        {text: "2005", value: "enr2005"},
-        {text: "2003", value: "enr2003"},
-    ];
-
-    vis.msaTrend = [
-        {text: "Current", value: "enrcurrent"},
-        {text: "Short Term", value: "enrshort"},
-        {text: "Mid Term", value: "enrmid"},
-        {text: "Long Term", value: "enrlong"}
-    ];
-
-    vis.countyYears = [
-        {text: "2014", value: "enr2014"},
-        {text: "2009", value: "enr2009"},
-        {text: "2004", value: "enr2004"},
-        {text: "1999", value: "enr1999"}
-    ];
-
-    if (vis.selectData == 'msa') {
-
-        $(document).ready(function(){
-            $('.year').parent().remove();
-
-            $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
-
-            $('<h2>Year:</h2>').appendTo('#radiodiv');
-            $('<input type="radio" name="year" class="year" value="' + vis.msaYears[0].value + '" checked> ' + vis.msaYears[0].text + '<br>').appendTo('#radiodiv');
-            for (i = 1; i < vis.msaYears.length; i++) {
-                $('<input type="radio" name="year" class="year" value="' + vis.msaYears[i].value + '"> ' + vis.msaYears[i].text + '<br>').appendTo('#radiodiv');
-            }
-
-            $('<h2>Trend:</h2>').appendTo('#radiodiv');
-            for (i = 0; i < vis.msaTrend.length; i++) {
-                $('<input type="radio" name="year" class="year" value="' + vis.msaTrend[i].value + '"> ' + vis.msaTrend[i].text + '<br>').appendTo('#radiodiv');
-            }
-        });
-    }
-
-    else if (vis.selectData == 'counties') {
-
-        $(document).ready(function(){
-            $('.year').parent().remove();
-
-            $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
-
-            $('<h2>Year:</h2>').appendTo('#radiodiv');
-            $('<input type="radio" name="year" class="year" value="' + vis.countyYears[0].value + '" checked> ' + vis.countyYears[0].text + '<br>').appendTo('#radiodiv');
-            for (i = 1; i < vis.countyYears.length; i++) {
-                $('<input type="radio" name="year" class="year" value="' + vis.countyYears[i].value + '"> ' + vis.countyYears[i].text + '<br>').appendTo('#radiodiv');
-            }
-        });
-
-        vis.selection = "enr2014";
-    }
-
-};
+// MasterMap.prototype.changeOptions = function(x) {
+//     var vis = this;
+//
+//     vis.selectData = x;
+//
+//     vis.msaYears = [
+//         {text: "2015", value: "enr2015"},
+//         {text: "2014", value: "enr2014"},
+//         {text: "2010", value: "enr2010"},
+//         {text: "2005", value: "enr2005"},
+//         {text: "2003", value: "enr2003"},
+//     ];
+//
+//     vis.msaTrend = [
+//         {text: "Current", value: "enrcurrent"},
+//         {text: "Short Term", value: "enrshort"},
+//         {text: "Mid Term", value: "enrmid"},
+//         {text: "Long Term", value: "enrlong"}
+//     ];
+//
+//     vis.countyYears = [
+//         {text: "2014", value: "enr2014"},
+//         {text: "2009", value: "enr2009"},
+//         {text: "2004", value: "enr2004"},
+//         {text: "1999", value: "enr1999"}
+//     ];
+//
+//     if (vis.selectData == 'msa') {
+//
+//         $(document).ready(function(){
+//             $('.year').parent().remove();
+//
+//             $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
+//
+//             $('<h2>Year:</h2>').appendTo('#radiodiv');
+//             $('<input type="radio" name="year" class="year" value="' + vis.msaYears[0].value + '" checked> ' + vis.msaYears[0].text + '<br>').appendTo('#radiodiv');
+//             for (i = 1; i < vis.msaYears.length; i++) {
+//                 $('<input type="radio" name="year" class="year" value="' + vis.msaYears[i].value + '"> ' + vis.msaYears[i].text + '<br>').appendTo('#radiodiv');
+//             }
+//
+//             $('<h2>Trend:</h2>').appendTo('#radiodiv');
+//             for (i = 0; i < vis.msaTrend.length; i++) {
+//                 $('<input type="radio" name="year" class="year" value="' + vis.msaTrend[i].value + '"> ' + vis.msaTrend[i].text + '<br>').appendTo('#radiodiv');
+//             }
+//         });
+//     }
+//
+//     else if (vis.selectData == 'counties') {
+//
+//         $(document).ready(function(){
+//             $('.year').parent().remove();
+//
+//             $('<fieldset data-role="controlgroup" id="radiodiv">').appendTo('#radiobtn');
+//
+//             $('<h2>Year:</h2>').appendTo('#radiodiv');
+//             $('<input type="radio" name="year" class="year" value="' + vis.countyYears[0].value + '" checked> ' + vis.countyYears[0].text + '<br>').appendTo('#radiodiv');
+//             for (i = 1; i < vis.countyYears.length; i++) {
+//                 $('<input type="radio" name="year" class="year" value="' + vis.countyYears[i].value + '"> ' + vis.countyYears[i].text + '<br>').appendTo('#radiodiv');
+//             }
+//         });
+//
+//         vis.selection = "enr2014";
+//     }
+//
+// };
 
 // MasterMap.prototype.clicked = function(d) {
 //     var vis = this;

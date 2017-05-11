@@ -13,12 +13,13 @@ function loadData() {
         .defer(d3.csv, "data/enr_gdp.csv")
         .defer(d3.json, "data/cbsa_us_2014_ex_hi_ak.json")
         .defer(d3.json, "data/gz_2010_us_050_00_5m.json")
-        .defer(d3.csv, "data/ENR_MSA_Master.csv")
+        .defer(d3.csv, "data/RNS_MSA_Master.csv")
         .defer(d3.json, "data/gz_2010_us_outline_5m.json")
         .defer(d3.json, "data/gz_2010_us_040_00_5m.json")
-        .defer(d3.csv, "data/ENI_CO_Master.csv")
+        .defer(d3.csv, "data/RNS_CO_Master.csv")
         .defer(d3.csv, "data/state-codes.csv")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes) {
+        .defer(d3.csv, "data/Tupelo_Tree.csv")
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo) {
 
             if (error) throw error;
 
@@ -40,10 +41,10 @@ function loadData() {
 
             scatter = new Scatter("scatter", enrGdp);
             choropleth = new Choropleth("choropleth", msa, states, nation);
-            tree = new Tree("tree");
-            bar = new Bar("bar");
-            network = new Network("network");
-            recommended = new Recommended("recommended");
+            bar = new Bar("bar", tupelo);
+            tree = new Tree("tree", tupelo);
+            // network = new Network("network");
+            // recommended = new Recommended("recommended");
             masterMap = new MasterMap("masterMap", msa, counties, states, nation);
             choroLegend = new ChoroLegend('choroLegend');
 
@@ -67,15 +68,9 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
         var enr2014 = enrTime[i].y14;
         var enr2010 = enrTime[i].y10;
         var enr2005 = enrTime[i].y05;
-        var enr2003 = enrTime[i].y03;
         var enr1yr = enrTime[i].t1yr;
         var enr5yr = enrTime[i].t5yr;
         var enr10yr = enrTime[i].t10yr;
-        var enr12yr = enrTime[i].t12yr;
-        var enrcurrent = enrTime[i].Current;
-        var enrshort = enrTime[i].ShortTerm;
-        var enrmid = enrTime[i].MidTerm;
-        var enrlong = enrTime[i].LongTerm;
 
         // Find the corresponding MSA inside the GeoJSON
         for (var j = 0; j < msa.length; j++) {
@@ -88,15 +83,9 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
                 msa[j].properties.enr2014 = +enr2014;
                 msa[j].properties.enr2010 = +enr2010;
                 msa[j].properties.enr2005 = +enr2005;
-                msa[j].properties.enr2003 = +enr2003;
                 msa[j].properties.enr1yr = +enr1yr;
                 msa[j].properties.enr5yr = +enr5yr;
                 msa[j].properties.enr10yr = +enr10yr;
-                msa[j].properties.enr12yr = +enr12yr;
-                msa[j].properties.enrcurrent = +enrcurrent;
-                msa[j].properties.enrshort = +enrshort;
-                msa[j].properties.enrmid = +enrmid;
-                msa[j].properties.enrlong = +enrlong;
 
                 break;
             }
@@ -104,6 +93,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
     }
 
     // Copy ENR data in Counties GeoJSON
+
 
     for (var y = 0; y < stateCodes.length; y++) {
 
@@ -113,6 +103,8 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
         for (var z = 0; z < counties.length; z++) {
             counties[z].properties.Market = counties[z].properties.STATE + counties[z].properties.COUNTY;
+
+            counties[z].properties.Market = +counties[z].properties.Market;
 
             var enrFIPS = counties[z].properties.STATE;
 
@@ -126,38 +118,40 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
     for (var k = 0; k < enrTimeCo.length; k++) {
 
         // Grab County ID Name
-        enrMarket = +enrTimeCo[k].Market;
+        // enrTimeCo[k].Code = +enrTimeCo[k].Code;
+        enrMarket = +enrTimeCo[k].Code;
 
         // Grab data value
-        enr2014 = enrTimeCo[k].y14;
-        var enr2009 = enrTimeCo[k].y09;
-        var enr2004 = enrTimeCo[k].y04;
-        var enr1999 = enrTimeCo[k].y99;
-        enr1yr = enrTimeCo[k].t1yr;
-        enr5yr = enrTimeCo[k].t5yr;
-        var enr15yr = enrTimeCo[k].t15yr;
+         enr2015 = enrTimeCo[k].y15;
+         enr2014 = enrTimeCo[k].y14;
+         enr2010 = enrTimeCo[k].y10;
+         enr2005 = enrTimeCo[k].y05;
+         enr1yr = enrTimeCo[k].t1yr;
+         enr5yr = enrTimeCo[k].t5yr;
+         enr10yr = enrTimeCo[k].t10yr;
 
         // Find the corresponding County ID inside the GeoJSON
         for (var l = 0; l < counties.length; l++) {
-            var jsonMarket = +counties[l].properties.Market;
+            var jsonMarket = counties[l].properties.Market;
 
             if (enrMarket == jsonMarket) {
-
+                // console.log(enrMarket + "," + jsonMarket);
                 // Copy the data value into the JSON
+                counties[l].properties.enr2015 = +enr2015;
                 counties[l].properties.enr2014 = +enr2014;
-                counties[l].properties.enr2009 = +enr2009;
-                counties[l].properties.enr2004 = +enr2004;
-                counties[l].properties.enr1999 = +enr1999;
+                counties[l].properties.enr2010 = +enr2010;
+                counties[l].properties.enr2005 = +enr2005;
                 counties[l].properties.enr1yr = +enr1yr;
                 counties[l].properties.enr5yr = +enr5yr;
                 counties[l].properties.enr10yr = +enr10yr;
-                counties[l].properties.enr15yr = +enr15yr;
 
                 // Stop looking through the JSON
                 break;
             }
         }
+
     }
+
 }
 
 // update visualization to select filter for node coloring
@@ -165,6 +159,18 @@ function dataManipulation() {
     var x = $('input[name="options"]:checked', '#type').val();
 
     masterMap.changeData(x);
-    masterMap.changeOptions(x);
+    // masterMap.changeOptions(x);
 
+}
+
+function toSectionThree() {
+    console.log("click!")
+}
+
+function toSectionFour() {
+    console.log("click!")
+}
+
+function toSectionFive() {
+    console.log("click!")
 }

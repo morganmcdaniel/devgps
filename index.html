@@ -40,61 +40,66 @@
         </ul>
     </nav>
 
-    <!--<div id="section0">-->
-        <!--<img src="img/index_background.png" width=100%>-->
-    <!--</div>-->
-
-    <div class="textbox">
-        <p>PART ONE: Big Picture. Cities with higher ENR have higher GDPs per Capita</p>
+    <div id="section0">
+        <img src="img/index_background.png" width=100%>
     </div>
 
-   <div class="row">
-       <div class="col-md-6">
-           <p>INTRO TEXT Just like Amazon identifies the next most likely thing you want to buy, and Google identifies the next most likely thing you want to click, DevGPS is working to identify the next most likely industry a region can do.
-           </p>
-           <p>Economic growth is one of the most important goals of local governments, yet policy makers often lack clear data-driven tools to evaluate growth strategies. This leads to sub-optimal utilization of their limited resources, which can lead to less jobs created and lower economic growth rates. DevGPS is committed to facilitating targeted economic growth strategy that creates more jobs and economic growth.
-           </p>
+    <div class="section" id="section1">
+        <h1>What's DevGPS?</h1>
+        <p>DevGPS is a user-friendly data-driven tool to help communities understand their best opportunities to create new jobs and economic growth. It learns about what an area does, what it could do, and then generates customized recommendations to make an area as competitive as possible.</p>
+    </div>
+
+    <div class="section" id="section2">
+        <h1>Stronger Networks = More Opportunities for Growth</h1>
+
+        <p>We think about economies as driven by networks of people who use their unique skills to solve problems. Network effects allow bigger groups with more complex skills to solve bigger, more complex problems. That does not mean small groups can't compete - it just means that they need to be strategic. By understanding what you can do, what you could do, and how to get there, an area can make itself as competitive as possible. It can also better invest its limited resources.
+        </p>
+        <p>In addition to learning about the amount of activity, DevGPS uses an Economic Network Rating (ENR) to measure how "connected" an area is. ENR not only measures the amount of activity, but the relative interconnectedness of those activities as compared to the rest of the country. </p>
+
+        <div class="row">
+           <div class="col-md-8" id="choropleth"></div>
+           <div class="col-md-4" id="scatter"></div>
        </div>
-       <div class="col-md-6" id="scatter"></div>
-   </div>
 
-    <div id="choropleth"></div>
+        <h2 align="center">Takeaway: Cities with higher ENR have higher GDPs per Capita</h2>
 
-    <div class="textbox">
-        <p>PART ONE TAKEAWAY: Big Picture. Cities with higher ENR have higher GDPs per Capita</p>
+        <button type="button" align="center" onClick="document.getElementById('section3').scrollIntoView();">Explore Tupelo, MS</button>
     </div>
 
-    <div class="textbox">
-        <p>CLICK TO GO TO PART TWO: Pick a case study to dig deeper</p>
+    <div class="section" id="section3">
+        <h1>Tupelo, MS: [takeaway]</h1>
+
+        <div id="tree"></div>
+
+        <div id="bar"></div>
+
+        <h2 align="center">Takeaway: Tupelo's economy is xyz</h2>
+
+        <div style="text-align:center;"><button type="button" onClick="document.getElementById('section4').scrollIntoView();">Next: Where Tupelo can go</button></div>
     </div>
 
-    <div class="textbox">
-        <p>PART TWO: Case Study: Where Case Study City is</p>
+    <div class="section" id="section4">
+        <h1>Tupelo's future is in abc</h1>
+        <p>The ability to do one thing connects to the ability to do other things. Explain more about networks here.</p>
+        <img align="center" src="img/network.png">
+        <!--<div id="network"></div>-->
+
+        <p>These are the industries that Tupelo should target in order to maximize its potential. DevGPS recommends different industries for every area.</p>
+        <img align="center" src="img/recommended.png" width=50%>
+        <!--<div id="recommended"></div>-->
+
+        <h2 align="center">Takeaway: Tupelo's future is in xyz</h2>
+
+        <button type="button" align="center" onClick="document.getElementById('section5').scrollIntoView();">Next: How DevGPS can help your city</button>
     </div>
 
-    <div id="tree"></div>
+    <div class="section" id="section5">
+        <h1>DevGPS will help your city asses its economy and plan for its future</h1>
 
-    <div id="bar"></div>
-
-
-    <div class="textbox">
-        <p>PART TWO TAKEAWAY: </p>
-    </div>
-
-    <div class="textbox">
-        <p>PART THREE: Case Study: Where Case Study City can go</p>
-    </div>
-
-    <div id="network"></div>
-
-    <div id="recommended"></div>
-
-    <div class="textbox">
-        <p>PART THREE TAKEAWAY: </p>
-    </div>
-
-    <div class="textbox">
-        <p>PART FOUR: Hire DevGPS and you can be like Case Study City</p>
+        <p>Just like Amazon identifies the next most likely thing you want to buy, and Google identifies the next most likely thing you want to click, DevGPS is working to identify the next most likely industry a region can do.
+        </p>
+        <p>Economic growth is one of the most important goals of local governments, yet policy makers often lack clear data-driven tools to evaluate growth strategies. This leads to sub-optimal utilization of their limited resources, which can lead to less jobs created and lower economic growth rates. DevGPS is committed to facilitating targeted economic growth strategy that creates more jobs and economic growth.
+        </p>
     </div>
 
     <div class="footer">

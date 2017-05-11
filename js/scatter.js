@@ -23,7 +23,7 @@ Scatter.prototype.initVis = function() {
     vis.margin = {top: 20, right: 20, bottom: 30, left: 40};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-        vis.height = 400 - vis.margin.top - vis.margin.bottom;
+        vis.height = 450 - vis.margin.top - vis.margin.bottom;
 
     vis.x = d3.scale.linear()
         .range([0, vis.width]);

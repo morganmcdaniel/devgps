@@ -26,7 +26,7 @@ Choropleth.prototype.initVis = function() {
     vis.margin = {top: 0, right: 0, bottom: 0, left: 0};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-        vis.height = 500- vis.margin.top - vis.margin.bottom;
+        vis.height = 450- vis.margin.top - vis.margin.bottom;
 
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
         .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -80,7 +80,7 @@ Choropleth.prototype.initVis = function() {
         .data(vis.legendColor)
         .enter().append('g')
         .attr('class', 'legend')
-        .attr("transform", function(d, i) { return "translate(20," + (400 + (i * 20)) + ")"; });
+        .attr("transform", function(d, i) { return "translate(20," + (350 + (i * 20)) + ")"; });
 
     vis.legend.append("rect")
         .attr("width", 10)
