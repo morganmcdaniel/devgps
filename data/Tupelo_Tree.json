@@ -1,0 +1,667 @@
+[
+  {
+    "key": "Upholstered Household Furniture Manufacturing",
+    "category": "Manufacturing",
+    "value": "588.19629"
+  },
+  {
+    "key": "Urethane and Other Foam Product (except Polystyrene) Manufacturing",
+    "category": "Manufacturing",
+    "value": "148.59592"
+  },
+  {
+    "key": "Consumer Electronics and Appliances Rental",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "35.330086"
+  },
+  {
+    "key": "Mattress Manufacturing",
+    "category": "Manufacturing",
+    "value": "27.463852"
+  },
+  {
+    "key": "Wood Office Furniture Manufacturing",
+    "category": "Manufacturing",
+    "value": "19.137161"
+  },
+  {
+    "key": "Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "13.900788"
+  },
+  {
+    "key": "Farm Machinery and Equipment Manufacturing",
+    "category": "Manufacturing",
+    "value": "10.357943"
+  },
+  {
+    "key": "Water Supply and Irrigation Systems",
+    "category": "Utilities",
+    "value": "9.0259247"
+  },
+  {
+    "key": "Other Activities Related to Credit Intermediation",
+    "category": "Finance and Insurance",
+    "value": "8.6077871"
+  },
+  {
+    "key": "Service Establishment Equipment and Supplies Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "6.4841728"
+  },
+  {
+    "key": "Consumer Lending",
+    "category": "Finance and Insurance",
+    "value": "5.5342178"
+  },
+  {
+    "key": "Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "5.0628428"
+  },
+  {
+    "key": "Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "4.9417205"
+  },
+  {
+    "key": "Collection Agencies",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "4.1511779"
+  },
+  {
+    "key": "General Warehousing and Storage",
+    "category": "Transportation and Warehousing",
+    "value": "3.9668808"
+  },
+  {
+    "key": "General Freight Trucking, Long-Distance, Less Than Truckload",
+    "category": "Transportation and Warehousing",
+    "value": "3.8541803"
+  },
+  {
+    "key": "Temporary Help Services",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "3.8316178"
+  },
+  {
+    "key": "Fuel Dealers",
+    "category": "Retail Trade",
+    "value": "3.3420064"
+  },
+  {
+    "key": "Furniture Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "3.3319757"
+  },
+  {
+    "key": "Offices of All Other Miscellaneous Health Practitioners",
+    "category": "Health Care and Social Assistance",
+    "value": "3.3053358"
+  },
+  {
+    "key": "Sewing, Needlework, and Piece Goods Stores",
+    "category": "Retail Trade",
+    "value": "3.2266722"
+  },
+  {
+    "key": "Other Gasoline Stations",
+    "category": "Retail Trade",
+    "value": "3.1011617"
+  },
+  {
+    "key": "General Freight Trucking, Long-Distance, Truckload",
+    "category": "Transportation and Warehousing",
+    "value": "3.077491"
+  },
+  {
+    "key": "Automobile and Other Motor Vehicle Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "3.0401926"
+  },
+  {
+    "key": "Other Building Equipment Contractors",
+    "category": "Construction",
+    "value": "2.8362203"
+  },
+  {
+    "key": "Commercial Banking",
+    "category": "Finance and Insurance",
+    "value": "2.7153254"
+  },
+  {
+    "key": "Automotive Parts and Accessories Stores",
+    "category": "Retail Trade",
+    "value": "2.6571841"
+  },
+  {
+    "key": "Clothing Accessories Stores",
+    "category": "Retail Trade",
+    "value": "2.6345019"
+  },
+  {
+    "key": "Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "2.5142407"
+  },
+  {
+    "key": "Used Car Dealers",
+    "category": "Retail Trade",
+    "value": "2.4551153"
+  },
+  {
+    "key": "Cafeterias, Grill Buffets, and Buffets",
+    "category": "Accommodation and Food Services",
+    "value": "2.4067712"
+  },
+  {
+    "key": "Used Merchandise Stores",
+    "category": "Retail Trade",
+    "value": "2.2923987"
+  },
+  {
+    "key": "Florists",
+    "category": "Retail Trade",
+    "value": "2.2602479"
+  },
+  {
+    "key": "Metal Service Centers and Other Metal Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "2.2265546"
+  },
+  {
+    "key": "Hobby, Toy, and Game Stores",
+    "category": "Retail Trade",
+    "value": "2.108634"
+  },
+  {
+    "key": "All Other Health and Personal Care Stores",
+    "category": "Retail Trade",
+    "value": "2.0913863"
+  },
+  {
+    "key": "Other Residential Care Facilities",
+    "category": "Health Care and Social Assistance",
+    "value": "2.013674"
+  },
+  {
+    "key": "Other Building Material Dealers",
+    "category": "Retail Trade",
+    "value": "2.0117426"
+  },
+  {
+    "key": "Wood Kitchen Cabinet and Countertop Manufacturing",
+    "category": "Manufacturing",
+    "value": "2.0052376"
+  },
+  {
+    "key": "Gasoline Stations with Convenience Stores",
+    "category": "Retail Trade",
+    "value": "1.931494"
+  },
+  {
+    "key": "Funeral Homes and Funeral Services",
+    "category": "Other Services",
+    "value": "1.9077663"
+  },
+  {
+    "key": "Nursing Care Facilities (Skilled Nursing Facilities)",
+    "category": "Health Care and Social Assistance",
+    "value": "1.8811125"
+  },
+  {
+    "key": "Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "1.8437487"
+  },
+  {
+    "key": "Dental Laboratories",
+    "category": "Manufacturing",
+    "value": "1.7348945"
+  },
+  {
+    "key": "General Automotive Repair",
+    "category": "Other Services",
+    "value": "1.7077602"
+  },
+  {
+    "key": "Optical Goods Stores",
+    "category": "Retail Trade",
+    "value": "1.7033898"
+  },
+  {
+    "key": "Specialized Freight (except Used Goods) Trucking, Local",
+    "category": "Transportation and Warehousing",
+    "value": "1.674583"
+  },
+  {
+    "key": "Shoe Stores",
+    "category": "Retail Trade",
+    "value": "1.6254697"
+  },
+  {
+    "key": "Drycleaning and Laundry Services (except Coin-Operated)",
+    "category": "Other Services",
+    "value": "1.620182"
+  },
+  {
+    "key": "Tire Dealers",
+    "category": "Retail Trade",
+    "value": "1.6139134"
+  },
+  {
+    "key": "Offices of Real Estate Appraisers",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "1.5438106"
+  },
+  {
+    "key": "Assisted Living Facilities for the Elderly",
+    "category": "Health Care and Social Assistance",
+    "value": "1.5171449"
+  },
+  {
+    "key": "Offices of Physicians (except Mental Health Specialists)",
+    "category": "Health Care and Social Assistance",
+    "value": "1.5025644"
+  },
+  {
+    "key": "Office Supplies and Stationery Stores",
+    "category": "Retail Trade",
+    "value": "1.4452912"
+  },
+  {
+    "key": "Tax Preparation Services",
+    "category": "Professional, Scientific, and Technical Services",
+    "value": "1.4112847"
+  },
+  {
+    "key": "Cosmetics, Beauty Supplies, and Perfume Stores",
+    "category": "Retail Trade",
+    "value": "1.3984187"
+  },
+  {
+    "key": "Religious Organizations",
+    "category": "Other Services",
+    "value": "1.3913871"
+  },
+  {
+    "key": "Household Appliance Stores",
+    "category": "Retail Trade",
+    "value": "1.3426743"
+  },
+  {
+    "key": "Industrial Machinery and Equipment Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "1.3419198"
+  },
+  {
+    "key": "Family Clothing Stores",
+    "category": "Retail Trade",
+    "value": "1.3326089"
+  },
+  {
+    "key": "Limited-Service Restaurants",
+    "category": "Accommodation and Food Services",
+    "value": "1.3306708"
+  },
+  {
+    "key": "All Other Miscellaneous Store Retailers (except Tobacco Stores)",
+    "category": "Retail Trade",
+    "value": "1.3252962"
+  },
+  {
+    "key": "Child Day Care Services",
+    "category": "Health Care and Social Assistance",
+    "value": "1.3191662"
+  },
+  {
+    "key": "Exterminating and Pest Control Services",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "1.3084857"
+  },
+  {
+    "key": "Women's Clothing Stores",
+    "category": "Retail Trade",
+    "value": "1.2857757"
+  },
+  {
+    "key": "Pharmacies and Drug Stores",
+    "category": "Retail Trade",
+    "value": "1.2579099"
+  },
+  {
+    "key": "Children's and Infants' Clothing Stores",
+    "category": "Retail Trade",
+    "value": "1.2479185"
+  },
+  {
+    "key": "Couriers and Express Delivery Services",
+    "category": "Transportation and Warehousing",
+    "value": "1.1856515"
+  },
+  {
+    "key": "Roofing Contractors",
+    "category": "Construction",
+    "value": "1.1635448"
+  },
+  {
+    "key": "Sporting Goods Stores",
+    "category": "Retail Trade",
+    "value": "1.1609997"
+  },
+  {
+    "key": "Industrial Supplies Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "1.1477389"
+  },
+  {
+    "key": "Electronics Stores",
+    "category": "Retail Trade",
+    "value": "1.1388959"
+  },
+  {
+    "key": "Beer, Wine, and Liquor Stores",
+    "category": "Retail Trade",
+    "value": "1.1356357"
+  },
+  {
+    "key": "Freight Transportation Arrangement",
+    "category": "Transportation and Warehousing",
+    "value": "1.1283613"
+  },
+  {
+    "key": "All Other Home Furnishings Stores",
+    "category": "Retail Trade",
+    "value": "1.1096934"
+  },
+  {
+    "key": "Direct Life Insurance Carriers",
+    "category": "Finance and Insurance",
+    "value": "1.095541"
+  },
+  {
+    "key": "General Freight Trucking, Local",
+    "category": "Transportation and Warehousing",
+    "value": "1.0810417"
+  },
+  {
+    "key": "Other Chemical and Allied Products Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "1.0356138"
+  },
+  {
+    "key": "Furniture Stores",
+    "category": "Retail Trade",
+    "value": "1.034481"
+  },
+  {
+    "key": "Other Specialized Design Services",
+    "category": "Professional, Scientific, and Technical Services",
+    "value": "1.0340205"
+  },
+  {
+    "key": "Full-Service Restaurants",
+    "category": "Accommodation and Food Services",
+    "value": "1.0273426"
+  },
+  {
+    "key": "Water and Sewer Line and Related Structures Construction",
+    "category": "Construction",
+    "value": "1.0203294"
+  },
+  {
+    "key": "Jewelry Stores",
+    "category": "Retail Trade",
+    "value": "1.0101742"
+  },
+  {
+    "key": "Diagnostic Imaging Centers",
+    "category": "Health Care and Social Assistance",
+    "value": "0.93389499"
+  },
+  {
+    "key": "Offices of Dentists",
+    "category": "Health Care and Social Assistance",
+    "value": "0.92093366"
+  },
+  {
+    "key": "Highway, Street, and Bridge Construction",
+    "category": "Construction",
+    "value": "0.91712379"
+  },
+  {
+    "key": "Other Direct Selling Establishments",
+    "category": "Retail Trade",
+    "value": "0.91280735"
+  },
+  {
+    "key": "Golf Courses and Country Clubs",
+    "category": "Arts, Entertainment, and Recreation",
+    "value": "0.89652997"
+  },
+  {
+    "key": "Commercial and Institutional Building Construction",
+    "category": "Construction",
+    "value": "0.86067605"
+  },
+  {
+    "key": "Other Accounting Services",
+    "category": "Professional, Scientific, and Technical Services",
+    "value": "0.85482824"
+  },
+  {
+    "key": "Insurance Agencies and Brokerages",
+    "category": "Finance and Insurance",
+    "value": "0.85217214"
+  },
+  {
+    "key": "Machine Shops",
+    "category": "Manufacturing",
+    "value": "0.82084733"
+  },
+  {
+    "key": "Lessors of Nonresidential Buildings (excpet Miniwarehouses)",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "0.81134665"
+  },
+  {
+    "key": "Gift, Novelty, and Souvenir Stores",
+    "category": "Retail Trade",
+    "value": "0.80823278"
+  },
+  {
+    "key": "Electrical Contractors and Other Wiring Installation Contractors",
+    "category": "Construction",
+    "value": "0.78554004"
+  },
+  {
+    "key": "Museums",
+    "category": "Arts, Entertainment, and Recreation",
+    "value": "0.76882195"
+  },
+  {
+    "key": "Commercial Printing (except Screen and Books)",
+    "category": "Manufacturing",
+    "value": "0.76139683"
+  },
+  {
+    "key": "Supermarkets and Other Grocery (except Convenience) Stores",
+    "category": "Retail Trade",
+    "value": "0.75817883"
+  },
+  {
+    "key": "Hotels (except Casino Hotels) and Motels",
+    "category": "Accommodation and Food Services",
+    "value": "0.75296479"
+  },
+  {
+    "key": "Landscaping Services",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "0.75044364"
+  },
+  {
+    "key": "Painting and Wall Covering Contractors",
+    "category": "Construction",
+    "value": "0.73752207"
+  },
+  {
+    "key": "Other Building Finishing Contractors",
+    "category": "Construction",
+    "value": "0.7150135"
+  },
+  {
+    "key": "Lessors of Residential Buildings and Dwellings",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "0.68799752"
+  },
+  {
+    "key": "Offices of Lawyers",
+    "category": "Professional, Scientific, and Technical Services",
+    "value": "0.68387753"
+  },
+  {
+    "key": "New Car Dealers",
+    "category": "Retail Trade",
+    "value": "0.68385863"
+  },
+  {
+    "key": "Fine Arts Schools",
+    "category": "Educational Services",
+    "value": "0.66773134"
+  },
+  {
+    "key": "Other Heavy and Civil Engineering Construction",
+    "category": "Construction",
+    "value": "0.63087785"
+  },
+  {
+    "key": "Plumbing, Heating, and Air-Conditioning Contractors",
+    "category": "Construction",
+    "value": "0.62594157"
+  },
+  {
+    "key": "Lessors of Miniwarehouses and Self-Storage Units",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "0.62310529"
+  },
+  {
+    "key": "Corporate, Subsidiary, and Regional Managing Offices",
+    "category": "Management of Companies and Entreprises",
+    "value": "0.60920799"
+  },
+  {
+    "key": "Beauty Salons",
+    "category": "Other Services",
+    "value": "0.6068781"
+  },
+  {
+    "key": "Wired Telecommunications Carriers",
+    "category": "Information",
+    "value": "0.60339022"
+  },
+  {
+    "key": "Business Associations",
+    "category": "Other Services",
+    "value": "0.60022569"
+  },
+  {
+    "key": "Real Estate Credit",
+    "category": "Finance and Insurance",
+    "value": "0.58808935"
+  },
+  {
+    "key": "Other Individual and Family Services",
+    "category": "Health Care and Social Assistance",
+    "value": "0.58134371"
+  },
+  {
+    "key": "Janitorial Services",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "0.54608309"
+  },
+  {
+    "key": "Other Grocery and Related Products Merchant Wholesalers",
+    "category": "Wholesale Trade",
+    "value": "0.53353971"
+  },
+  {
+    "key": "Home Health Care Services",
+    "category": "Health Care and Social Assistance",
+    "value": "0.52988541"
+  },
+  {
+    "key": "Snack and Nonalcoholic Beverage Bars",
+    "category": "Accommodation and Food Services",
+    "value": "0.46299383"
+  },
+  {
+    "key": "Automotive Body, Paint, and Interior Repair and Maintenance",
+    "category": "Other Services",
+    "value": "0.45349211"
+  },
+  {
+    "key": "Offices of Real Estate Agents and Brokers",
+    "category": "Real Estate and Rental and Leasing",
+    "value": "0.39806619"
+  },
+  {
+    "key": "Labor Unions and Similar Labor Organizations",
+    "category": "Other Services",
+    "value": "0.39768198"
+  },
+  {
+    "key": "Engineering Services",
+    "category": "Professional, Scientific, and Technical Services",
+    "value": "0.39102089"
+  },
+  {
+    "key": "Residential Remodelers",
+    "category": "Construction",
+    "value": "0.38864368"
+  },
+  {
+    "key": "Other Personal Care Services",
+    "category": "Other Services",
+    "value": "0.36967522"
+  },
+  {
+    "key": "Civic and Social Organizations",
+    "category": "Other Services",
+    "value": "0.32878765"
+  },
+  {
+    "key": "Automotive Oil Change and Lubrication Shops",
+    "category": "Other Services",
+    "value": "0.26963884"
+  },
+  {
+    "key": "Fitness and Recreational Sports Centers",
+    "category": "Arts, Entertainment, and Recreation",
+    "value": "0.24834199"
+  },
+  {
+    "key": "Wholesale Trade Agents and Brokers",
+    "category": "Wholesale Trade",
+    "value": "0.19984896"
+  },
+  {
+    "key": "Masonry Contractors",
+    "category": "Construction",
+    "value": "0.12775047"
+  },
+  {
+    "key": "Medical Laboratories",
+    "category": "Health Care and Social Assistance",
+    "value": "0.08365979"
+  },
+  {
+    "key": "Office Administrative Services",
+    "category": "Administrative and Suppost and Waste Management and Remediation Services",
+    "value": "0.036008924"
+  },
+  {
+    "key": "Drinking Places (Alcoholic Beverages)",
+    "category": "Accommodation and Food Services",
+    "value": "0.034225754"
+  }
+]

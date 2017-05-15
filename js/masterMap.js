@@ -108,8 +108,6 @@ MasterMap.prototype.updateMap = function() {
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
 
-    console.log(vis.counties);
-
     vis.color.domain([
         d3.min(vis.counties, function(d) { return d.properties[vis.selection]; }),
         d3.max(vis.counties, function(d) { return d.properties[vis.selection]; })

@@ -23,6 +23,8 @@ function loadData() {
 
             if (error) throw error;
 
+            var treeData = tupelo;
+
         // DATA WRANGLING
 
             //SCATTER
@@ -42,11 +44,12 @@ function loadData() {
             scatter = new Scatter("scatter", enrGdp);
             choropleth = new Choropleth("choropleth", msa, states, nation);
             bar = new Bar("bar", tupelo);
-            tree = new Tree("tree", tupelo);
-            // network = new Network("network");
-            // recommended = new Recommended("recommended");
             masterMap = new MasterMap("masterMap", msa, counties, states, nation);
             choroLegend = new ChoroLegend('choroLegend');
+            tree = new Tree("tree", tupelo);
+            network = new Network("network");
+            recommended = new Recommended("recommended");
+
 
         });
 }
