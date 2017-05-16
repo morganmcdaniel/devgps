@@ -22,16 +22,16 @@ Tree = function(_parentElement, _data) {
     var defaults = {
         margin: {top: 24, right: 0, bottom: 0, left: 0},
         rootname: "TOP",
-        format: ",d",
+        //format: ",d",
         title: "",
-        width: 960,
+        width: $("#tree").width(),
         height: 500
     };
 
     function main(o, data) {
         var root,
             opts = $.extend(true, {}, defaults, o),
-            formatNumber = d3.format(opts.format),
+            //formatNumber = d3.format(opts.format),
             rname = opts.rootname,
             margin = opts.margin,
             theight = 36 + 16;
@@ -91,7 +91,6 @@ Tree = function(_parentElement, _data) {
         initialize(root);
         accumulate(root);
         layout(root);
-        console.log(root);
         display(root);
 
         if (window.parent !== window) {
@@ -164,7 +163,7 @@ Tree = function(_parentElement, _data) {
                 .attr("class", "child")
                 .call(rect)
                 .append("title")
-                .text(function(d) { return d.key + " (" + formatNumber(d.value) + ")"; });
+                .text(function(d) { return d.key + " (" + d.value.toFixed(2) + ")"; });
             children.append("text")
                 .attr("class", "ctext")
                 .text(function(d) { return d.key; })
@@ -176,13 +175,13 @@ Tree = function(_parentElement, _data) {
 
             var t = g.append("text")
                 .attr("class", "ptext")
-                .attr("dy", ".75em")
+                .attr("dy", ".75em");
 
             t.append("tspan")
                 .text(function(d) { return d.key; });
             t.append("tspan")
                 .attr("dy", "1.0em")
-                .text(function(d) { return formatNumber(d.value); });
+                .text(function(d) { return d.value.toFixed(2); });
             t.call(text);
 
             g.selectAll("rect")
@@ -229,7 +228,7 @@ Tree = function(_parentElement, _data) {
 
         function text(text) {
             text.selectAll("tspan")
-                .attr("x", function(d) { return x(d.x) + 6; })
+                .attr("x", function(d) { return x(d.x) + 6; });
             text.attr("x", function(d) { return x(d.x) + 6; })
                 .attr("y", function(d) { return y(d.y) + 6; })
                 .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; });
@@ -250,8 +249,19 @@ Tree = function(_parentElement, _data) {
 
         function name(d) {
             return d.parent
-                ? name(d.parent) + " / " + d.key + " (" + formatNumber(d.value) + ")"
-                : d.key + " (" + formatNumber(d.value) + ")";
+                ? name(d.parent) + " / " + d.key + " (" + d.value + ")"
+                : d.key + " (" + d.value + ")";
+        }
+
+        function wrap() {
+            var self = d3.select(this),
+                textLength = self.node().getComputedTextLength(),
+                text = self.text();
+            while (textLength > (width - 2 * padding) && text.length > 0) {
+                text = text.slice(0, -1);
+                self.text(text + '...');
+                textLength = self.node().getComputedTextLength();
+            }
         }
     }
 
