@@ -19,11 +19,13 @@ function loadData() {
         .defer(d3.csv, "data/RNS_CO_Master.csv")
         .defer(d3.csv, "data/state-codes.csv")
         .defer(d3.csv, "data/Tupelo_Tree.csv")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo) {
+        .defer(d3.csv, "data/MS_Tree_All_Cities.json")
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTree) {
 
             if (error) throw error;
 
             var treeData = tupelo;
+            var msTreeData = msTree;
 
         // DATA WRANGLING
 
@@ -49,6 +51,7 @@ function loadData() {
             tree = new Tree("tree", tupelo);
             network = new Network("network");
             recommended = new Recommended("recommended");
+            masterTree = new MasterTree("masterTree", msTree)
 
 
         });
