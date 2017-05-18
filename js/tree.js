@@ -231,13 +231,17 @@ Tree = function(_parentElement, _data) {
                 .attr("x", function(d) { return x(d.x) + 6; });
             text.attr("x", function(d) { return x(d.x) + 6; })
                 .attr("y", function(d) { return y(d.y) + 6; })
-                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; });
+                .each(function(d) {
+                    var tspan = this.childNodes[0];
+                    var w = x(d.x + d.dx) - x(d.x);
+                    wrap(tspan, w, x(d.x) + 6);
+                })
         }
 
         function text2(text) {
             text.attr("x", function(d) { return x(d.x + d.dx) - this.getComputedTextLength() - 6; })
                 .attr("y", function(d) { return y(d.y + d.dy) - 6; })
-                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; });
+                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; })
         }
 
         function rect(rect) {
@@ -249,18 +253,30 @@ Tree = function(_parentElement, _data) {
 
         function name(d) {
             return d.parent
-                ? name(d.parent) + " / " + d.key + " (" + d.value + ")"
-                : d.key + " (" + d.value + ")";
+                ? "< Back     |        " + name(d.parent) + " / " + d.key + " (" + d.value.toFixed(2) + ")"
+                : d.key + " (" + d.value.toFixed(2) + ")";
+
         }
 
-        function wrap() {
-            var self = d3.select(this),
-                textLength = self.node().getComputedTextLength(),
-                text = self.text();
-            while (textLength > (width - 2 * padding) && text.length > 0) {
-                text = text.slice(0, -1);
-                self.text(text + '...');
-                textLength = self.node().getComputedTextLength();
+        function wrap(tspan, width, x) {
+
+            var text = d3.select(tspan),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy")) || 0.4,
+                tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", "0.75em");
+
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > width) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", "1em").text(word);
+                }
             }
         }
     }

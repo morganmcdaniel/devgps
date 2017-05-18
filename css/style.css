@@ -68,6 +68,20 @@ nav a {
 
 /* Choropleth */
 
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 62%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 #mapControls {
     padding-top: 30px;
@@ -90,13 +104,14 @@ nav a {
  }
 
 .states path {
-    fill: gray;
+    fill: #d3d3d3;
     stroke: #424242;
 }
 
 .statesLine {
     stroke: #424242;
     fill: none;
+    stroke-width: .5px;
 }
 .nation path {
     fill: none;

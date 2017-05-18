@@ -11,7 +11,7 @@ loadData();
 function loadData() {
     queue()
         .defer(d3.csv, "data/enr_gdp.csv")
-        .defer(d3.json, "data/cbsa_us_2014_ex_hi_ak.json")
+        .defer(d3.json, "data/msawithAKHI.geojson")
         .defer(d3.json, "data/gz_2010_us_050_00_5m.json")
         .defer(d3.csv, "data/RNS_MSA_Master.csv")
         .defer(d3.json, "data/gz_2010_us_outline_5m.json")
@@ -32,7 +32,7 @@ function loadData() {
             //CHOROPLETH
 
             // Convert TopoJSON to GeoJSON
-            var msa = topojson.feature(msaData, msaData.objects.cbsa_2014_us_ex_hi_ak).features;
+            var msa = msaData.features;
             var counties = usCounties.features;
             var states = usStates.features;
             var nation = usNation.features;
@@ -77,7 +77,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
         // Find the corresponding MSA inside the GeoJSON
         for (var j = 0; j < msa.length; j++) {
-            var jsonId = msa[j].properties.GEOID;
+            var jsonId = +msa[j].properties.geoid;
 
             if (enrMarket == jsonId) {
 

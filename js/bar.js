@@ -33,7 +33,7 @@ Bar.prototype.initVis = function() {
     ;
 
     vis.x = d3.scale.linear()
-        .range([0, 20])
+        .range([0, vis.width - 400])
     ;
 
     vis.wrangleData();
@@ -46,6 +46,12 @@ Bar.prototype.wrangleData = function() {
 
     for (i = 0; i < 15; i++) {
         vis.dataShort[i] = vis.data[i];
+    }
+
+    for (i = 0; i < 15; i++) {
+        vis.dataShort[i].msaEmp = +vis.dataShort[i].msaEmp;
+        vis.dataShort[i].msaFra = +vis.dataShort[i].msaFra;
+        vis.dataShort[i].msaRa = +vis.dataShort[i].msaRa;
     }
 
     vis.updateBar();
@@ -63,7 +69,7 @@ Bar.prototype.updateBar = function() {
         .attr("transform", function(d, i) { return "translate(0," + (15 + (i * 25)) + ")"; });
 
     vis.label = vis.svg.append("text")
-        .text("Top 20 Industries")
+        .text("Top 15 Industries")
         .attr("x", 0)
         .attr("y", 0)
         .style("font-weight","bold");
@@ -80,9 +86,11 @@ Bar.prototype.updateBar = function() {
         .text(function(d) { return d.key })
         .style("text-anchor","end");
 
+    console.log(vis.dataShort);
+
     vis.barChart.append("text")
         .attr("dy", "0.8em")
         .attr("x", 415)
-        .text(function(d) { return d.msaRa });
+        .text(function(d) { return d.msaRa.toFixed(2) });
 
 };

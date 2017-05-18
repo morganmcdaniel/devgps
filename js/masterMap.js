@@ -13,8 +13,8 @@ MasterMap = function(_parentElement, _msa, _counties, _states, _nation) {
     this.nation = _nation;
 
     this.initVis();
-};
 
+};
 
 /*
  *  Initialize map
@@ -32,8 +32,11 @@ MasterMap.prototype.initVis = function() {
     // vis.active = d3.select(null);
 
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
-        .attr("width", vis.width + vis.margin.left + vis.margin.right)
-        .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+        //.attr("width", vis.width + vis.margin.left + vis.margin.right)
+        //.attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox","0 0 " + vis.width + " " + vis.height)
+        .attr("class", "svg-content")
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")")
     ;
@@ -108,10 +111,30 @@ MasterMap.prototype.updateMap = function() {
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
 
-    vis.color.domain([
-        d3.min(vis.counties, function(d) { return d.properties[vis.selection]; }),
-        d3.max(vis.counties, function(d) { return d.properties[vis.selection]; })
-    ]);
+    vis.domainCounty = [];
+
+    for (i = 0; i < vis.counties.length; i++) {
+        vis.domainCounty[i] = vis.counties[i].properties[vis.selection];
+    }
+
+    console.log(vis.domainCounty);
+
+    vis.color.domain(vis.domainCounty);
+
+    console.log(vis.color.domain());
+
+    console.log(vis.color(-3));
+    console.log(vis.color(-2));
+    console.log(vis.color(-1));
+    console.log(vis.color(0));
+    console.log(vis.color(1));
+    console.log(vis.color(2));
+    console.log(vis.color(3));
+
+    // vis.color.domain([
+    //     d3.min(vis.counties, function(d) { return d.properties[vis.selection]; }),
+    //     d3.max(vis.counties, function(d) { return d.properties[vis.selection]; })
+    // ]);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -139,6 +162,7 @@ MasterMap.prototype.drawCounties = function() {
             vis.div.transition().duration(300)
                 .style("opacity", 0);
         });
+
 
 
     // State boundaries
@@ -171,12 +195,26 @@ MasterMap.prototype.drawCounties = function() {
 MasterMap.prototype.drawMSA = function() {
     var vis = this;
 
-    vis.color.domain([
-        d3.min(vis.msa, function(d) { return d.properties[vis.selection]; }),
-        d3.max(vis.msa, function(d) { return d.properties[vis.selection]; })
-    ]);
+    vis.domainMsa = [];
 
-    console.log(vis.color.domain());
+    for (i = 0; i < vis.msa.length; i++) {
+        vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
+    }
+
+    vis.color.domain(vis.domainMsa);
+
+    console.log(vis.color(-3));
+    console.log(vis.color(-2));
+    console.log(vis.color(-1));
+    console.log(vis.color(0));
+    console.log(vis.color(1));
+    console.log(vis.color(2));
+    console.log(vis.color(3));
+
+    // vis.color.domain([
+    //     d3.min(vis.msa, function(d) { return d.properties[vis.selection]; }),
+    //     d3.max(vis.msa, function(d) { return d.properties[vis.selection]; })
+    // ]);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -193,7 +231,7 @@ MasterMap.prototype.drawMSA = function() {
             d3.select(this).transition().duration(300).style("opacity", 1);
             vis.div.transition().duration(300)
                 .style("opacity", 1);
-            vis.div.text(function () { return (d.properties.NAME); })
+            vis.div.text(function () { return (d.properties.name); })
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY -30) + "px")
             })
@@ -256,6 +294,7 @@ MasterMap.prototype.onChangeYear = function() {
 
     vis.updateMap();
 };
+
 
 /*
  *  Called to change the radio button options
@@ -413,8 +452,3 @@ MasterMap.prototype.onChangeYear = function() {
 //     return vis.explanation[vis.selection];
 // };
 
-// TO DO
-//
-// Implement zoom function
-// Improve structure of code in general
-// Style tooltips
