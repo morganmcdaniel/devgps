@@ -287,8 +287,9 @@ Tree = function(_parentElement, _data) {
                 for (i = 0; i < res.length; i++) {
                     res[i].value = +res[i].value;
                 }
-                console.log(res);
+
                 var data = d3.nest().key(function(d) { return d.category; }).entries(res);
+
                 main({title: "Tupelo Industries"}, {key: "Industries", values: data});
             }
         });

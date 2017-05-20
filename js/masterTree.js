@@ -9,14 +9,13 @@ MasterTree = function(_parentElement, _data) {
     this.parentElement = _parentElement;
     this.data = _data;
 
-    //this.initVis();
-
+    var vis = this;
 
     window.addEventListener('message', function(e) {
         var opts = e.data.opts,
             data = e.data.data;
 
-        return main(opts, data);
+        return vis.main(opts, data);
     });
 
     var defaults = {
@@ -24,7 +23,7 @@ MasterTree = function(_parentElement, _data) {
         rootname: "TOP",
         //format: ",d",
         title: "",
-        width: $("#masterTree").width(),
+        width: $("#" + vis.parentElement).width(),
         height: 500
     };
 
@@ -36,7 +35,7 @@ MasterTree = function(_parentElement, _data) {
             margin = opts.margin,
             theight = 36 + 16;
 
-        $('#masterTree').width(opts.width).height(opts.height);
+        $("#" + vis.parentElement).width(opts.width).height(opts.height);
         var width = opts.width - margin.left - margin.right,
             height = opts.height - margin.top - margin.bottom - theight,
             transitioning;
@@ -57,7 +56,7 @@ MasterTree = function(_parentElement, _data) {
             .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
             .round(false);
 
-        var svg = d3.select("#masterTree").append("svg")
+        var svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.bottom + margin.top)
             .style("margin-left", -margin.left + "px")
@@ -79,9 +78,6 @@ MasterTree = function(_parentElement, _data) {
             .attr("y", 6 - margin.top)
             .attr("dy", ".75em");
 
-        if (opts.title) {
-            $("#masterTree").prepend("<p class='title'>" + opts.title + "</p>");
-        }
         if (data instanceof Array) {
             root = { key: rname, values: data };
         } else {
@@ -91,7 +87,6 @@ MasterTree = function(_parentElement, _data) {
         initialize(root);
         accumulate(root);
         layout(root);
-        console.log(root);
         display(root);
 
         if (window.parent !== window) {
@@ -283,21 +278,11 @@ MasterTree = function(_parentElement, _data) {
     }
 
     if (window.location.hash === "") {
-        d3.json("data/MS_Tree_All_Cities.json", function(err, res) {
-            if (!err) {
-                for (i = 0; i < res.length; i++) {
-                    res[i].value = res[i].ra;
-                    delete res[i].code;
-                    delete res[i].emp;
-                    delete res[i].ra;
-                }
-                console.log(res);
-                var data = d3.nest().key(function(d) { return d.market; }).key(function(d) { return d.category; }).entries(res);
-                console.log(data);
-                main({title: "Mississippi Industries"}, {key: "Mississippi Industries", values: data});
-            }
+        var data = d3.nest().key(function(d) { return d.market; }).key(function(d) { return d.category; }).entries(vis.data);
 
-        });
+        main({title: "Mississippi Industries"}, {key: "Mississippi Industries", values: data});
+
     }
+
 
 };

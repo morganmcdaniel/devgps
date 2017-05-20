@@ -4,7 +4,13 @@ var scatter,
     bar,
     network,
     recommended,
-    masterMap;
+    masterMap,
+    masterTree,
+    selectVar = "ra",
+    msTreeEmp,
+    msTreeRa,
+    msTree,
+    selectData;
 
 loadData();
 
@@ -19,13 +25,15 @@ function loadData() {
         .defer(d3.csv, "data/RNS_CO_Master.csv")
         .defer(d3.csv, "data/state-codes.csv")
         .defer(d3.csv, "data/Tupelo_Tree.csv")
-        .defer(d3.csv, "data/MS_Tree_All_Cities.json")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTree) {
+        .defer(d3.json, "data/MS_Tree_Emp.json")
+        .defer(d3.json, "data/MS_Tree_RA.json")
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR) {
 
             if (error) throw error;
 
             var treeData = tupelo;
-            var msTreeData = msTree;
+            msTreeEmp = msTreeE;
+            msTreeRa = msTreeR;
 
         // DATA WRANGLING
 
@@ -41,6 +49,11 @@ function loadData() {
 
             wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes);
 
+            // MASTER TREE
+
+            // var nest = d3.nest().key(function(d) { return "Mississippi Industries"; }).key(function(d) { return d.market; }).key(function(d) { return d.category; }).entries(msTree);
+            // console.log(nest);
+
             // INSTANTIATE VISUALIZATIONS
 
             scatter = new Scatter("scatter", enrGdp);
@@ -51,9 +64,7 @@ function loadData() {
             tree = new Tree("tree", tupelo);
             network = new Network("network");
             recommended = new Recommended("recommended");
-            masterTree = new MasterTree("masterTree", msTree)
-
-
+            masterTree = new MasterTree("masterTree", msTreeRa)
         });
 }
 
@@ -165,8 +176,26 @@ function dataManipulation() {
     var x = $('input[name="options"]:checked', '#type').val();
 
     masterMap.changeData(x);
-    // masterMap.changeOptions(x);
 
+}
+
+function changeTreeData() {
+    selectVar = $('input[name="options"]:checked', '#treeDisplay').val();
+
+    d3.select("svg").remove();
+
+    console.log(selectVar);
+
+    if (selectVar == "emp") {
+        selectData = msTreeEmp;
+    }
+    else if (selectVar == "ra") {
+        selectData = msTreeRa;
+    }
+
+    console.log(selectData);
+
+    masterTree = new MasterTree("masterTree", selectData);
 }
 
 function toSectionThree() {

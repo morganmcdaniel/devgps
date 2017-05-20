@@ -45,7 +45,17 @@
         <p>Create new jobs and economic growth in your community</p>
     </div>
 
-    <h1>Regional Network Strength (RNS)</h1>
+    <form id="treeDisplay" onchange="changeTreeData()">
+        <label>Display: </label>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" value="ra" autocomplete="off" checked>RA
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" value="emp" autocomplete="off">Employees
+            </label>
+        </div>
+    </form>
 
     <div id="masterTree"></div>
 
@@ -78,7 +88,6 @@
 <script src="js/masterMap.js"></script>
 <script src="js/choroLegend.js"></script>
 <script src="js/masterTree.js"></script>
-
 
 
 </body>

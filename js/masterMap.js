@@ -117,19 +117,7 @@ MasterMap.prototype.drawCounties = function() {
         vis.domainCounty[i] = vis.counties[i].properties[vis.selection];
     }
 
-    console.log(vis.domainCounty);
-
     vis.color.domain(vis.domainCounty);
-
-    console.log(vis.color.domain());
-
-    console.log(vis.color(-3));
-    console.log(vis.color(-2));
-    console.log(vis.color(-1));
-    console.log(vis.color(0));
-    console.log(vis.color(1));
-    console.log(vis.color(2));
-    console.log(vis.color(3));
 
     // vis.color.domain([
     //     d3.min(vis.counties, function(d) { return d.properties[vis.selection]; }),

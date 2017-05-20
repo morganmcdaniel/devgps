@@ -86,8 +86,6 @@ Bar.prototype.updateBar = function() {
         .text(function(d) { return d.key })
         .style("text-anchor","end");
 
-    console.log(vis.dataShort);
-
     vis.barChart.append("text")
         .attr("dy", "0.8em")
         .attr("x", 415)
