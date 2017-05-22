@@ -68,7 +68,7 @@ nav a {
 
 /* Choropleth */
 
-.svg-container {
+.svg-container-choro {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -160,6 +160,15 @@ div.tooltip {
 }
 
 /* Tree Map */
+
+.svg-container-tree {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+    vertical-align: middle;
+    overflow: hidden;
+}
 
 .title {
     font-weight: bold;

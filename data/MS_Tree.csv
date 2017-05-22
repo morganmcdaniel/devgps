@@ -1,134 +1,1577 @@
-name,key,category,ra,emp
-Tupelo,Upholstered Household Furniture Manufacturing,Manufacturing,588.19629,8814
-Tupelo,Urethane and Other Foam Product (except Polystyrene) Manufacturing,Manufacturing,148.59592,913
-Tupelo,Consumer Electronics and Appliances Rental,Real Estate and Rental and Leasing,35.330086,71
-Tupelo,Mattress Manufacturing,Manufacturing,27.463852,129
-Tupelo,Wood Office Furniture Manufacturing,Manufacturing,19.137161,50
-Tupelo,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",Wholesale Trade,13.900788,120
-Tupelo,Farm Machinery and Equipment Manufacturing,Manufacturing,10.357943,60
-Tupelo,Water Supply and Irrigation Systems,Utilities,9.0259247,64
-Tupelo,Other Activities Related to Credit Intermediation,Finance and Insurance,8.6077871,221
-Tupelo,Service Establishment Equipment and Supplies Merchant Wholesalers,Wholesale Trade,6.4841728,100
-Tupelo,Consumer Lending,Finance and Insurance,5.5342178,104
-Tupelo,"Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers",Wholesale Trade,5.0628428,78
-Tupelo,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",Real Estate and Rental and Leasing,4.9417205,74
-Tupelo,Collection Agencies,Administrative and Suppost and Waste Management and Remediation Services,4.1511779,173
-Tupelo,General Warehousing and Storage,Transportation and Warehousing,3.9668808,808
-Tupelo,"General Freight Trucking, Long-Distance, Less Than Truckload",Transportation and Warehousing,3.8541803,387
-Tupelo,Temporary Help Services,Administrative and Suppost and Waste Management and Remediation Services,3.8316178,3997
-Tupelo,Fuel Dealers,Retail Trade,3.3420064,71
-Tupelo,Furniture Merchant Wholesalers,Wholesale Trade,3.3319757,79
-Tupelo,Offices of All Other Miscellaneous Health Practitioners,Health Care and Social Assistance,3.3053358,84
-Tupelo,"Sewing, Needlework, and Piece Goods Stores",Retail Trade,3.2266722,39
-Tupelo,Other Gasoline Stations,Retail Trade,3.1011617,136
-Tupelo,"General Freight Trucking, Long-Distance, Truckload",Transportation and Warehousing,3.077491,514
-Tupelo,Automobile and Other Motor Vehicle Merchant Wholesalers,Wholesale Trade,3.0401926,125
-Tupelo,Other Building Equipment Contractors,Construction,2.8362203,119
-Tupelo,Commercial Banking,Finance and Insurance,2.7153254,1453
-Tupelo,Automotive Parts and Accessories Stores,Retail Trade,2.6571841,346
-Tupelo,Clothing Accessories Stores,Retail Trade,2.6345019,57
-Tupelo,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,Wholesale Trade,2.5142407,73
-Tupelo,Used Car Dealers,Retail Trade,2.4551153,128
-Tupelo,"Cafeterias, Grill Buffets, and Buffets",Accommodation and Food Services,2.4067712,101
-Tupelo,Used Merchandise Stores,Retail Trade,2.2923987,170
-Tupelo,Florists,Retail Trade,2.2602479,48
-Tupelo,Metal Service Centers and Other Metal Merchant Wholesalers,Wholesale Trade,2.2265546,124
-Tupelo,"Hobby, Toy, and Game Stores",Retail Trade,2.108634,106
-Tupelo,All Other Health and Personal Care Stores,Retail Trade,2.0913863,47
-Tupelo,Other Residential Care Facilities,Health Care and Social Assistance,2.013674,79
-Tupelo,Other Building Material Dealers,Retail Trade,2.0117426,202
-Tupelo,Wood Kitchen Cabinet and Countertop Manufacturing,Manufacturing,2.0052376,48
-Tupelo,Gasoline Stations with Convenience Stores,Retail Trade,1.931494,516
-Tupelo,Funeral Homes and Funeral Services,Other Services,1.9077663,65
-Tupelo,Nursing Care Facilities (Skilled Nursing Facilities),Health Care and Social Assistance,1.8811125,1172
-Tupelo,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",Wholesale Trade,1.8437487,69
-Tupelo,Dental Laboratories,Manufacturing,1.7348945,26
-Tupelo,General Automotive Repair,Other Services,1.7077602,224
-Tupelo,Optical Goods Stores,Retail Trade,1.7033898,37
-Tupelo,"Specialized Freight (except Used Goods) Trucking, Local",Transportation and Warehousing,1.674583,116
-Tupelo,Shoe Stores,Retail Trade,1.6254697,147
-Tupelo,Drycleaning and Laundry Services (except Coin-Operated),Other Services,1.620182,84
-Tupelo,Tire Dealers,Retail Trade,1.6139134,106
-Tupelo,Offices of Real Estate Appraisers,Real Estate and Rental and Leasing,1.5438106,15
-Tupelo,Assisted Living Facilities for the Elderly,Health Care and Social Assistance,1.5171449,255
-Tupelo,Offices of Physicians (except Mental Health Specialists),Health Care and Social Assistance,1.5025644,1412
-Tupelo,Office Supplies and Stationery Stores,Retail Trade,1.4452912,33
-Tupelo,Tax Preparation Services,"Professional, Scientific, and Technical Services",1.4112847,87
-Tupelo,"Cosmetics, Beauty Supplies, and Perfume Stores",Retail Trade,1.3984187,73
-Tupelo,Religious Organizations,Other Services,1.3913871,950
-Tupelo,Household Appliance Stores,Retail Trade,1.3426743,28
-Tupelo,Industrial Machinery and Equipment Merchant Wholesalers,Wholesale Trade,1.3419198,203
-Tupelo,Family Clothing Stores,Retail Trade,1.3326089,390
-Tupelo,Limited-Service Restaurants,Accommodation and Food Services,1.3306708,2117
-Tupelo,All Other Miscellaneous Store Retailers (except Tobacco Stores),Retail Trade,1.3252962,38
-Tupelo,Child Day Care Services,Health Care and Social Assistance,1.3191662,467
-Tupelo,Exterminating and Pest Control Services,Administrative and Suppost and Waste Management and Remediation Services,1.3084857,51
-Tupelo,Women's Clothing Stores,Retail Trade,1.2857757,188
-Tupelo,Pharmacies and Drug Stores,Retail Trade,1.2579099,345
-Tupelo,Children's and Infants' Clothing Stores,Retail Trade,1.2479185,43
-Tupelo,Couriers and Express Delivery Services,Transportation and Warehousing,1.1856515,180
-Tupelo,Roofing Contractors,Construction,1.1635448,68
-Tupelo,Sporting Goods Stores,Retail Trade,1.1609997,117
-Tupelo,Industrial Supplies Merchant Wholesalers,Wholesale Trade,1.1477389,39
-Tupelo,Electronics Stores,Retail Trade,1.1388959,152
-Tupelo,"Beer, Wine, and Liquor Stores",Retail Trade,1.1356357,67
-Tupelo,Freight Transportation Arrangement,Transportation and Warehousing,1.1283613,103
-Tupelo,All Other Home Furnishings Stores,Retail Trade,1.1096934,73
-Tupelo,Direct Life Insurance Carriers,Finance and Insurance,1.095541,111
-Tupelo,"General Freight Trucking, Local",Transportation and Warehousing,1.0810417,73
-Tupelo,Other Chemical and Allied Products Merchant Wholesalers,Wholesale Trade,1.0356138,11
-Tupelo,Furniture Stores,Retail Trade,1.034481,79
-Tupelo,Other Specialized Design Services,"Professional, Scientific, and Technical Services",1.0340205,133
-Tupelo,Full-Service Restaurants,Accommodation and Food Services,1.0273426,2153
-Tupelo,Water and Sewer Line and Related Structures Construction,Construction,1.0203294,54
-Tupelo,Jewelry Stores,Retail Trade,1.0101742,50
-Tupelo,Diagnostic Imaging Centers,Health Care and Social Assistance,0.93389499,27
-Tupelo,Offices of Dentists,Health Care and Social Assistance,0.92093366,341
-Tupelo,"Highway, Street, and Bridge Construction",Construction,0.91712379,83
-Tupelo,Other Direct Selling Establishments,Retail Trade,0.91280735,33
-Tupelo,Golf Courses and Country Clubs,"Arts, Entertainment, and Recreation",0.89652997,103
-Tupelo,Commercial and Institutional Building Construction,Construction,0.86067605,171
-Tupelo,Other Accounting Services,"Professional, Scientific, and Technical Services",0.85482824,70
-Tupelo,Insurance Agencies and Brokerages,Finance and Insurance,0.85217214,224
-Tupelo,Machine Shops,Manufacturing,0.82084733,76
-Tupelo,Lessors of Nonresidential Buildings (excpet Miniwarehouses),Real Estate and Rental and Leasing,0.81134665,53
-Tupelo,"Gift, Novelty, and Souvenir Stores",Retail Trade,0.80823278,50
-Tupelo,Electrical Contractors and Other Wiring Installation Contractors,Construction,0.78554004,235
-Tupelo,Museums,"Arts, Entertainment, and Recreation",0.76882195,26
-Tupelo,Commercial Printing (except Screen and Books),Manufacturing,0.76139683,97
-Tupelo,Supermarkets and Other Grocery (except Convenience) Stores,Retail Trade,0.75817883,710
-Tupelo,Hotels (except Casino Hotels) and Motels,Accommodation and Food Services,0.75296479,453
-Tupelo,Landscaping Services,Administrative and Suppost and Waste Management and Remediation Services,0.75044364,172
-Tupelo,Painting and Wall Covering Contractors,Construction,0.73752207,47
-Tupelo,Other Building Finishing Contractors,Construction,0.7150135,60
-Tupelo,Lessors of Residential Buildings and Dwellings,Real Estate and Rental and Leasing,0.68799752,90
-Tupelo,Offices of Lawyers,"Professional, Scientific, and Technical Services",0.68387753,305
-Tupelo,New Car Dealers,Retail Trade,0.68385863,293
-Tupelo,Fine Arts Schools,Educational Services,0.66773134,23
-Tupelo,Other Heavy and Civil Engineering Construction,Construction,0.63087785,12
-Tupelo,"Plumbing, Heating, and Air-Conditioning Contractors",Construction,0.62594157,226
-Tupelo,Lessors of Miniwarehouses and Self-Storage Units,Real Estate and Rental and Leasing,0.62310529,8
-Tupelo,"Corporate, Subsidiary, and Regional Managing Offices",Management of Companies and Entreprises,0.60920799,758
-Tupelo,Beauty Salons,Other Services,0.6068781,108
-Tupelo,Wired Telecommunications Carriers,Information,0.60339022,161
-Tupelo,Business Associations,Other Services,0.60022569,25
-Tupelo,Real Estate Credit,Finance and Insurance,0.58808935,52
-Tupelo,Other Individual and Family Services,Health Care and Social Assistance,0.58134371,86
-Tupelo,Janitorial Services,Administrative and Suppost and Waste Management and Remediation Services,0.54608309,216
-Tupelo,Other Grocery and Related Products Merchant Wholesalers,Wholesale Trade,0.53353971,55
-Tupelo,Home Health Care Services,Health Care and Social Assistance,0.52988541,277
-Tupelo,Snack and Nonalcoholic Beverage Bars,Accommodation and Food Services,0.46299383,120
-Tupelo,"Automotive Body, Paint, and Interior Repair and Maintenance",Other Services,0.45349211,39
-Tupelo,Offices of Real Estate Agents and Brokers,Real Estate and Rental and Leasing,0.39806619,43
-Tupelo,Labor Unions and Similar Labor Organizations,Other Services,0.39768198,23
-Tupelo,Engineering Services,"Professional, Scientific, and Technical Services",0.39102089,154
-Tupelo,Residential Remodelers,Construction,0.38864368,46
-Tupelo,Other Personal Care Services,Other Services,0.36967522,17
-Tupelo,Civic and Social Organizations,Other Services,0.32878765,29
-Tupelo,Automotive Oil Change and Lubrication Shops,Other Services,0.26963884,16
-Tupelo,Fitness and Recreational Sports Centers,"Arts, Entertainment, and Recreation",0.24834199,64
-Tupelo,Wholesale Trade Agents and Brokers,Wholesale Trade,0.19984896,21
-Tupelo,Masonry Contractors,Construction,0.12775047,6
-Tupelo,Medical Laboratories,Health Care and Social Assistance,0.08365979,4
-Tupelo,Office Administrative Services,Administrative and Suppost and Waste Management and Remediation Services,0.036008924,6
-Tupelo,Drinking Places (Alcoholic Beverages),Accommodation and Food Services,0.034225754,5
+market,category,code,description,emp,ra
+Brookhaven,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,244,213.29579
+Brookhaven,"Mining, Quarrying, and Oil and Gas Extraction",213112,Support Activities for Oil and Gas Operations,57,6.3839464
+Brookhaven,Utilities,221310,Water Supply and Irrigation Systems,17,22.146587
+Brookhaven,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),12,1.7311938
+Brookhaven,Construction,236220,Commercial and Institutional Building Construction,77,3.5799792
+Brookhaven,Construction,238320,Painting and Wall Covering Contractors,25,3.6237926
+Brookhaven,Construction,238910,Site Preparation Contractors,14,1.1799039
+Brookhaven,Retail Trade,441110,New Car Dealers,182,3.9238851
+Brookhaven,Retail Trade,441310,Automotive Parts and Accessories Stores,66,4.6820455
+Brookhaven,Retail Trade,442110,Furniture Stores,40,4.8383985
+Brookhaven,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,185,1.824867
+Brookhaven,Retail Trade,446110,Pharmacies and Drug Stores,78,2.6270676
+Brookhaven,Retail Trade,447110,Gasoline Stations with Convenience Stores,131,4.5296135
+Brookhaven,Retail Trade,447190,Other Gasoline Stations,43,9.0573282
+Brookhaven,Retail Trade,448120,Women's Clothing Stores,25,1.5794051
+Brookhaven,Retail Trade,448140,Family Clothing Stores,25,.78908592
+Brookhaven,Retail Trade,448210,Shoe Stores,25,2.5535696
+Brookhaven,Retail Trade,452990,All Other General Merchandise Stores,107,7.6031337
+Brookhaven,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",90,12.001551
+Brookhaven,Finance and Insurance,522110,Commercial Banking,192,3.3143904
+Brookhaven,Finance and Insurance,522291,Consumer Lending,41,20.153614
+Brookhaven,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,10,4.2956333
+Brookhaven,Finance and Insurance,524210,Insurance Agencies and Brokerages,56,1.9679475
+Brookhaven,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,4,.3420527
+Brookhaven,Reale Estate and Rental and Leasing,532111,Passenger Car Rental,21,40.152302
+Brookhaven,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,39,.80777293
+Brookhaven,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,38,1.8894588
+Brookhaven,"Professional, Scientific, and Technical Services",541330,Engineering Services,149,3.4947145
+Brookhaven,"Professional, Scientific, and Technical Services",541940,Veterinary Services,42,3.0162892
+Brookhaven,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,35,8.2949362
+Brookhaven,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,32,.74731058
+Brookhaven,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),134,1.3171929
+Brookhaven,Health Care and Social Assistance,621210,Offices of Dentists,74,1.8460857
+Brookhaven,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),374,5.545043
+Brookhaven,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,6,.21506394
+Brookhaven,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,117,1.7964226
+Brookhaven,Accommodation and Food Services,722320,Caterers,4,.66167337
+Brookhaven,Accommodation and Food Services,722511,Full-Service Restaurants,310,1.3664039
+Brookhaven,Accommodation and Food Services,722513,Limited-Service Restaurants,633,3.6753581
+Brookhaven,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,27,.9622854
+Brookhaven,Other Services,811111,General Automotive Repair,66,4.6480308
+Brookhaven,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",39,4.1890535
+Brookhaven,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,61,7.5797162
+Brookhaven,Other Services,813110,Religious Organizations,313,4.2346244
+Clarksdale,Utilities,221310,Water Supply and Irrigation Systems,8,17.108822
+Clarksdale,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",14,.58799249
+Clarksdale,Construction,238910,Site Preparation Contractors,19,2.6287205
+Clarksdale,Wholesale Trade,423820,Farm and Garden Machinery and Equipment Merchant Wholesalers,135,75.322128
+Clarksdale,Wholesale Trade,424910,Farm Supplies Merchant Wholesalers,84,61.342922
+Clarksdale,Retail Trade,441310,Automotive Parts and Accessories Stores,35,4.0759792
+Clarksdale,Retail Trade,441320,Tire Dealers,29,6.6956196
+Clarksdale,Retail Trade,446110,Pharmacies and Drug Stores,64,3.5385785
+Clarksdale,Retail Trade,447110,Gasoline Stations with Convenience Stores,97,5.5059695
+Clarksdale,Retail Trade,447190,Other Gasoline Stations,43,14.868678
+Clarksdale,Retail Trade,448120,Women's Clothing Stores,18,1.8668021
+Clarksdale,Retail Trade,448140,Family Clothing Stores,38,1.9689747
+Clarksdale,Retail Trade,452990,All Other General Merchandise Stores,88,10.265114
+Clarksdale,Retail Trade,454390,Other Direct Selling Establishments,6,2.5167198
+Clarksdale,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",3,.27237883
+Clarksdale,Finance and Insurance,522110,Commercial Banking,124,3.5139563
+Clarksdale,Finance and Insurance,524210,Insurance Agencies and Brokerages,45,2.5960331
+Clarksdale,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,38,4.4050045
+Clarksdale,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),7,1.6249763
+Clarksdale,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,20,150.91582
+Clarksdale,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,108,3.6721523
+Clarksdale,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,21,1.7141362
+Clarksdale,Educational Services,611110,Elementary and Secondary Schools,136,5.24825
+Clarksdale,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),180,2.9046202
+Clarksdale,Health Care and Social Assistance,621210,Offices of Dentists,30,1.2286088
+Clarksdale,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),239,5.8170586
+Clarksdale,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,60,5.4132309
+Clarksdale,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,135,5.8211236
+Clarksdale,Health Care and Social Assistance,624410,Child Day Care Services,223,9.5522547
+Clarksdale,Accommodation and Food Services,721191,Bed-and-Breakfast Inns,21,91.795357
+Clarksdale,Accommodation and Food Services,722511,Full-Service Restaurants,137,.99131167
+Clarksdale,Accommodation and Food Services,722513,Limited-Service Restaurants,280,2.6688626
+Clarksdale,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,3,.17552283
+Clarksdale,Other Services,812210,Funeral Homes and Funeral Services,14,6.2310076
+Clarksdale,Other Services,813110,Religious Organizations,93,2.0655024
+Cleveland,"Agriculture, Forestry, Fishing and Hunting",115112,"Soil Preparation, Planting, and Cultivating",60,396.66046
+Cleveland,Construction,236220,Commercial and Institutional Building Construction,36,1.9800619
+Cleveland,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",61,1.8462386
+Cleveland,Wholesale Trade,424510,Grain and Field Bean Merchant Wholesalers,63,94.635384
+Cleveland,Retail Trade,441310,Automotive Parts and Accessories Stores,52,4.3639679
+Cleveland,Retail Trade,442110,Furniture Stores,34,4.8652711
+Cleveland,Retail Trade,442299,All Other Home Furnishings Stores,3,.49834952
+Cleveland,Retail Trade,444190,Other Building Material Dealers,70,7.6181893
+Cleveland,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,203,2.3688743
+Cleveland,Retail Trade,445120,Convenience Stores,26,5.9544873
+Cleveland,Retail Trade,446110,Pharmacies and Drug Stores,81,3.2273653
+Cleveland,Retail Trade,447110,Gasoline Stations with Convenience Stores,169,6.9129438
+Cleveland,Retail Trade,448120,Women's Clothing Stores,30,2.2421324
+Cleveland,Retail Trade,452990,All Other General Merchandise Stores,99,8.3220539
+Cleveland,Retail Trade,454390,Other Direct Selling Establishments,7,2.1159036
+Cleveland,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",25,3.9438586
+Cleveland,Information,511110,Newspaper Publishers,38,8.6842108
+Cleveland,Finance and Insurance,522110,Commercial Banking,152,3.1040771
+Cleveland,Finance and Insurance,524210,Insurance Agencies and Brokerages,52,2.161799
+Cleveland,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,8,.80929989
+Cleveland,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,65,1.5926653
+Cleveland,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,38,2.2352386
+Cleveland,"Professional, Scientific, and Technical Services",541940,Veterinary Services,22,1.8691014
+Cleveland,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,14,.66749853
+Cleveland,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),154,1.7908194
+Cleveland,Health Care and Social Assistance,621210,Offices of Dentists,62,1.8297776
+Cleveland,Health Care and Social Assistance,621320,Offices of Optometrists,7,1.7268224
+Cleveland,Health Care and Social Assistance,621610,Home Health Care Services,163,3.4073946
+Cleveland,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),321,5.6302128
+Cleveland,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,108,3.3559155
+Cleveland,Health Care and Social Assistance,624410,Child Day Care Services,205,6.3280387
+Cleveland,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,26,1.1024939
+Cleveland,"Arts, Entertainment, and Recreation",713990,All Other Amusement and Recreation Industries,5,1.2881569
+Cleveland,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,81,1.471276
+Cleveland,Accommodation and Food Services,722511,Full-Service Restaurants,315,1.6425344
+Cleveland,Accommodation and Food Services,722513,Limited-Service Restaurants,492,3.3794618
+Cleveland,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,15,2.2049606
+Cleveland,Other Services,812112,Beauty Salons,22,1.3509307
+Cleveland,Other Services,812210,Funeral Homes and Funeral Services,18,5.7732053
+Cleveland,Other Services,813110,Religious Organizations,199,3.1850049
+Columbus,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),25,1.6229371
+Columbus,Construction,236118,Residential Remodelers,7,.24583019
+Columbus,Construction,236220,Commercial and Institutional Building Construction,109,2.2804129
+Columbus,Construction,237310,"Highway, Street, and Bridge Construction",153,7.0272384
+Columbus,Construction,238160,Roofing Contractors,108,7.6814165
+Columbus,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,75,1.0420897
+Columbus,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",106,1.2203225
+Columbus,Construction,238910,Site Preparation Contractors,84,3.1856282
+Columbus,Wholesale Trade,423420,Office Equipment Merchant Wholesalers,40,5.1197319
+Columbus,Wholesale Trade,423840,Industrial Supplies Merchant Wholesalers,63,7.7065935
+Columbus,Wholesale Trade,423930,Recyclable Material Merchant Wholesalers,72,7.5837288
+Columbus,Wholesale Trade,424690,Other Chemical and Allied Products Merchant Wholesalers,9,.91545701
+Columbus,Retail Trade,441110,New Car Dealers,250,2.4253931
+Columbus,Retail Trade,441120,Used Car Dealers,40,3.1890793
+Columbus,Retail Trade,441310,Automotive Parts and Accessories Stores,109,3.4794886
+Columbus,Retail Trade,442299,All Other Home Furnishings Stores,24,1.5164733
+Columbus,Retail Trade,443141,Household Appliance Stores,24,4.7837367
+Columbus,Retail Trade,444190,Other Building Material Dealers,82,3.3945196
+Columbus,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",33,3.746067
+Columbus,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,322,1.4292644
+Columbus,Retail Trade,445310,"Beer, Wine, and Liquor Stores",34,2.395447
+Columbus,Retail Trade,446110,Pharmacies and Drug Stores,144,2.18241
+Columbus,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",41,3.2646875
+Columbus,Retail Trade,446199,All Other Health and Personal Care Stores,22,4.0691385
+Columbus,Retail Trade,447110,Gasoline Stations with Convenience Stores,181,2.8162138
+Columbus,Retail Trade,448120,Women's Clothing Stores,123,3.4966798
+Columbus,Retail Trade,448140,Family Clothing Stores,235,3.3377161
+Columbus,Retail Trade,448210,Shoe Stores,55,2.527945
+Columbus,Retail Trade,448310,Jewelry Stores,27,2.2674274
+Columbus,Retail Trade,451211,Book Stores,29,5.90801
+Columbus,Retail Trade,452990,All Other General Merchandise Stores,189,6.0432129
+Columbus,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",55,3.6954944
+Columbus,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),22,3.1893003
+Columbus,Transportation and Warehousing,484110,"General Freight Trucking, Local",58,3.5701873
+Columbus,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",103,2.5633876
+Columbus,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",51,3.0602877
+Columbus,Transportation and Warehousing,488190,Other Support Activities for Air Transportation,32,5.5708284
+Columbus,Transportation and Warehousing,492110,Couriers and Express Delivery Services,121,3.3129382
+Columbus,Finance and Insurance,522110,Commercial Banking,178,1.3826735
+Columbus,Finance and Insurance,522130,Credit Unions,45,2.1249008
+Columbus,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,28,5.4123073
+Columbus,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,39,6.3140388
+Columbus,Finance and Insurance,524210,Insurance Agencies and Brokerages,98,1.5497041
+Columbus,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,24,.76260382
+Columbus,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,27,1.0389484
+Columbus,Reale Estate and Rental and Leasing,532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,26,2.8400052
+Columbus,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,122,1.1370556
+Columbus,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,76,1.7004529
+Columbus,"Professional, Scientific, and Technical Services",541310,Architectural Services,36,2.3200672
+Columbus,"Professional, Scientific, and Technical Services",541330,Engineering Services,65,.68601876
+Columbus,"Professional, Scientific, and Technical Services",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)",33,.72005475
+Columbus,"Professional, Scientific, and Technical Services",541940,Veterinary Services,40,1.2926499
+Columbus,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,544,2.1676559
+Columbus,Administrative and Support and Waste Management and Remediation Services,561612,Security Guards and Patrol Services,69,1.0527585
+Columbus,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,50,5.3322711
+Columbus,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,371,3.8987222
+Columbus,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,52,.9430536
+Columbus,Educational Services,611110,Elementary and Secondary Schools,118,1.2481955
+Columbus,Educational Services,611512,Flight Training,29,38.878597
+Columbus,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),497,2.1983569
+Columbus,Health Care and Social Assistance,621210,Offices of Dentists,164,1.8410314
+Columbus,Health Care and Social Assistance,621320,Offices of Optometrists,47,4.4101992
+Columbus,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,17,2.7805367
+Columbus,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),471,3.1423275
+Columbus,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,121,2.9923725
+Columbus,Health Care and Social Assistance,624190,Other Individual and Family Services,21,.59006143
+Columbus,Health Care and Social Assistance,624410,Child Day Care Services,166,1.9490999
+Columbus,Accommodation and Food Services,722511,Full-Service Restaurants,895,1.7751608
+Columbus,Accommodation and Food Services,722513,Limited-Service Restaurants,836,2.1842356
+Columbus,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",62,6.1411328
+Columbus,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,48,.7698012
+Columbus,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",54,2.6100106
+Columbus,Other Services,811192,Car Washes,44,3.0821836
+Columbus,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,44,2.4602146
+Columbus,Other Services,812112,Beauty Salons,26,.60728765
+Columbus,Other Services,812199,Other Personal Care Services,4,.36155537
+Columbus,Other Services,812210,Funeral Homes and Funeral Services,35,4.2699547
+Columbus,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),48,3.8483021
+Columbus,Other Services,813110,Religious Organizations,540,3.287468
+Corinth,Utilities,221310,Water Supply and Irrigation Systems,22,34.499249
+Corinth,Construction,236220,Commercial and Institutional Building Construction,54,3.0221262
+Corinth,Construction,237310,"Highway, Street, and Bridge Construction",20,2.4572823
+Corinth,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,49,1.8212591
+Corinth,Construction,238910,Site Preparation Contractors,33,3.3478158
+Corinth,Wholesale Trade,423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",40,6.2159019
+Corinth,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,64,4.7041993
+Corinth,Retail Trade,441110,New Car Dealers,116,3.0104535
+Corinth,Retail Trade,441310,Automotive Parts and Accessories Stores,64,5.4651327
+Corinth,Retail Trade,443142,Electronics Stores,24,1.9995252
+Corinth,Retail Trade,444120,Paint and Wallpaper Stores,5,8.8318691
+Corinth,Retail Trade,444190,Other Building Material Dealers,20,2.2147579
+Corinth,Retail Trade,445310,"Beer, Wine, and Liquor Stores",20,3.769376
+Corinth,Retail Trade,447110,Gasoline Stations with Convenience Stores,135,5.6189175
+Corinth,Retail Trade,448120,Women's Clothing Stores,61,4.6388721
+Corinth,Retail Trade,448140,Family Clothing Stores,67,2.5455883
+Corinth,Retail Trade,451211,Book Stores,14,7.6296229
+Corinth,Retail Trade,452990,All Other General Merchandise Stores,76,6.5005708
+Corinth,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),14,5.4291592
+Corinth,Retail Trade,454390,Other Direct Selling Establishments,23,7.0740519
+Corinth,Transportation and Warehousing,484110,"General Freight Trucking, Local",43,7.0804892
+Corinth,Information,517110,Wired Telecommunications Carriers,24,1.0001355
+Corinth,Finance and Insurance,522110,Commercial Banking,126,2.6181951
+Corinth,Finance and Insurance,522291,Consumer Lending,41,24.259508
+Corinth,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,11,5.68786
+Corinth,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,18,7.7955537
+Corinth,Finance and Insurance,524210,Insurance Agencies and Brokerages,43,1.8189592
+Corinth,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,6,.61760855
+Corinth,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,22,121.72625
+Corinth,Reale Estate and Rental and Leasing,532220,Formal Wear and Costume Rental,3,48.031029
+Corinth,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,47,1.1717948
+Corinth,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,22,1.3167567
+Corinth,"Professional, Scientific, and Technical Services",541330,Engineering Services,56,1.5810387
+Corinth,"Professional, Scientific, and Technical Services",541940,Veterinary Services,26,2.2476366
+Corinth,Administrative and Support and Waste Management and Remediation Services,561612,Security Guards and Patrol Services,34,1.3876834
+Corinth,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,20,.97027504
+Corinth,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),352,4.1650124
+Corinth,Health Care and Social Assistance,621210,Offices of Dentists,93,2.7927504
+Corinth,Health Care and Social Assistance,621310,Offices of Chiropractors,11,2.4123549
+Corinth,Health Care and Social Assistance,621320,Offices of Optometrists,35,8.7853737
+Corinth,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",26,2.2672038
+Corinth,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,21,9.1882076
+Corinth,Health Care and Social Assistance,621610,Home Health Care Services,59,1.2549586
+Corinth,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),271,4.8365049
+Corinth,Health Care and Social Assistance,624410,Child Day Care Services,51,1.6018727
+Corinth,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,86,1.589462
+Corinth,Accommodation and Food Services,722511,Full-Service Restaurants,401,2.1276042
+Corinth,Accommodation and Food Services,722513,Limited-Service Restaurants,465,3.2499595
+Corinth,Other Services,813110,Religious Organizations,205,3.3385158
+Greenville,"Agriculture, Forestry, Fishing and Hunting",115112,"Soil Preparation, Planting, and Cultivating",22,75.575363
+Greenville,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,67,1.2717384
+Greenville,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",115,1.8086133
+Greenville,Construction,238910,Site Preparation Contractors,21,1.0879632
+Greenville,Wholesale Trade,423820,Farm and Garden Machinery and Equipment Merchant Wholesalers,90,18.80336
+Greenville,Wholesale Trade,423840,Industrial Supplies Merchant Wholesalers,19,3.1750798
+Greenville,Wholesale Trade,424510,Grain and Field Bean Merchant Wholesalers,85,66.347076
+Greenville,Wholesale Trade,424910,Farm Supplies Merchant Wholesalers,161,44.026604
+Greenville,Retail Trade,441110,New Car Dealers,152,2.0144887
+Greenville,Retail Trade,441310,Automotive Parts and Accessories Stores,90,3.9247372
+Greenville,Retail Trade,442110,Furniture Stores,22,1.6358395
+Greenville,Retail Trade,444190,Other Building Material Dealers,59,3.3365345
+Greenville,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",22,3.4116418
+Greenville,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,395,2.3951511
+Greenville,Retail Trade,445120,Convenience Stores,14,1.6660535
+Greenville,Retail Trade,446110,Pharmacies and Drug Stores,92,1.9047625
+Greenville,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",27,2.9369779
+Greenville,Retail Trade,447110,Gasoline Stations with Convenience Stores,345,7.3330607
+Greenville,Retail Trade,447190,Other Gasoline Stations,59,7.6394138
+Greenville,Retail Trade,448120,Women's Clothing Stores,64,2.4854777
+Greenville,Retail Trade,448140,Family Clothing Stores,155,3.0074081
+Greenville,Retail Trade,448310,Jewelry Stores,17,1.9502833
+Greenville,Retail Trade,452990,All Other General Merchandise Stores,161,7.0325217
+Greenville,Retail Trade,453310,Used Merchandise Stores,13,.99542171
+Greenville,Retail Trade,453991,Tobacco Stores,27,12.829674
+Greenville,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",20,.67996448
+Greenville,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",42,3.4428692
+Greenville,Transportation and Warehousing,492110,Couriers and Express Delivery Services,108,4.0395303
+Greenville,Finance and Insurance,522110,Commercial Banking,189,2.0055828
+Greenville,Finance and Insurance,524210,Insurance Agencies and Brokerages,65,1.4041555
+Greenville,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,11,.57823193
+Greenville,Reale Estate and Rental and Leasing,531311,Residential Property Managers,21,.69513857
+Greenville,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,13,36.732647
+Greenville,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,80,1.0185703
+Greenville,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,45,1.3754433
+Greenville,"Professional, Scientific, and Technical Services",541380,Testing Laboratories,15,2.0260901
+Greenville,"Professional, Scientific, and Technical Services",541940,Veterinary Services,29,1.2802597
+Greenville,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,376,2.04672
+Greenville,Administrative and Support and Waste Management and Remediation Services,561621,Security Systems Services (except Locksmiths),78,10.54231
+Greenville,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,40,5.8274875
+Greenville,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,62,.89005983
+Greenville,Educational Services,611110,Elementary and Secondary Schools,260,3.757103
+Greenville,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),277,1.6737891
+Greenville,Health Care and Social Assistance,621320,Offices of Optometrists,45,5.7683554
+Greenville,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",28,1.246874
+Greenville,Health Care and Social Assistance,621610,Home Health Care Services,175,1.9009153
+Greenville,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),389,3.5453513
+Greenville,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,319,5.1507192
+Greenville,Health Care and Social Assistance,624190,Other Individual and Family Services,105,4.0303836
+Greenville,"Arts, Entertainment, and Recreation",713990,All Other Amusement and Recreation Industries,23,3.0790482
+Greenville,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,111,1.0476639
+Greenville,Accommodation and Food Services,722511,Full-Service Restaurants,338,.91582078
+Greenville,Accommodation and Food Services,722513,Limited-Service Restaurants,979,3.4942584
+Greenville,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",19,1.2545307
+Greenville,Other Services,812210,Funeral Homes and Funeral Services,40,6.6664457
+Greenville,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),36,3.9428437
+Greenville,Other Services,813110,Religious Organizations,279,2.3203373
+Greenville,Other Services,813319,Other Social Advocacy Organizations,4,1.0976896
+Greenville,Other Services,813410,Civic and Social Organizations,15,.96567571
+Greenwood,Construction,237310,"Highway, Street, and Bridge Construction",141,12.274089
+Greenwood,Construction,238110,Poured Concrete Foundation and Structure Contractors,23,2.5308003
+Greenwood,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,52,1.3693804
+Greenwood,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",506,11.040689
+Greenwood,Construction,238350,Finish Carpentry Contractors,23,4.0704556
+Greenwood,Construction,238910,Site Preparation Contractors,45,3.2344854
+Greenwood,Construction,238990,All Other Specialty Trade Contractors,14,1.3143508
+Greenwood,Wholesale Trade,423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,52,14.109369
+Greenwood,Retail Trade,441110,New Car Dealers,157,2.8868129
+Greenwood,Retail Trade,441120,Used Car Dealers,29,4.3820791
+Greenwood,Retail Trade,441310,Automotive Parts and Accessories Stores,66,3.9930959
+Greenwood,Retail Trade,442110,Furniture Stores,33,3.4043145
+Greenwood,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,268,2.2545941
+Greenwood,Retail Trade,446110,Pharmacies and Drug Stores,80,2.2979507
+Greenwood,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",45,6.7912097
+Greenwood,Retail Trade,447110,Gasoline Stations with Convenience Stores,195,5.7504067
+Greenwood,Retail Trade,447190,Other Gasoline Stations,75,13.473084
+Greenwood,Retail Trade,448120,Women's Clothing Stores,50,2.6940002
+Greenwood,Retail Trade,448140,Family Clothing Stores,74,1.9920037
+Greenwood,Retail Trade,448210,Shoe Stores,44,3.8329618
+Greenwood,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",82,9.3257294
+Greenwood,Information,517110,Wired Telecommunications Carriers,102,3.011569
+Greenwood,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,23,8.4261484
+Greenwood,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),6,.72360593
+Greenwood,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,12,.87516183
+Greenwood,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,68,1.2011789
+Greenwood,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,73,3.0956423
+Greenwood,"Professional, Scientific, and Technical Services",541940,Veterinary Services,18,1.102479
+Greenwood,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,12,.41246885
+Greenwood,Educational Services,611110,Elementary and Secondary Schools,317,6.35531
+Greenwood,Educational Services,611610,Fine Arts Schools,8,1.8297181
+Greenwood,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),165,1.3832563
+Greenwood,Health Care and Social Assistance,621210,Offices of Dentists,53,1.1276391
+Greenwood,Health Care and Social Assistance,621320,Offices of Optometrists,22,3.9125502
+Greenwood,Health Care and Social Assistance,621610,Home Health Care Services,103,1.5522429
+Greenwood,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),556,7.0304351
+Greenwood,Health Care and Social Assistance,624410,Child Day Care Services,81,1.8025525
+Greenwood,Accommodation and Food Services,722310,Food Service Contractors,161,9.8175068
+Greenwood,Accommodation and Food Services,722511,Full-Service Restaurants,385,1.447279
+Greenwood,Accommodation and Food Services,722513,Limited-Service Restaurants,527,2.6096404
+Greenwood,Other Services,811111,General Automotive Repair,17,1.0210526
+Greenwood,Other Services,811191,Automotive Oil Change and Lubrication Shops,19,8.689868
+Greenwood,Other Services,812112,Beauty Salons,15,.6640324
+Greenwood,Other Services,812210,Funeral Homes and Funeral Services,10,2.3122358
+Greenwood,Other Services,813110,Religious Organizations,180,2.0769074
+Greenwood,Other Services,813910,Business Associations,8,1.5131599
+Grenada,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,87,135.33096
+Grenada,Construction,236220,Commercial and Institutional Building Construction,39,3.2265608
+Grenada,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,8,.8692649
+Grenada,Retail Trade,441110,New Car Dealers,169,6.4836125
+Grenada,Retail Trade,441310,Automotive Parts and Accessories Stores,38,4.7969012
+Grenada,Retail Trade,446110,Pharmacies and Drug Stores,75,4.4949341
+Grenada,Retail Trade,447110,Gasoline Stations with Convenience Stores,177,10.890518
+Grenada,Retail Trade,448140,Family Clothing Stores,33,1.8534621
+Grenada,Retail Trade,448210,Shoe Stores,21,3.8169146
+Grenada,Retail Trade,452990,All Other General Merchandise Stores,92,11.632743
+Grenada,Retail Trade,453930,Manufactured (Mobile) Home Dealers,2,20.524677
+Grenada,Finance and Insurance,522291,Consumer Lending,40,34.987629
+Grenada,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,27,17.286005
+Grenada,Finance and Insurance,524210,Insurance Agencies and Brokerages,25,1.563331
+Grenada,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",22,.29063687
+Grenada,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),122,2.1339777
+Grenada,Health Care and Social Assistance,621210,Offices of Dentists,52,2.3083887
+Grenada,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",19,2.4492168
+Grenada,Health Care and Social Assistance,624190,Other Individual and Family Services,3,.33333999
+Grenada,Health Care and Social Assistance,624410,Child Day Care Services,72,3.3430798
+Grenada,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,128,3.4971807
+Grenada,Accommodation and Food Services,722511,Full-Service Restaurants,425,3.3334336
+Grenada,Accommodation and Food Services,722513,Limited-Service Restaurants,607,6.271481
+Grenada,Other Services,811111,General Automotive Repair,30,3.7595146
+Grenada,Other Services,813110,Religious Organizations,81,1.9500288
+Gulfport-Biloxi-Pascagoula,Utilities,221310,Water Supply and Irrigation Systems,322,21.05518
+Gulfport-Biloxi-Pascagoula,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),108,.78204793
+Gulfport-Biloxi-Pascagoula,Construction,236117,New Housing For-Sale Builders,30,.3915683
+Gulfport-Biloxi-Pascagoula,Construction,236118,Residential Remodelers,43,.16844323
+Gulfport-Biloxi-Pascagoula,Construction,236210,Industrial Building Construction,82,2.1337745
+Gulfport-Biloxi-Pascagoula,Construction,236220,Commercial and Institutional Building Construction,842,1.9649298
+Gulfport-Biloxi-Pascagoula,Construction,237110,Water and Sewer Line and Related Structures Construction,184,1.6119657
+Gulfport-Biloxi-Pascagoula,Construction,237120,Oil and Gas Pipeline and Related Structures Construction,184,2.3831651
+Gulfport-Biloxi-Pascagoula,Construction,237210,Land Subdivision,29,1.7899609
+Gulfport-Biloxi-Pascagoula,Construction,237310,"Highway, Street, and Bridge Construction",403,2.0646491
+Gulfport-Biloxi-Pascagoula,Construction,237990,Other Heavy and Civil Engineering Construction,154,3.7538428
+Gulfport-Biloxi-Pascagoula,Construction,238140,Masonry Contractors,79,.77988338
+Gulfport-Biloxi-Pascagoula,Construction,238160,Roofing Contractors,166,1.3169631
+Gulfport-Biloxi-Pascagoula,Construction,238190,"Other Foundation, Structure, and Building Exterior Contractors",78,2.7927456
+Gulfport-Biloxi-Pascagoula,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,793,1.229037
+Gulfport-Biloxi-Pascagoula,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",671,.8616665
+Gulfport-Biloxi-Pascagoula,Construction,238290,Other Building Equipment Contractors,110,1.2155617
+Gulfport-Biloxi-Pascagoula,Construction,238310,Drywall and Insulation Contractors,211,1.2090862
+Gulfport-Biloxi-Pascagoula,Construction,238320,Painting and Wall Covering Contractors,145,1.0549612
+Gulfport-Biloxi-Pascagoula,Construction,238910,Site Preparation Contractors,399,1.6878608
+Gulfport-Biloxi-Pascagoula,Construction,238990,All Other Specialty Trade Contractors,277,1.5305027
+Gulfport-Biloxi-Pascagoula,Manufacturing,311710,Seafood Product Preparation and Packaging,205,17.190525
+Gulfport-Biloxi-Pascagoula,Manufacturing,323111,Commercial Printing (except Screen and Books),118,.42945006
+Gulfport-Biloxi-Pascagoula,Manufacturing,325199,All Other Basic Organic Chemical Manufacturing,68,2.7891657
+Gulfport-Biloxi-Pascagoula,Manufacturing,325211,Plastics Material and Resin Manufacturing,307,8.3616667
+Gulfport-Biloxi-Pascagoula,Manufacturing,325412,Pharmaceutical Preparation Manufacturing,132,1.9116344
+Gulfport-Biloxi-Pascagoula,Manufacturing,332322,Sheet Metal Work Manufacturing,89,1.2904545
+Gulfport-Biloxi-Pascagoula,Manufacturing,332710,Machine Shops,127,.63598061
+Gulfport-Biloxi-Pascagoula,Manufacturing,337110,Wood Kitchen Cabinet and Countertop Manufacturing,92,1.7819839
+Gulfport-Biloxi-Pascagoula,Manufacturing,339113,Surgical Appliance and Supplies Manufacturing,16,.31053081
+Gulfport-Biloxi-Pascagoula,Manufacturing,339950,Sign Manufacturing,20,.38778219
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,45,.50745195
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,34,.20045751
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423140,Motor Vehicle Parts (Used) Merchant Wholesalers,54,6.3673701
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",103,1.2760897
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423330,"Roofing, Siding, and Insulation Material Merchant Wholesalers",21,.86077458
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423390,Other Construction Material Merchant Wholesalers,45,1.8178157
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423420,Office Equipment Merchant Wholesalers,60,.8566165
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423510,Metal Service Centers and Other Metal Merchant Wholesalers,27,.22478472
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",75,.48598352
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423690,Other Electronic Parts and Equipment Merchant Wholesalers,22,.10106438
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423730,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers,39,.84202296
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,129,.39537716
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423840,Industrial Supplies Merchant Wholesalers,89,1.2143947
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423860,Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers,105,4.2414122
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,423990,Other Miscellaneous Durable Goods Merchant Wholesalers,80,1.2787356
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,424420,Packaged Frozen Food Merchant Wholesalers,134,2.7046132
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,424460,Fish and Seafood Merchant Wholesalers,30,2.0410881
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,424490,Other Grocery and Related Products Merchant Wholesalers,250,1.1244378
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,424990,Other Miscellaneous Nondurable Goods Merchant Wholesalers,36,.60969925
+Gulfport-Biloxi-Pascagoula,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,45,.19855759
+Gulfport-Biloxi-Pascagoula,Retail Trade,441110,New Car Dealers,1015,1.0983888
+Gulfport-Biloxi-Pascagoula,Retail Trade,441120,Used Car Dealers,144,1.2806067
+Gulfport-Biloxi-Pascagoula,Retail Trade,441222,Boat Dealers,113,5.5353618
+Gulfport-Biloxi-Pascagoula,Retail Trade,441228,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",43,.89502424
+Gulfport-Biloxi-Pascagoula,Retail Trade,441310,Automotive Parts and Accessories Stores,586,2.0865774
+Gulfport-Biloxi-Pascagoula,Retail Trade,441320,Tire Dealers,283,1.9978006
+Gulfport-Biloxi-Pascagoula,Retail Trade,442110,Furniture Stores,169,1.0260618
+Gulfport-Biloxi-Pascagoula,Retail Trade,442299,All Other Home Furnishings Stores,125,.88101131
+Gulfport-Biloxi-Pascagoula,Retail Trade,443141,Household Appliance Stores,22,.48913264
+Gulfport-Biloxi-Pascagoula,Retail Trade,444130,Hardware Stores,106,1.0501983
+Gulfport-Biloxi-Pascagoula,Retail Trade,444190,Other Building Material Dealers,388,1.7916126
+Gulfport-Biloxi-Pascagoula,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",134,1.6967363
+Gulfport-Biloxi-Pascagoula,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,1715,.84911942
+Gulfport-Biloxi-Pascagoula,Retail Trade,445310,"Beer, Wine, and Liquor Stores",180,1.4145819
+Gulfport-Biloxi-Pascagoula,Retail Trade,446110,Pharmacies and Drug Stores,790,1.3355154
+Gulfport-Biloxi-Pascagoula,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",138,1.2257017
+Gulfport-Biloxi-Pascagoula,Retail Trade,446130,Optical Goods Stores,58,1.2380314
+Gulfport-Biloxi-Pascagoula,Retail Trade,446191,Food (Health) Supplement Stores,52,1.8851476
+Gulfport-Biloxi-Pascagoula,Retail Trade,446199,All Other Health and Personal Care Stores,188,3.8786945
+Gulfport-Biloxi-Pascagoula,Retail Trade,447110,Gasoline Stations with Convenience Stores,1347,2.3377743
+Gulfport-Biloxi-Pascagoula,Retail Trade,447190,Other Gasoline Stations,149,1.5752994
+Gulfport-Biloxi-Pascagoula,Retail Trade,448110,Men's Clothing Stores,44,.99730277
+Gulfport-Biloxi-Pascagoula,Retail Trade,448120,Women's Clothing Stores,332,1.052778
+Gulfport-Biloxi-Pascagoula,Retail Trade,448130,Children's and Infants' Clothing Stores,84,1.1302861
+Gulfport-Biloxi-Pascagoula,Retail Trade,448140,Family Clothing Stores,858,1.3593045
+Gulfport-Biloxi-Pascagoula,Retail Trade,448190,Other Clothing Stores,159,1.7054918
+Gulfport-Biloxi-Pascagoula,Retail Trade,448210,Shoe Stores,354,1.8149143
+Gulfport-Biloxi-Pascagoula,Retail Trade,448310,Jewelry Stores,124,1.1615536
+Gulfport-Biloxi-Pascagoula,Retail Trade,451110,Sporting Goods Stores,239,1.0996019
+Gulfport-Biloxi-Pascagoula,Retail Trade,451120,"Hobby, Toy, and Game Stores",119,1.0975735
+Gulfport-Biloxi-Pascagoula,Retail Trade,451130,"Sewing, Needlework, and Piece Goods Stores",28,1.0740874
+Gulfport-Biloxi-Pascagoula,Retail Trade,451140,Musical Instrument and Supplies Stores,25,1.1613303
+Gulfport-Biloxi-Pascagoula,Retail Trade,451211,Book Stores,101,2.2951577
+Gulfport-Biloxi-Pascagoula,Retail Trade,452111,Department Stores (except Discount Department Stores),850,2.450485
+Gulfport-Biloxi-Pascagoula,Retail Trade,452112,Discount Department Stores - insignificant perishable grocery sales,251,.65177447
+Gulfport-Biloxi-Pascagoula,Retail Trade,452990,All Other General Merchandise Stores,879,3.1350386
+Gulfport-Biloxi-Pascagoula,Retail Trade,453110,Florists,45,.98246866
+Gulfport-Biloxi-Pascagoula,Retail Trade,453210,Office Supplies and Stationery Stores,89,1.8072687
+Gulfport-Biloxi-Pascagoula,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",280,2.0985332
+Gulfport-Biloxi-Pascagoula,Retail Trade,453991,Tobacco Stores,107,4.151494
+Gulfport-Biloxi-Pascagoula,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),54,.87320143
+Gulfport-Biloxi-Pascagoula,Retail Trade,454111,Electronic Shopping,27,.15671422
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,484110,"General Freight Trucking, Local",90,.61795014
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",135,.3747648
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",24,.1108214
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,484210,Used Household and Office Goods Moving,158,1.9925411
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",141,.94375473
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,493110,General Warehousing and Storage,220,.50078553
+Gulfport-Biloxi-Pascagoula,Transportation and Warehousing,493120,Refrigerated Warehousing and Storage,8,.37603489
+Gulfport-Biloxi-Pascagoula,Information,511120,Periodical Publishers,23,.28116861
+Gulfport-Biloxi-Pascagoula,Information,515112,Radio Stations,96,1.7346616
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,522110,Commercial Banking,1686,1.4608485
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,522130,Credit Unions,636,3.349895
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,522291,Consumer Lending,244,6.0201054
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,111,2.39329
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,523930,Investment Advice,14,.17648046
+Gulfport-Biloxi-Pascagoula,Finance and Insurance,524210,Insurance Agencies and Brokerages,528,.93133211
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,285,1.0101377
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,531130,Lessors of Miniwarehouses and Self-Storage Units,102,3.6835194
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,109,.46784788
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,531311,Residential Property Managers,254,.68652225
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,531312,Nonresidential Property Managers,63,.52905023
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,128,29.531647
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,532291,Home Health Equipment Rental,34,1.7761989
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,532412,"Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing",94,2.0455208
+Gulfport-Biloxi-Pascagoula,Reale Estate and Rental and Leasing,532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,57,.69449413
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,912,.94812298
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,296,.73873842
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541214,Payroll Services,48,.16635187
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,97,.54921693
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541310,Architectural Services,76,.5463357
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541330,Engineering Services,1184,1.3938701
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541370,Surveying and Mapping (except Geophysical) Services,24,.71005011
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541380,Testing Laboratories,93,1.0256974
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541512,Computer Systems Design Services,959,1.9196353
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541620,Environmental Consulting Services,81,1.3140891
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541690,Other Scientific and Technical Consulting Services,63,.62691528
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)",340,.82751989
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541921,"Photography Studios, Portrai",24,.77738339
+Gulfport-Biloxi-Pascagoula,"Professional, Scientific, and Technical Services",541940,Veterinary Services,338,1.2183878
+Gulfport-Biloxi-Pascagoula,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",667,.24854988
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561110,Office Administrative Services,333,.92660463
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561210,Facilities Support Services,484,3.1934202
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,2502,1.112056
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561510,Travel Agencies,23,.42955336
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561612,Security Guards and Patrol Services,775,1.3189529
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561621,Security Systems Services (except Locksmiths),48,.52972591
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,149,1.77246
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,454,.5321722
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,506,1.0236028
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561920,Convention and Trade Show Organizers,9,.13828264
+Gulfport-Biloxi-Pascagoula,Administrative and Support and Waste Management and Remediation Services,561990,All Other Support Services,122,1.0906231
+Gulfport-Biloxi-Pascagoula,Educational Services,611110,Elementary and Secondary Schools,751,.88611174
+Gulfport-Biloxi-Pascagoula,Educational Services,611519,Other Technical and Trade Schools,53,1.0696952
+Gulfport-Biloxi-Pascagoula,Educational Services,611620,Sports and Recreation Instruction,39,.42069352
+Gulfport-Biloxi-Pascagoula,Educational Services,611710,Educational Support Services,49,.65239501
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),1974,.97395056
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621210,Offices of Dentists,717,.89781004
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621310,Offices of Chiropractors,86,.78643548
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621320,Offices of Optometrists,85,.8896665
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",406,1.4762481
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,34,.62030685
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621493,Freestanding Ambulatory Surgical and Emergency Centers,285,2.7897816
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621498,All Other Outpatient Care Centers,248,1.2017975
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621511,Medical Laboratories,38,.36849511
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,621610,Home Health Care Services,824,.73083735
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,622110,General Medical and Surgical Hospitals,10652,3.2313893
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),1757,1.3075258
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,247,.68135774
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624110,Child and Youth Services,45,.32403758
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,72,.094924532
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624190,Other Individual and Family Services,179,.56102073
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624210,Community Food Services,16,.74347413
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624229,Other Community Housing Services,71,1.869133
+Gulfport-Biloxi-Pascagoula,Health Care and Social Assistance,624410,Child Day Care Services,933,1.221956
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",712110,Museums,75,1.0282649
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713120,Amusement Arcades,60,2.1659114
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713910,Golf Courses and Country Clubs,241,.97260386
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713930,Marinas,111,5.6662393
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,341,.61350191
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713950,Bowling Centers,84,1.897444
+Gulfport-Biloxi-Pascagoula,"Arts, Entertainment, and Recreation",713990,All Other Amusement and Recreation Industries,88,.96192259
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,1295,.99801618
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,721120,Casino Hotels,10249,39.394226
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,721191,Bed-and-Breakfast Inns,20,2.673033
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,721211,RV (Recreational Vehicle) Parks and Campgrounds,64,5.7682829
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722320,Caterers,38,.3155095
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722410,Drinking Places (Alcoholic Beverages),280,.8886534
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722511,Full-Service Restaurants,5737,1.2692508
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722513,Limited-Service Restaurants,5765,1.6801205
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",175,1.9334939
+Gulfport-Biloxi-Pascagoula,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,359,.64221394
+Gulfport-Biloxi-Pascagoula,Other Services,811111,General Automotive Repair,256,.90491998
+Gulfport-Biloxi-Pascagoula,Other Services,811118,Other Automotive Mechanical and Electrical Repair and Maintenance,22,2.1007576
+Gulfport-Biloxi-Pascagoula,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",223,1.2022681
+Gulfport-Biloxi-Pascagoula,Other Services,811122,Automotive Glass Replacement Shops,43,2.3056214
+Gulfport-Biloxi-Pascagoula,Other Services,811191,Automotive Oil Change and Lubrication Shops,102,2.7455592
+Gulfport-Biloxi-Pascagoula,Other Services,811192,Car Washes,149,1.1642334
+Gulfport-Biloxi-Pascagoula,Other Services,811198,All Other Automotive Repair and Maintenance,7,.75330931
+Gulfport-Biloxi-Pascagoula,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,425,2.6506793
+Gulfport-Biloxi-Pascagoula,Other Services,812112,Beauty Salons,198,.51586282
+Gulfport-Biloxi-Pascagoula,Other Services,812199,Other Personal Care Services,95,.95782548
+Gulfport-Biloxi-Pascagoula,Other Services,812210,Funeral Homes and Funeral Services,113,1.5377353
+Gulfport-Biloxi-Pascagoula,Other Services,812220,Cemeteries and Crematories,20,1.0902613
+Gulfport-Biloxi-Pascagoula,Other Services,812310,Coin-Operated Laundries and Drycleaners,37,1.3203219
+Gulfport-Biloxi-Pascagoula,Other Services,812332,Industrial Launderers,41,1.2400053
+Gulfport-Biloxi-Pascagoula,Other Services,813110,Religious Organizations,1500,1.0186077
+Gulfport-Biloxi-Pascagoula,Other Services,813312,"Environment, Conservation and Wildlife Organizations",89,1.7534423
+Gulfport-Biloxi-Pascagoula,Other Services,813410,Civic and Social Organizations,296,1.5559676
+Gulfport-Biloxi-Pascagoula,Other Services,813910,Business Associations,47,.52319521
+Gulfport-Biloxi-Pascagoula,Other Services,813930,Labor Unions and Similar Labor Organizations,118,.94597882
+Hattiesburg,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,180,23.245535
+Hattiesburg,"Mining, Quarrying, and Oil and Gas Extraction",213112,Support Activities for Oil and Gas Operations,57,.94311315
+Hattiesburg,Utilities,221122,Electric Power Distribution,335,12.718677
+Hattiesburg,Utilities,221310,Water Supply and Irrigation Systems,67,12.894583
+Hattiesburg,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),80,1.7050182
+Hattiesburg,Construction,236117,New Housing For-Sale Builders,17,.65307736
+Hattiesburg,Construction,236118,Residential Remodelers,32,.36894745
+Hattiesburg,Construction,236220,Commercial and Institutional Building Construction,317,2.1773269
+Hattiesburg,Construction,238130,Framing Contractors,9,.50737071
+Hattiesburg,Construction,238160,Roofing Contractors,45,1.0507694
+Hattiesburg,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,189,.86215037
+Hattiesburg,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",208,.78615725
+Hattiesburg,Construction,238350,Finish Carpentry Contractors,59,1.8087047
+Hattiesburg,Construction,238910,Site Preparation Contractors,32,.39842182
+Hattiesburg,Construction,238990,All Other Specialty Trade Contractors,169,2.7483399
+Hattiesburg,Manufacturing,323113,Commercial Screen Printing,39,2.7023165
+Hattiesburg,Manufacturing,327320,Ready-Mix Concrete Manufacturing,66,5.0463791
+Hattiesburg,Wholesale Trade,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,63,2.0909922
+Hattiesburg,Wholesale Trade,423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,20,.34705862
+Hattiesburg,Wholesale Trade,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",111,4.0475888
+Hattiesburg,Wholesale Trade,423420,Office Equipment Merchant Wholesalers,49,2.0590205
+Hattiesburg,Wholesale Trade,423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,60,2.8200448
+Hattiesburg,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,51,.46006739
+Hattiesburg,Wholesale Trade,423840,Industrial Supplies Merchant Wholesalers,55,2.2088282
+Hattiesburg,Wholesale Trade,423990,Other Miscellaneous Durable Goods Merchant Wholesalers,37,1.740692
+Hattiesburg,Wholesale Trade,424490,Other Grocery and Related Products Merchant Wholesalers,187,2.4755199
+Hattiesburg,Wholesale Trade,424910,Farm Supplies Merchant Wholesalers,13,.85434026
+Hattiesburg,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,132,1.7142625
+Hattiesburg,Retail Trade,441110,New Car Dealers,505,1.6084622
+Hattiesburg,Retail Trade,441120,Used Car Dealers,115,3.0100973
+Hattiesburg,Retail Trade,441310,Automotive Parts and Accessories Stores,254,2.6619506
+Hattiesburg,Retail Trade,441320,Tire Dealers,113,2.3478675
+Hattiesburg,Retail Trade,442110,Furniture Stores,86,1.5367905
+Hattiesburg,Retail Trade,442299,All Other Home Furnishings Stores,95,1.970718
+Hattiesburg,Retail Trade,443142,Electronics Stores,245,2.5051126
+Hattiesburg,Retail Trade,444130,Hardware Stores,55,1.6038272
+Hattiesburg,Retail Trade,444190,Other Building Material Dealers,147,1.9978329
+Hattiesburg,Retail Trade,444210,Outdoor Power Equipment Stores,22,5.0213838
+Hattiesburg,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",81,3.018728
+Hattiesburg,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,730,1.0637925
+Hattiesburg,Retail Trade,445120,Convenience Stores,48,1.3727782
+Hattiesburg,Retail Trade,445310,"Beer, Wine, and Liquor Stores",101,2.3361804
+Hattiesburg,Retail Trade,446110,Pharmacies and Drug Stores,402,2.0002177
+Hattiesburg,Retail Trade,446130,Optical Goods Stores,42,2.6386535
+Hattiesburg,Retail Trade,446199,All Other Health and Personal Care Stores,55,3.3397954
+Hattiesburg,Retail Trade,447110,Gasoline Stations with Convenience Stores,769,3.9281743
+Hattiesburg,Retail Trade,448120,Women's Clothing Stores,249,2.3239536
+Hattiesburg,Retail Trade,448130,Children's and Infants' Clothing Stores,78,3.0891082
+Hattiesburg,Retail Trade,448140,Family Clothing Stores,505,2.3547795
+Hattiesburg,Retail Trade,448210,Shoe Stores,144,2.1729252
+Hattiesburg,Retail Trade,448310,Jewelry Stores,53,1.4612445
+Hattiesburg,Retail Trade,451120,"Hobby, Toy, and Game Stores",118,3.2033036
+Hattiesburg,Retail Trade,451211,Book Stores,73,4.8825135
+Hattiesburg,Retail Trade,452990,All Other General Merchandise Stores,520,5.4586692
+Hattiesburg,Retail Trade,453110,Florists,27,1.7349995
+Hattiesburg,Retail Trade,453310,Used Merchandise Stores,35,.6440655
+Hattiesburg,Retail Trade,453991,Tobacco Stores,25,2.8548946
+Hattiesburg,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),57,2.7128448
+Hattiesburg,Retail Trade,454390,Other Direct Selling Establishments,29,1.0946718
+Hattiesburg,Transportation and Warehousing,484110,"General Freight Trucking, Local",35,.7073077
+Hattiesburg,Transportation and Warehousing,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",60,.81544197
+Hattiesburg,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",101,1.9897147
+Hattiesburg,Transportation and Warehousing,484230,"Specialized Freight (except Used Goods) Trucking, Long-Distance",112,3.0353432
+Hattiesburg,Transportation and Warehousing,486210,Pipeline Transportation of Natural Gas,141,180.84734
+Hattiesburg,Transportation and Warehousing,488410,Motor Vehicle Towing,11,.74063611
+Hattiesburg,Information,511110,Newspaper Publishers,60,1.7123247
+Hattiesburg,Information,517110,Wired Telecommunications Carriers,272,1.3911119
+Hattiesburg,Finance and Insurance,522130,Credit Unions,56,.8681435
+Hattiesburg,Finance and Insurance,522291,Consumer Lending,101,7.3344078
+Hattiesburg,Finance and Insurance,522292,Real Estate Credit,20,.30866736
+Hattiesburg,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,70,3.7206433
+Hattiesburg,Finance and Insurance,523120,Securities Brokerage,47,.79231536
+Hattiesburg,Finance and Insurance,524210,Insurance Agencies and Brokerages,213,1.1058079
+Hattiesburg,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,142,1.4813356
+Hattiesburg,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),49,1.0236404
+Hattiesburg,Reale Estate and Rental and Leasing,531311,Residential Property Managers,159,1.2648746
+Hattiesburg,Reale Estate and Rental and Leasing,532291,Home Health Equipment Rental,21,3.2289505
+Hattiesburg,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,376,1.1505013
+Hattiesburg,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,158,1.1606078
+Hattiesburg,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,106,2.3465078
+Hattiesburg,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,56,.93323195
+Hattiesburg,"Professional, Scientific, and Technical Services",541330,Engineering Services,281,.97365779
+Hattiesburg,"Professional, Scientific, and Technical Services",541511,Custom Computer Programming Services,48,.23073614
+Hattiesburg,"Professional, Scientific, and Technical Services",541512,Computer Systems Design Services,61,.35938451
+Hattiesburg,"Professional, Scientific, and Technical Services",541611,Administrative Management and General Management Consulting Services,211,1.463527
+Hattiesburg,"Professional, Scientific, and Technical Services",541940,Veterinary Services,216,2.2916698
+Hattiesburg,Management of Companies and Enterprises,551112,Offices of Other Holding Companies,41,1.5964141
+Hattiesburg,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",363,.39812896
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561110,Office Administrative Services,329,2.6944835
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,881,1.15251
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561611,Investigation Services,4,.52855283
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,81,2.8359895
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,422,1.4559222
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,133,.79188484
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,561740,Carpet and Upholstery Cleaning Services,10,1.002721
+Hattiesburg,Administrative and Support and Waste Management and Remediation Services,562910,Remediation Services,52,2.6817715
+Hattiesburg,Educational Services,611110,Elementary and Secondary Schools,386,1.3404952
+Hattiesburg,Educational Services,611620,Sports and Recreation Instruction,56,1.7779464
+Hattiesburg,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),2657,3.8584309
+Hattiesburg,Health Care and Social Assistance,621210,Offices of Dentists,449,1.654783
+Hattiesburg,Health Care and Social Assistance,621310,Offices of Chiropractors,37,.99585426
+Hattiesburg,Health Care and Social Assistance,621320,Offices of Optometrists,43,1.3246653
+Hattiesburg,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",71,.75983816
+Hattiesburg,Health Care and Social Assistance,621610,Home Health Care Services,471,1.2295433
+Hattiesburg,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),823,1.8026347
+Hattiesburg,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,244,.94681519
+Hattiesburg,Health Care and Social Assistance,624190,Other Individual and Family Services,92,.84867835
+Hattiesburg,Health Care and Social Assistance,624229,Other Community Housing Services,16,1.2397418
+Hattiesburg,Health Care and Social Assistance,624410,Child Day Care Services,671,2.5865798
+Hattiesburg,"Arts, Entertainment, and Recreation",713910,Golf Courses and Country Clubs,95,1.1284231
+Hattiesburg,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,241,1.2761683
+Hattiesburg,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,505,1.1454829
+Hattiesburg,Accommodation and Food Services,722320,Caterers,20,.48875165
+Hattiesburg,Accommodation and Food Services,722511,Full-Service Restaurants,2669,1.7379632
+Hattiesburg,Accommodation and Food Services,722513,Limited-Service Restaurants,2957,2.5364242
+Hattiesburg,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",182,5.918417
+Hattiesburg,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,188,.98985726
+Hattiesburg,Other Services,811111,General Automotive Repair,49,.50979519
+Hattiesburg,Other Services,811113,Automotive Transmission Repair,22,5.2674861
+Hattiesburg,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",116,1.8407036
+Hattiesburg,Other Services,811122,Automotive Glass Replacement Shops,48,7.5751319
+Hattiesburg,Other Services,811192,Car Washes,88,2.023792
+Hattiesburg,Other Services,812112,Beauty Salons,99,.75916064
+Hattiesburg,Other Services,812113,Nail Salons,23,1.1406178
+Hattiesburg,Other Services,812199,Other Personal Care Services,59,1.7508309
+Hattiesburg,Other Services,812210,Funeral Homes and Funeral Services,70,2.803694
+Hattiesburg,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),71,1.8688035
+Hattiesburg,Other Services,813110,Religious Organizations,1255,2.5083542
+Hattiesburg,Other Services,813312,"Environment, Conservation and Wildlife Organizations",44,2.5514295
+Hattiesburg,Other Services,813410,Civic and Social Organizations,63,.97471762
+Indianola,Manufacturing,311119,Other Animal Food Manufacturing,55,540.91669
+Indianola,Retail Trade,441310,Automotive Parts and Accessories Stores,46,12.535094
+Indianola,Retail Trade,445120,Convenience Stores,8,5.9491181
+Indianola,Retail Trade,446110,Pharmacies and Drug Stores,37,4.7869225
+Indianola,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",11,7.477067
+Indianola,Retail Trade,447110,Gasoline Stations with Convenience Stores,164,21.782701
+Indianola,Retail Trade,448140,Family Clothing Stores,29,3.516093
+Indianola,Retail Trade,452990,All Other General Merchandise Stores,74,20.198477
+Indianola,Transportation and Warehousing,484110,"General Freight Trucking, Local",60,31.527903
+Indianola,Transportation and Warehousing,493130,Farm Product Warehousing and Storage,11,1205.5735
+Indianola,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,9,14.850728
+Indianola,Finance and Insurance,524210,Insurance Agencies and Brokerages,26,3.5097556
+Indianola,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,10,.7956146
+Indianola,Health Care and Social Assistance,621320,Offices of Optometrists,21,16.821337
+Indianola,Health Care and Social Assistance,621610,Home Health Care Services,37,2.5114708
+Indianola,Accommodation and Food Services,722511,Full-Service Restaurants,115,1.9471227
+Indianola,Accommodation and Food Services,722513,Limited-Service Restaurants,255,5.6874056
+Indianola,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,49,23.388224
+Indianola,Other Services,812112,Beauty Salons,4,.79755735
+Indianola,Other Services,813110,Religious Organizations,88,4.5733166
+Jackson,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,157,3.9663627
+Jackson,"Agriculture, Forestry, Fishing and Hunting",115112,"Soil Preparation, Planting, and Cultivating",23,3.714577
+Jackson,"Mining, Quarrying, and Oil and Gas Extraction",211111,Crude Petroleum and Natural Gas Extraction - crude petroleum extraction,339,2.6522598
+Jackson,"Mining, Quarrying, and Oil and Gas Extraction",212321,Construction Sand and Gravel Mining,135,11.937949
+Jackson,"Mining, Quarrying, and Oil and Gas Extraction",213112,Support Activities for Oil and Gas Operations,100,.32367915
+Jackson,Utilities,221210,Natural Gas Distribution,244,8.2860298
+Jackson,Utilities,221320,Sewage Treatment Facilities,87,37.893074
+Jackson,Construction,236117,New Housing For-Sale Builders,53,.39830643
+Jackson,Construction,236118,Residential Remodelers,204,.46011931
+Jackson,Construction,236220,Commercial and Institutional Building Construction,896,1.2039214
+Jackson,Construction,237110,Water and Sewer Line and Related Structures Construction,438,2.2093639
+Jackson,Construction,237130,Power and Communication Line and Related Structures Construction,1742,9.2593679
+Jackson,Construction,237310,"Highway, Street, and Bridge Construction",635,1.8731394
+Jackson,Construction,238110,Poured Concrete Foundation and Structure Contractors,42,.15660498
+Jackson,Construction,238120,Structural Steel and Precast Concrete Contractors,175,2.3152242
+Jackson,Construction,238140,Masonry Contractors,107,.60819316
+Jackson,Construction,238150,Glass and Glazing Contractors,80,1.2846574
+Jackson,Construction,238160,Roofing Contractors,302,1.3795187
+Jackson,Construction,238170,Siding Contractors,5,.14418611
+Jackson,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,1238,1.1047591
+Jackson,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",1504,1.1120381
+Jackson,Construction,238290,Other Building Equipment Contractors,177,1.1261928
+Jackson,Construction,238310,Drywall and Insulation Contractors,278,.91722262
+Jackson,Construction,238330,Flooring Contractors,70,.77342767
+Jackson,Construction,238340,Tile and Terrazzo Contractors,60,.89878911
+Jackson,Construction,238350,Finish Carpentry Contractors,82,.49176234
+Jackson,Construction,238390,Other Building Finishing Contractors,114,1.3607846
+Jackson,Construction,238910,Site Preparation Contractors,475,1.1569445
+Jackson,Construction,238990,All Other Specialty Trade Contractors,370,1.1770942
+Jackson,Manufacturing,322211,Corrugated and Solid Fiber Box Manufacturing,423,5.1376328
+Jackson,Manufacturing,323111,Commercial Printing (except Screen and Books),232,.48615393
+Jackson,Manufacturing,326199,All Other Plastics Product Manufacturing,586,1.4378325
+Jackson,Manufacturing,327320,Ready-Mix Concrete Manufacturing,404,6.0428672
+Jackson,Manufacturing,327390,Other Concrete Product Manufacturing,96,2.0956907
+Jackson,Manufacturing,332312,Fabricated Structural Metal Manufacturing,247,2.7884443
+Jackson,Manufacturing,332322,Sheet Metal Work Manufacturing,76,.63448513
+Jackson,Manufacturing,332710,Machine Shops,89,.25661692
+Jackson,Manufacturing,332812,"Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers",256,4.4671559
+Jackson,Manufacturing,335311,"Power, Distribution, and Specialty Transformer Manufacturing",657,138.96338
+Jackson,Manufacturing,336360,Motor Vehicle Seating and Interior Trim Manufacturing,1464,41.692543
+Jackson,Manufacturing,339113,Surgical Appliance and Supplies Manufacturing,11,.12292284
+Jackson,Manufacturing,339116,Dental Laboratories,93,1.656644
+Jackson,Manufacturing,339950,Sign Manufacturing,112,1.2503484
+Jackson,Wholesale Trade,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,445,2.889333
+Jackson,Wholesale Trade,423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,536,1.8195474
+Jackson,Wholesale Trade,423130,Tire and Tube Merchant Wholesalers,192,4.590095
+Jackson,Wholesale Trade,423210,Furniture Merchant Wholesalers,70,.78816891
+Jackson,Wholesale Trade,423220,Home Furnishing Merchant Wholesalers,180,1.5586051
+Jackson,Wholesale Trade,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",184,1.3125534
+Jackson,Wholesale Trade,423320,"Brick, Stone, and Related Construction Material Merchant Wholesalers",25,.69335502
+Jackson,Wholesale Trade,423330,"Roofing, Siding, and Insulation Material Merchant Wholesalers",143,3.3749034
+Jackson,Wholesale Trade,423390,Other Construction Material Merchant Wholesalers,45,1.0466585
+Jackson,Wholesale Trade,423420,Office Equipment Merchant Wholesalers,311,2.556529
+Jackson,Wholesale Trade,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,363,1.3347541
+Jackson,Wholesale Trade,423440,Other Commercial Equipment Merchant Wholesalers,83,1.3175651
+Jackson,Wholesale Trade,423510,Metal Service Centers and Other Metal Merchant Wholesalers,172,.82449234
+Jackson,Wholesale Trade,423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",261,.97376901
+Jackson,Wholesale Trade,423690,Other Electronic Parts and Equipment Merchant Wholesalers,174,.46023521
+Jackson,Wholesale Trade,423710,Hardware Merchant Wholesalers,107,.95843786
+Jackson,Wholesale Trade,423720,Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers,74,.82822376
+Jackson,Wholesale Trade,423730,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers,100,1.2431241
+Jackson,Wholesale Trade,423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,536,4.9282789
+Jackson,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,536,.94589257
+Jackson,Wholesale Trade,423850,Service Establishment Equipment and Supplies Merchant Wholesalers,87,1.5059839
+Jackson,Wholesale Trade,423930,Recyclable Material Merchant Wholesalers,168,1.1364824
+Jackson,Wholesale Trade,423990,Other Miscellaneous Durable Goods Merchant Wholesalers,45,.41415077
+Jackson,Wholesale Trade,424110,Printing and Writing Paper Merchant Wholesalers,87,6.5137229
+Jackson,Wholesale Trade,424130,Industrial and Personal Service Paper Merchant Wholesalers,55,.69409978
+Jackson,Wholesale Trade,424490,Other Grocery and Related Products Merchant Wholesalers,994,2.5741684
+Jackson,Wholesale Trade,424690,Other Chemical and Allied Products Merchant Wholesalers,169,1.1040411
+Jackson,Wholesale Trade,424720,Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals),27,1.1675304
+Jackson,Wholesale Trade,424810,Beer and Ale Merchant Wholesalers,297,2.9344957
+Jackson,Wholesale Trade,424990,Other Miscellaneous Nondurable Goods Merchant Wholesalers,9,.087762877
+Jackson,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,646,1.6412005
+Jackson,Retail Trade,441110,New Car Dealers,2165,1.3489726
+Jackson,Retail Trade,441120,Used Car Dealers,511,2.6165519
+Jackson,Retail Trade,441210,Recreational Vehicle Dealers,32,.80670244
+Jackson,Retail Trade,441310,Automotive Parts and Accessories Stores,897,1.8390117
+Jackson,Retail Trade,442110,Furniture Stores,527,1.842267
+Jackson,Retail Trade,442299,All Other Home Furnishings Stores,362,1.4690454
+Jackson,Retail Trade,443141,Household Appliance Stores,184,2.3554666
+Jackson,Retail Trade,443142,Electronics Stores,554,1.1081452
+Jackson,Retail Trade,444120,Paint and Wallpaper Stores,90,3.8167739
+Jackson,Retail Trade,444130,Hardware Stores,228,1.3006351
+Jackson,Retail Trade,444190,Other Building Material Dealers,557,1.4808898
+Jackson,Retail Trade,444210,Outdoor Power Equipment Stores,65,2.9022837
+Jackson,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",289,2.1069903
+Jackson,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,3953,1.1269033
+Jackson,Retail Trade,445120,Convenience Stores,146,.81684136
+Jackson,Retail Trade,445210,Meat Markets,32,.69676274
+Jackson,Retail Trade,445230,Fruit and Vegetable Markets,20,.78732497
+Jackson,Retail Trade,445292,Confectionery and Nut Stores,45,1.7656982
+Jackson,Retail Trade,445310,"Beer, Wine, and Liquor Stores",177,.80091059
+Jackson,Retail Trade,446110,Pharmacies and Drug Stores,1496,1.4561582
+Jackson,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",271,1.3858944
+Jackson,Retail Trade,446130,Optical Goods Stores,103,1.2658902
+Jackson,Retail Trade,446191,Food (Health) Supplement Stores,59,1.2315419
+Jackson,Retail Trade,446199,All Other Health and Personal Care Stores,216,2.565882
+Jackson,Retail Trade,447110,Gasoline Stations with Convenience Stores,1604,1.602856
+Jackson,Retail Trade,447190,Other Gasoline Stations,355,2.1610279
+Jackson,Retail Trade,448110,Men's Clothing Stores,150,1.9575856
+Jackson,Retail Trade,448120,Women's Clothing Stores,1149,2.0978475
+Jackson,Retail Trade,448130,Children's and Infants' Clothing Stores,227,1.7586933
+Jackson,Retail Trade,448140,Family Clothing Stores,1221,1.1137823
+Jackson,Retail Trade,448150,Clothing Accessories Stores,119,1.4683079
+Jackson,Retail Trade,448190,Other Clothing Stores,257,1.5872334
+Jackson,Retail Trade,448210,Shoe Stores,651,1.9217151
+Jackson,Retail Trade,448310,Jewelry Stores,250,1.3483814
+Jackson,Retail Trade,451120,"Hobby, Toy, and Game Stores",193,1.0249417
+Jackson,Retail Trade,451140,Musical Instrument and Supplies Stores,60,1.6048048
+Jackson,Retail Trade,452111,Department Stores (except Discount Department Stores),1546,2.5662429
+Jackson,Retail Trade,452990,All Other General Merchandise Stores,1300,2.6696391
+Jackson,Retail Trade,453110,Florists,128,1.6090566
+Jackson,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",239,1.0313613
+Jackson,Retail Trade,453310,Used Merchandise Stores,259,.93236828
+Jackson,Retail Trade,453910,Pet and Pet Supplies Stores,162,1.405334
+Jackson,Retail Trade,453930,Manufactured (Mobile) Home Dealers,29,4.8334723
+Jackson,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),91,.84726101
+Jackson,Retail Trade,454113,Mail-Order Houses,239,1.1740425
+Jackson,Retail Trade,454210,Vending Machine Operators,32,1.138531
+Jackson,Retail Trade,454310,Fuel Dealers,116,1.4576505
+Jackson,Retail Trade,454390,Other Direct Selling Establishments,145,1.0707294
+Jackson,Transportation and Warehousing,484110,"General Freight Trucking, Local",154,.6088171
+Jackson,Transportation and Warehousing,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",1476,3.9242251
+Jackson,Transportation and Warehousing,484210,Used Household and Office Goods Moving,143,1.0383444
+Jackson,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",258,.99429417
+Jackson,Transportation and Warehousing,486210,Pipeline Transportation of Natural Gas,61,15.305537
+Jackson,Transportation and Warehousing,488119,Other Airport Operations,104,.86034793
+Jackson,Transportation and Warehousing,488190,Other Support Activities for Air Transportation,35,.39132804
+Jackson,Transportation and Warehousing,488410,Motor Vehicle Towing,95,1.2513003
+Jackson,Transportation and Warehousing,488490,Other Support Activities for Road Transportation,66,2.2471638
+Jackson,Transportation and Warehousing,488510,Freight Transportation Arrangement,130,.38019013
+Jackson,Transportation and Warehousing,492110,Couriers and Express Delivery Services,1429,2.5128312
+Jackson,Transportation and Warehousing,493190,Other Warehousing and Storage,126,2.4674852
+Jackson,Information,511110,Newspaper Publishers,384,2.1438375
+Jackson,Information,512110,Motion Picture and Video Production,1,.00299638
+Jackson,Information,515112,Radio Stations,126,1.310899
+Jackson,Information,515120,Television Broadcasting,291,1.9328192
+Jackson,Information,517110,Wired Telecommunications Carriers,2746,2.7473843
+Jackson,Information,518210,"Data Processing, Hosting, and Related Services",620,.8490603
+Jackson,Information,519130,Internet Publishing and Broadcasting and Web Search Portals,32,.13978399
+Jackson,Finance and Insurance,522130,Credit Unions,266,.80669779
+Jackson,Finance and Insurance,522220,Sales Financing,151,1.3454084
+Jackson,Finance and Insurance,522291,Consumer Lending,259,3.6793337
+Jackson,Finance and Insurance,522292,Real Estate Credit,197,.59477496
+Jackson,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,235,2.9173958
+Jackson,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,230,2.3915176
+Jackson,Finance and Insurance,523910,Miscellaneous Intermediation,43,.91383106
+Jackson,Finance and Insurance,523920,Portfolio Management,117,.28024918
+Jackson,Finance and Insurance,523991,"Trust, Fiduciary, and Custody Activities",89,2.0517335
+Jackson,Finance and Insurance,524113,Direct Life Insurance Carriers,1028,2.7086024
+Jackson,Finance and Insurance,524114,Direct Health and Medical Insurance Carriers,903,2.0700512
+Jackson,Finance and Insurance,524126,Direct Property and Casualty Insurance Carriers,1068,1.6605656
+Jackson,Finance and Insurance,524210,Insurance Agencies and Brokerages,1834,1.8626238
+Jackson,Finance and Insurance,524292,Third Party Administration of Insurance and Pension Funds,755,2.9665277
+Jackson,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,340,.69385666
+Jackson,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),295,1.2055885
+Jackson,Reale Estate and Rental and Leasing,531130,Lessors of Miniwarehouses and Self-Storage Units,103,2.1416829
+Jackson,Reale Estate and Rental and Leasing,531190,Lessors of Other Real Estate Property,27,.75015491
+Jackson,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,230,.56840932
+Jackson,Reale Estate and Rental and Leasing,531311,Residential Property Managers,983,1.5297822
+Jackson,Reale Estate and Rental and Leasing,531320,Offices of Real Estate Appraisers,48,1.3188351
+Jackson,Reale Estate and Rental and Leasing,532120,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",173,3.0841753
+Jackson,Reale Estate and Rental and Leasing,532291,Home Health Equipment Rental,23,.69182408
+Jackson,Reale Estate and Rental and Leasing,532299,All Other Consumer Goods Rental,80,1.5013192
+Jackson,Reale Estate and Rental and Leasing,532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,105,.73661101
+Jackson,Reale Estate and Rental and Leasing,533110,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),85,2.3344109
+Jackson,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,3196,1.913074
+Jackson,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,934,1.3421499
+Jackson,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,436,1.8881147
+Jackson,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,635,2.0701463
+Jackson,"Professional, Scientific, and Technical Services",541310,Architectural Services,323,1.3369147
+Jackson,"Professional, Scientific, and Technical Services",541330,Engineering Services,997,.67580426
+Jackson,"Professional, Scientific, and Technical Services",541340,Drafting Services,8,1.0991743
+Jackson,"Professional, Scientific, and Technical Services",541350,Building Inspection Services,14,.65378445
+Jackson,"Professional, Scientific, and Technical Services",541511,Custom Computer Programming Services,199,.18713422
+Jackson,"Professional, Scientific, and Technical Services",541512,Computer Systems Design Services,317,.36535457
+Jackson,"Professional, Scientific, and Technical Services",541513,Computer Facilities Management Services,75,.46171311
+Jackson,"Professional, Scientific, and Technical Services",541612,Human Resources Consulting Services,499,3.0106664
+Jackson,"Professional, Scientific, and Technical Services",541613,Marketing Consulting Services,76,.26762989
+Jackson,"Professional, Scientific, and Technical Services",541614,"Process, Physical Distribution, and Logistics Consulting Services",47,.4479937
+Jackson,"Professional, Scientific, and Technical Services",541620,Environmental Consulting Services,55,.51375687
+Jackson,"Professional, Scientific, and Technical Services",541690,Other Scientific and Technical Consulting Services,113,.64744353
+Jackson,"Professional, Scientific, and Technical Services",541810,Advertising Agencies,154,.5409677
+Jackson,"Professional, Scientific, and Technical Services",541820,Public Relations Agencies,42,.53473657
+Jackson,"Professional, Scientific, and Technical Services",541890,Other Services Related to Advertising,71,.70701134
+Jackson,"Professional, Scientific, and Technical Services",541921,"Photography Studios, Portrai",59,1.1003509
+Jackson,"Professional, Scientific, and Technical Services",541940,Veterinary Services,552,1.1456795
+Jackson,"Professional, Scientific, and Technical Services",541990,"All Other Professional, Scientific, and Technical Services",59,.54227901
+Jackson,Management of Companies and Enterprises,551112,Offices of Other Holding Companies,158,1.2034956
+Jackson,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",3090,.66298145
+Jackson,Administrative and Support and Waste Management and Remediation Services,561110,Office Administrative Services,552,.88439131
+Jackson,Administrative and Support and Waste Management and Remediation Services,561210,Facilities Support Services,1396,5.3033619
+Jackson,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,2651,.67842877
+Jackson,Administrative and Support and Waste Management and Remediation Services,561431,Private Mail Centers,21,.77835357
+Jackson,Administrative and Support and Waste Management and Remediation Services,561439,Other Business Service Centers (including Copy Shops),52,.82418555
+Jackson,Administrative and Support and Waste Management and Remediation Services,561440,Collection Agencies,155,.99289525
+Jackson,Administrative and Support and Waste Management and Remediation Services,561491,Repossession Services,87,17.273367
+Jackson,Administrative and Support and Waste Management and Remediation Services,561611,Investigation Services,29,.74963897
+Jackson,Administrative and Support and Waste Management and Remediation Services,561612,Security Guards and Patrol Services,1643,1.6099795
+Jackson,Administrative and Support and Waste Management and Remediation Services,561622,Locksmiths,23,1.3157068
+Jackson,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,235,1.6095823
+Jackson,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,1904,1.2850453
+Jackson,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,537,.6254757
+Jackson,Administrative and Support and Waste Management and Remediation Services,561790,Other Services to Buildings and Dwellings,42,.48864067
+Jackson,Administrative and Support and Waste Management and Remediation Services,561990,All Other Support Services,857,4.4111404
+Jackson,Administrative and Support and Waste Management and Remediation Services,562910,Remediation Services,75,.75666809
+Jackson,Educational Services,611110,Elementary and Secondary Schools,2438,1.656294
+Jackson,Educational Services,611210,Junior Colleges,158,1.7409049
+Jackson,Educational Services,611310,"Colleges, Universities, and Professional Schools",3936,1.7686949
+Jackson,Educational Services,611430,Professional and Management Development Training,11,.19066523
+Jackson,Educational Services,611511,Cosmetology and Barber Schools,48,2.0554166
+Jackson,Educational Services,611519,Other Technical and Trade Schools,60,.69725341
+Jackson,Educational Services,611610,Fine Arts Schools,61,.47277036
+Jackson,Educational Services,611620,Sports and Recreation Instruction,56,.34781188
+Jackson,Educational Services,611691,Exam Preparation and Tutoring,50,.3146264
+Jackson,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),4510,1.2812134
+Jackson,Health Care and Social Assistance,621112,"Offices of Physicians, Mental Health Specialists",65,1.2537779
+Jackson,Health Care and Social Assistance,621210,Offices of Dentists,1273,.91780174
+Jackson,Health Care and Social Assistance,621310,Offices of Chiropractors,83,.43701658
+Jackson,Health Care and Social Assistance,621320,Offices of Optometrists,191,1.151057
+Jackson,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",848,1.7753515
+Jackson,Health Care and Social Assistance,621420,Outpatient Mental Health and Substance Abuse Centers,378,1.4505227
+Jackson,Health Care and Social Assistance,621493,Freestanding Ambulatory Surgical and Emergency Centers,302,1.7021093
+Jackson,Health Care and Social Assistance,621498,All Other Outpatient Care Centers,479,1.3365041
+Jackson,Health Care and Social Assistance,621511,Medical Laboratories,251,1.4014481
+Jackson,Health Care and Social Assistance,621610,Home Health Care Services,2478,1.2654645
+Jackson,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),3468,1.4859792
+Jackson,Health Care and Social Assistance,623210,Residential Intellectual and Developmental Disability Facilities,930,1.3908165
+Jackson,Health Care and Social Assistance,623220,Residential Mental Health and Substance Abuse Facilities,314,1.3149897
+Jackson,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,517,.82115275
+Jackson,Health Care and Social Assistance,623990,Other Residential Care Facilities,155,1.0547276
+Jackson,Health Care and Social Assistance,624110,Child and Youth Services,457,1.8947601
+Jackson,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,965,.73253512
+Jackson,Health Care and Social Assistance,624190,Other Individual and Family Services,923,1.6656462
+Jackson,Health Care and Social Assistance,624221,Temporary Shelters,92,1.0284313
+Jackson,Health Care and Social Assistance,624229,Other Community Housing Services,50,.75789148
+Jackson,Health Care and Social Assistance,624310,Vocational Rehabilitation Services,269,.7353313
+Jackson,Health Care and Social Assistance,624410,Child Day Care Services,2416,1.8219063
+Jackson,"Arts, Entertainment, and Recreation",712110,Museums,136,1.0735885
+Jackson,"Arts, Entertainment, and Recreation",713910,Golf Courses and Country Clubs,395,.91784894
+Jackson,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,1009,1.0452204
+Jackson,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,2020,.89634323
+Jackson,Accommodation and Food Services,722310,Food Service Contractors,724,1.4960294
+Jackson,Accommodation and Food Services,722320,Caterers,52,.24859211
+Jackson,Accommodation and Food Services,722410,Drinking Places (Alcoholic Beverages),206,.37644088
+Jackson,Accommodation and Food Services,722511,Full-Service Restaurants,6905,.87959236
+Jackson,Accommodation and Food Services,722513,Limited-Service Restaurants,10637,1.7849064
+Jackson,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",522,3.3207059
+Jackson,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,811,.83533621
+Jackson,Other Services,811111,General Automotive Repair,392,.79783201
+Jackson,Other Services,811113,Automotive Transmission Repair,51,2.3887825
+Jackson,Other Services,811118,Other Automotive Mechanical and Electrical Repair and Maintenance,102,5.6080074
+Jackson,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",507,1.5738364
+Jackson,Other Services,811122,Automotive Glass Replacement Shops,119,3.673852
+Jackson,Other Services,811191,Automotive Oil Change and Lubrication Shops,222,3.4406364
+Jackson,Other Services,811192,Car Washes,132,.59385836
+Jackson,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,304,1.0916842
+Jackson,Other Services,811412,Appliance Repair and Maintenance,42,2.1781242
+Jackson,Other Services,811490,Other Personal and Household Goods Repair and Maintenance,64,1.6180385
+Jackson,Other Services,812112,Beauty Salons,274,.41103119
+Jackson,Other Services,812113,Nail Salons,59,.5723874
+Jackson,Other Services,812199,Other Personal Care Services,265,1.5383806
+Jackson,Other Services,812210,Funeral Homes and Funeral Services,178,1.3946921
+Jackson,Other Services,812220,Cemeteries and Crematories,57,1.7890836
+Jackson,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),332,1.7095001
+Jackson,Other Services,812910,Pet Care (except Veterinary) Services,41,.33344266
+Jackson,Other Services,813110,Religious Organizations,5133,2.0069759
+Jackson,Other Services,813211,Grantmaking Foundations,116,.93460625
+Jackson,Other Services,813212,Voluntary Health Organizations,108,1.4410558
+Jackson,Other Services,813311,Human Rights Organizations,57,1.3609666
+Jackson,Other Services,813319,Other Social Advocacy Organizations,117,1.509487
+Jackson,Other Services,813410,Civic and Social Organizations,272,.82325226
+Jackson,Other Services,813910,Business Associations,408,2.6150575
+Jackson,Other Services,813920,Professional Organizations,291,2.2889819
+Jackson,Other Services,813930,Labor Unions and Similar Labor Organizations,228,1.0524207
+Jackson,Other Services,813940,Political Organizations,29,1.8855217
+Jackson,Other Services,813990,"Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)",43,.22280248
+Laurel,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,54,13.647266
+Laurel,"Agriculture, Forestry, Fishing and Hunting",115310,Support Activities for Forestry,3,3.5789754
+Laurel,"Mining, Quarrying, and Oil and Gas Extraction",213111,Drilling Oil and Gas Wells,160,20.023922
+Laurel,"Mining, Quarrying, and Oil and Gas Extraction",213112,Support Activities for Oil and Gas Operations,1100,35.617752
+Laurel,Construction,236220,Commercial and Institutional Building Construction,109,1.4651285
+Laurel,Construction,237120,Oil and Gas Pipeline and Related Structures Construction,199,14.845802
+Laurel,Construction,237310,"Highway, Street, and Bridge Construction",380,11.213446
+Laurel,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,181,1.6157891
+Laurel,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",118,.87279648
+Laurel,Construction,238320,Painting and Wall Covering Contractors,25,1.0476658
+Laurel,Construction,238910,Site Preparation Contractors,228,5.5553684
+Laurel,Construction,238990,All Other Specialty Trade Contractors,26,.82745039
+Laurel,Manufacturing,311615,Poultry Processing,2972,344.48105
+Laurel,Manufacturing,311811,Retail Bakeries,17,2.0206065
+Laurel,Manufacturing,332710,Machine Shops,432,12.460578
+Laurel,Manufacturing,333995,Fluid Power Cylinder and Actuator Manufacturing,226,268.89786
+Laurel,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,230,4.0603547
+Laurel,Wholesale Trade,423930,Recyclable Material Merchant Wholesalers,33,2.2331941
+Laurel,Wholesale Trade,424690,Other Chemical and Allied Products Merchant Wholesalers,66,4.31322
+Laurel,Wholesale Trade,424710,Petroleum Bulk Stations and Terminals,27,4.1274467
+Laurel,Retail Trade,441110,New Car Dealers,177,1.1032593
+Laurel,Retail Trade,441120,Used Car Dealers,12,.61467963
+Laurel,Retail Trade,441228,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",53,6.354136
+Laurel,Retail Trade,441310,Automotive Parts and Accessories Stores,145,2.9738507
+Laurel,Retail Trade,442299,All Other Home Furnishings Stores,22,.89311719
+Laurel,Retail Trade,443141,Household Appliance Stores,17,2.1770439
+Laurel,Retail Trade,444190,Other Building Material Dealers,90,2.393697
+Laurel,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",22,1.6045252
+Laurel,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,445,1.2690506
+Laurel,Retail Trade,445310,"Beer, Wine, and Liquor Stores",39,1.7653649
+Laurel,Retail Trade,446110,Pharmacies and Drug Stores,185,1.8013903
+Laurel,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",23,1.1766515
+Laurel,Retail Trade,447110,Gasoline Stations with Convenience Stores,379,3.7886851
+Laurel,Retail Trade,447190,Other Gasoline Stations,35,2.1313715
+Laurel,Retail Trade,448120,Women's Clothing Stores,49,.89497125
+Laurel,Retail Trade,448140,Family Clothing Stores,33,.30113256
+Laurel,Retail Trade,448210,Shoe Stores,62,1.8308756
+Laurel,Retail Trade,452990,All Other General Merchandise Stores,302,6.2040496
+Laurel,Retail Trade,453110,Florists,18,2.2635651
+Laurel,Transportation and Warehousing,484110,"General Freight Trucking, Local",180,7.1186514
+Laurel,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",263,4.2052813
+Laurel,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",68,2.6215806
+Laurel,Transportation and Warehousing,484230,"Specialized Freight (except Used Goods) Trucking, Long-Distance",111,5.8870487
+Laurel,Transportation and Warehousing,488510,Freight Transportation Arrangement,5,.14628056
+Laurel,Transportation and Warehousing,493110,General Warehousing and Storage,5,.065556146
+Laurel,Information,511110,Newspaper Publishers,64,3.5743718
+Laurel,Information,517110,Wired Telecommunications Carriers,131,1.3111408
+Laurel,Finance and Insurance,522110,Commercial Banking,286,1.4273416
+Laurel,Finance and Insurance,522291,Consumer Lending,70,9.9477892
+Laurel,Finance and Insurance,524210,Insurance Agencies and Brokerages,116,1.1785362
+Laurel,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,18,.44500509
+Laurel,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,92,.55089897
+Laurel,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,57,.81938523
+Laurel,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,36,1.5595652
+Laurel,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,6,.19567606
+Laurel,"Professional, Scientific, and Technical Services",541330,Engineering Services,75,.50856465
+Laurel,"Professional, Scientific, and Technical Services",541690,Other Scientific and Technical Consulting Services,26,1.490239
+Laurel,"Professional, Scientific, and Technical Services",541940,Veterinary Services,52,1.0796587
+Laurel,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",478,1.0259588
+Laurel,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,23,1.5759132
+Laurel,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,54,.36458969
+Laurel,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,48,.55928928
+Laurel,Educational Services,611110,Elementary and Secondary Schools,154,1.0466068
+Laurel,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),408,1.1594826
+Laurel,Health Care and Social Assistance,621210,Offices of Dentists,163,1.1756207
+Laurel,Health Care and Social Assistance,624410,Child Day Care Services,119,.89770824
+Laurel,"Arts, Entertainment, and Recreation",713910,Golf Courses and Country Clubs,61,1.4179571
+Laurel,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,137,.60813874
+Laurel,Accommodation and Food Services,722511,Full-Service Restaurants,427,.54413259
+Laurel,Accommodation and Food Services,722513,Limited-Service Restaurants,1265,2.1234691
+Laurel,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",115,7.3184128
+Laurel,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,48,.49458489
+Laurel,Other Services,811118,Other Automotive Mechanical and Electrical Repair and Maintenance,10,5.5000615
+Laurel,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",60,1.8632109
+Laurel,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,96,3.4486873
+Laurel,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),67,3.451159
+Laurel,Other Services,813110,Religious Organizations,640,2.5032833
+Laurel,Other Services,813219,Other Grantmaking and Giving Services,7,1.7919787
+McComb,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,220,121.33673
+McComb,Utilities,221310,Water Supply and Irrigation Systems,27,22.192122
+McComb,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,54,1.0520045
+McComb,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",84,1.355901
+McComb,Manufacturing,321113,Sawmills,272,173.68982
+McComb,Wholesale Trade,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,60,8.5048313
+McComb,Wholesale Trade,423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,15,1.1116464
+McComb,Wholesale Trade,423820,Farm and Garden Machinery and Equipment Merchant Wholesalers,29,6.2185874
+McComb,Wholesale Trade,423930,Recyclable Material Merchant Wholesalers,28,4.1351213
+McComb,Wholesale Trade,423990,Other Miscellaneous Durable Goods Merchant Wholesalers,8,1.6073586
+McComb,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,15,.83195001
+McComb,Retail Trade,441110,New Car Dealers,141,1.9179672
+McComb,Retail Trade,441120,Used Car Dealers,29,3.2417781
+McComb,Retail Trade,441310,Automotive Parts and Accessories Stores,86,3.8491721
+McComb,Retail Trade,441320,Tire Dealers,54,4.7917204
+McComb,Retail Trade,443142,Electronics Stores,31,1.3537095
+McComb,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",47,7.4806514
+McComb,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,237,1.4749762
+McComb,Retail Trade,446110,Pharmacies and Drug Stores,227,4.8236928
+McComb,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",27,3.0144041
+McComb,Retail Trade,447110,Gasoline Stations with Convenience Stores,265,5.7811317
+McComb,Retail Trade,448140,Family Clothing Stores,98,1.9515853
+McComb,Retail Trade,448210,Shoe Stores,43,2.7711072
+McComb,Retail Trade,448310,Jewelry Stores,22,2.5904324
+McComb,Retail Trade,452990,All Other General Merchandise Stores,147,6.5902724
+McComb,Retail Trade,453110,Florists,27,7.4097228
+McComb,Retail Trade,453310,Used Merchandise Stores,23,1.8075587
+McComb,Retail Trade,453930,Manufactured (Mobile) Home Dealers,21,76.411255
+McComb,Transportation and Warehousing,484110,"General Freight Trucking, Local",9,.77675748
+McComb,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",125,10.516762
+McComb,Transportation and Warehousing,492110,Couriers and Express Delivery Services,87,3.3398514
+McComb,Finance and Insurance,522110,Commercial Banking,239,2.60302
+McComb,Finance and Insurance,522291,Consumer Lending,45,13.95593
+McComb,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,24,6.5045252
+McComb,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,26,5.9019556
+McComb,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,103,1.3459815
+McComb,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,41,1.2862188
+McComb,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,21,1.9853543
+McComb,"Professional, Scientific, and Technical Services",541370,Surveying and Mapping (except Geophysical) Services,15,5.578289
+McComb,"Professional, Scientific, and Technical Services",541611,Administrative Management and General Management Consulting Services,5,.14811221
+McComb,"Professional, Scientific, and Technical Services",541940,Veterinary Services,39,1.7671177
+McComb,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",66,.30914602
+McComb,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,45,1.1442621
+McComb,Educational Services,611110,Elementary and Secondary Schools,254,3.7671616
+McComb,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),296,1.8357497
+McComb,Health Care and Social Assistance,621210,Offices of Dentists,138,2.1720829
+McComb,Health Care and Social Assistance,621610,Home Health Care Services,111,1.2375094
+McComb,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),433,4.0504041
+McComb,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,56,.92803848
+McComb,Health Care and Social Assistance,624190,Other Individual and Family Services,31,1.2212921
+McComb,Health Care and Social Assistance,624410,Child Day Care Services,138,2.2718782
+McComb,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,145,1.404649
+McComb,Accommodation and Food Services,722511,Full-Service Restaurants,426,1.1846886
+McComb,Accommodation and Food Services,722513,Limited-Service Restaurants,797,2.9196544
+McComb,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",153,21.248495
+McComb,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,21,.47221154
+McComb,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",56,3.7950411
+McComb,Other Services,812210,Funeral Homes and Funeral Services,24,4.1053143
+McComb,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),31,3.4847333
+McComb,Other Services,813110,Religious Organizations,415,3.5423853
+Meridian,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,202,41.514061
+Meridian,"Agriculture, Forestry, Fishing and Hunting",115310,Support Activities for Forestry,31,30.073994
+Meridian,"Mining, Quarrying, and Oil and Gas Extraction",212321,Construction Sand and Gravel Mining,4,2.8774447
+Meridian,"Mining, Quarrying, and Oil and Gas Extraction",213112,Support Activities for Oil and Gas Operations,134,3.5283413
+Meridian,Utilities,221310,Water Supply and Irrigation Systems,72,22.051685
+Meridian,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),35,1.1870906
+Meridian,Construction,236117,New Housing For-Sale Builders,5,.30567685
+Meridian,Construction,238160,Roofing Contractors,59,2.19242
+Meridian,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",120,.72177887
+Meridian,Construction,238350,Finish Carpentry Contractors,40,1.9514278
+Meridian,Construction,238990,All Other Specialty Trade Contractors,49,1.2681092
+Meridian,Manufacturing,323111,Commercial Printing (except Screen and Books),28,.47730383
+Meridian,Manufacturing,339116,Dental Laboratories,23,3.332922
+Meridian,Wholesale Trade,423420,Office Equipment Merchant Wholesalers,27,1.805532
+Meridian,Wholesale Trade,423510,Metal Service Centers and Other Metal Merchant Wholesalers,215,8.3839312
+Meridian,Wholesale Trade,423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",130,3.9455712
+Meridian,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,39,.5598771
+Meridian,Wholesale Trade,423930,Recyclable Material Merchant Wholesalers,49,2.6965008
+Meridian,Retail Trade,441110,New Car Dealers,342,1.7334943
+Meridian,Retail Trade,441120,Used Car Dealers,74,3.0824158
+Meridian,Retail Trade,441228,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",95,9.261817
+Meridian,Retail Trade,441310,Automotive Parts and Accessories Stores,156,2.6017628
+Meridian,Retail Trade,441320,Tire Dealers,81,2.6782861
+Meridian,Retail Trade,442110,Furniture Stores,50,1.4218804
+Meridian,Retail Trade,442299,All Other Home Furnishings Stores,48,1.5845975
+Meridian,Retail Trade,443141,Household Appliance Stores,25,2.6034558
+Meridian,Retail Trade,443142,Electronics Stores,168,2.7336776
+Meridian,Retail Trade,444110,Home Centers,223,11.195458
+Meridian,Retail Trade,444190,Other Building Material Dealers,90,1.9465302
+Meridian,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",63,3.7364256
+Meridian,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,572,1.326499
+Meridian,Retail Trade,445120,Convenience Stores,41,1.8660351
+Meridian,Retail Trade,446110,Pharmacies and Drug Stores,287,2.2725315
+Meridian,Retail Trade,447110,Gasoline Stations with Convenience Stores,438,3.5605357
+Meridian,Retail Trade,447190,Other Gasoline Stations,323,15.995049
+Meridian,Retail Trade,448120,Women's Clothing Stores,96,1.4258577
+Meridian,Retail Trade,448130,Children's and Infants' Clothing Stores,38,2.3949637
+Meridian,Retail Trade,448140,Family Clothing Stores,209,1.5508935
+Meridian,Retail Trade,448150,Clothing Accessories Stores,38,3.8142121
+Meridian,Retail Trade,448210,Shoe Stores,84,2.0171509
+Meridian,Retail Trade,451110,Sporting Goods Stores,63,1.3576392
+Meridian,Retail Trade,451211,Book Stores,74,7.8764248
+Meridian,Retail Trade,452990,All Other General Merchandise Stores,282,4.7109594
+Meridian,Retail Trade,453110,Florists,22,2.2497544
+Meridian,Retail Trade,453310,Used Merchandise Stores,3,.0878537
+Meridian,Retail Trade,453930,Manufactured (Mobile) Home Dealers,63,85.418678
+Meridian,Retail Trade,453991,Tobacco Stores,31,5.6336336
+Meridian,Retail Trade,454310,Fuel Dealers,65,6.6444626
+Meridian,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",64,.8321684
+Meridian,Transportation and Warehousing,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",70,1.513968
+Meridian,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",60,1.8810377
+Meridian,Transportation and Warehousing,484230,"Specialized Freight (except Used Goods) Trucking, Long-Distance",62,2.6739807
+Meridian,Information,515112,Radio Stations,83,7.0247016
+Meridian,Information,515120,Television Broadcasting,83,4.4846382
+Meridian,Information,517110,Wired Telecommunications Carriers,230,1.8719653
+Meridian,Finance and Insurance,522110,Commercial Banking,578,2.3457499
+Meridian,Finance and Insurance,522130,Credit Unions,65,1.6035912
+Meridian,Finance and Insurance,522291,Consumer Lending,107,12.365289
+Meridian,Finance and Insurance,523910,Miscellaneous Intermediation,7,1.2101705
+Meridian,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,41,.68065304
+Meridian,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),42,1.3962958
+Meridian,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,14,.28145728
+Meridian,Reale Estate and Rental and Leasing,532111,Passenger Car Rental,39,17.531019
+Meridian,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,36,38.903297
+Meridian,Reale Estate and Rental and Leasing,532291,Home Health Equipment Rental,17,4.1597557
+Meridian,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,108,.52589595
+Meridian,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,96,1.122216
+Meridian,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,101,3.5580688
+Meridian,"Professional, Scientific, and Technical Services",541214,Payroll Services,207,3.3601837
+Meridian,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,23,.60996687
+Meridian,"Professional, Scientific, and Technical Services",541330,Engineering Services,54,.2977629
+Meridian,"Professional, Scientific, and Technical Services",541921,"Photography Studios, Portrai",10,1.517156
+Meridian,"Professional, Scientific, and Technical Services",541940,Veterinary Services,71,1.1987634
+Meridian,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",533,.93029606
+Meridian,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,897,1.867403
+Meridian,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,39,2.1730065
+Meridian,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,270,1.4824032
+Meridian,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,113,1.0706947
+Meridian,Administrative and Support and Waste Management and Remediation Services,561740,Carpet and Upholstery Cleaning Services,19,3.0318694
+Meridian,Educational Services,611110,Elementary and Secondary Schools,361,1.9950876
+Meridian,Educational Services,611610,Fine Arts Schools,29,1.8283927
+Meridian,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),1077,2.4889245
+Meridian,Health Care and Social Assistance,621210,Offices of Dentists,211,1.2375251
+Meridian,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,26,2.2218115
+Meridian,Health Care and Social Assistance,621498,All Other Outpatient Care Centers,216,4.9027481
+Meridian,Health Care and Social Assistance,621610,Home Health Care Services,188,.78101182
+Meridian,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),901,3.1405776
+Meridian,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,129,1.6667643
+Meridian,Health Care and Social Assistance,624120,Services for the Elderly and Persons with Disabilities,77,.4754917
+Meridian,Health Care and Social Assistance,624410,Child Day Care Services,159,.97538781
+Meridian,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,30,.25280696
+Meridian,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,482,1.7398872
+Meridian,Accommodation and Food Services,722310,Food Service Contractors,303,5.0932531
+Meridian,Accommodation and Food Services,722511,Full-Service Restaurants,1408,1.4590544
+Meridian,Accommodation and Food Services,722513,Limited-Service Restaurants,1777,2.4256871
+Meridian,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,57,.47760227
+Meridian,Other Services,811111,General Automotive Repair,87,1.4404418
+Meridian,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",47,1.1868629
+Meridian,Other Services,811191,Automotive Oil Change and Lubrication Shops,27,3.4040868
+Meridian,Other Services,811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,58,1.6943476
+Meridian,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),46,1.9268147
+Meridian,Other Services,813110,Religious Organizations,879,2.7958305
+Oxford,Construction,236115,New Single-Family Housing Construction (except For-Sale Builders),30,2.7201555
+Oxford,Construction,236118,Residential Remodelers,4,.19620405
+Oxford,Construction,236220,Commercial and Institutional Building Construction,112,3.2727728
+Oxford,Construction,237310,"Highway, Street, and Bridge Construction",31,1.9886839
+Oxford,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",43,.69142967
+Oxford,Construction,238340,Tile and Terrazzo Contractors,1,.32577237
+Oxford,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,10,.55250579
+Oxford,Retail Trade,441110,New Car Dealers,140,1.8970596
+Oxford,Retail Trade,441120,Used Car Dealers,45,5.0110493
+Oxford,Retail Trade,441310,Automotive Parts and Accessories Stores,44,1.9617896
+Oxford,Retail Trade,441320,Tire Dealers,37,3.2706215
+Oxford,Retail Trade,442110,Furniture Stores,29,2.2046907
+Oxford,Retail Trade,444120,Paint and Wallpaper Stores,12,11.06733
+Oxford,Retail Trade,445310,"Beer, Wine, and Liquor Stores",52,5.1170754
+Oxford,Retail Trade,446110,Pharmacies and Drug Stores,133,2.8153753
+Oxford,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",15,1.668245
+Oxford,Retail Trade,447110,Gasoline Stations with Convenience Stores,176,3.824816
+Oxford,Retail Trade,448120,Women's Clothing Stores,91,3.6132913
+Oxford,Retail Trade,448140,Family Clothing Stores,127,2.5193939
+Oxford,Retail Trade,448190,Other Clothing Stores,29,3.8950531
+Oxford,Retail Trade,448210,Shoe Stores,48,3.0814631
+Oxford,Retail Trade,451110,Sporting Goods Stores,50,2.880517
+Oxford,Retail Trade,451211,Book Stores,87,24.75559
+Oxford,Retail Trade,452990,All Other General Merchandise Stores,61,2.7242486
+Oxford,Retail Trade,453110,Florists,34,9.2949696
+Oxford,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",31,2.9092588
+Oxford,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",42,1.4599473
+Oxford,Information,511110,Newspaper Publishers,34,4.1280718
+Oxford,Finance and Insurance,522110,Commercial Banking,214,2.3217969
+Oxford,Finance and Insurance,522292,Real Estate Credit,10,.65658987
+Oxford,Finance and Insurance,524210,Insurance Agencies and Brokerages,69,1.5239917
+Oxford,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,54,2.3965821
+Oxford,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,21,1.1286528
+Oxford,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,57,1.7812985
+Oxford,"Professional, Scientific, and Technical Services",541330,Engineering Services,68,1.002403
+Oxford,"Professional, Scientific, and Technical Services",541512,Computer Systems Design Services,23,.57648873
+Oxford,"Professional, Scientific, and Technical Services",541940,Veterinary Services,66,2.9790354
+Oxford,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,231,3.390558
+Oxford,Educational Services,611110,Elementary and Secondary Schools,49,.72394818
+Oxford,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),533,3.2929099
+Oxford,Health Care and Social Assistance,621210,Offices of Dentists,180,2.8222837
+Oxford,Health Care and Social Assistance,621320,Offices of Optometrists,25,3.2765076
+Oxford,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,34,7.7672887
+Oxford,Health Care and Social Assistance,621493,Freestanding Ambulatory Surgical and Emergency Centers,74,9.0702639
+Oxford,Health Care and Social Assistance,621511,Medical Laboratories,17,2.0642388
+Oxford,Health Care and Social Assistance,624410,Child Day Care Services,90,1.4759761
+Oxford,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,191,4.3028655
+Oxford,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,140,1.3510106
+Oxford,Accommodation and Food Services,721310,Rooming and Boarding Houses,82,140.62418
+Oxford,Accommodation and Food Services,722320,Caterers,14,1.4555253
+Oxford,Accommodation and Food Services,722410,Drinking Places (Alcoholic Beverages),108,4.2920127
+Oxford,Accommodation and Food Services,722511,Full-Service Restaurants,1121,3.1054966
+Oxford,Accommodation and Food Services,722513,Limited-Service Restaurants,1111,4.0543203
+Oxford,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,71,1.5904006
+Oxford,Other Services,811191,Automotive Oil Change and Lubrication Shops,17,5.7298388
+Oxford,Other Services,812112,Beauty Salons,78,2.544641
+Oxford,Other Services,812199,Other Personal Care Services,11,1.3887316
+Oxford,Other Services,812910,Pet Care (except Veterinary) Services,26,4.5985231
+Oxford,Other Services,813110,Religious Organizations,391,3.3247221
+Oxford,Other Services,813410,Civic and Social Organizations,42,2.764528
+Oxford,Other Services,813910,Business Associations,12,1.6726691
+Picayune,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",49,1.4072311
+Picayune,Construction,238910,Site Preparation Contractors,40,3.78422
+Picayune,Manufacturing,332710,Machine Shops,38,4.2557526
+Picayune,Retail Trade,441110,New Car Dealers,165,3.9932513
+Picayune,Retail Trade,441310,Automotive Parts and Accessories Stores,58,4.6186762
+Picayune,Retail Trade,443142,Electronics Stores,24,1.8646429
+Picayune,Retail Trade,444190,Other Building Material Dealers,61,6.2993374
+Picayune,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",55,15.574887
+Picayune,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,309,3.421494
+Picayune,Retail Trade,446110,Pharmacies and Drug Stores,153,5.7845006
+Picayune,Retail Trade,446191,Food (Health) Supplement Stores,19,15.404523
+Picayune,Retail Trade,447110,Gasoline Stations with Convenience Stores,168,6.5207405
+Picayune,Retail Trade,447190,Other Gasoline Stations,29,6.856895
+Picayune,Retail Trade,448140,Family Clothing Stores,41,1.4526666
+Picayune,Retail Trade,452990,All Other General Merchandise Stores,169,13.480108
+Picayune,Finance and Insurance,522110,Commercial Banking,165,3.1973059
+Picayune,Finance and Insurance,522291,Consumer Lending,39,21.519466
+Picayune,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,48,1.1159989
+Picayune,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,22,1.227932
+Picayune,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,9,1.139639
+Picayune,"Professional, Scientific, and Technical Services",541690,Other Scientific and Technical Consulting Services,3,.66763979
+Picayune,"Professional, Scientific, and Technical Services",541940,Veterinary Services,48,3.8695705
+Picayune,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,56,1.468037
+Picayune,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),138,1.5227251
+Picayune,Health Care and Social Assistance,621210,Offices of Dentists,67,1.8762589
+Picayune,Health Care and Social Assistance,621320,Offices of Optometrists,40,9.3631277
+Picayune,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",45,3.6593041
+Picayune,Health Care and Social Assistance,621610,Home Health Care Services,47,.93227494
+Picayune,Health Care and Social Assistance,623311,Continuing Care Retirement Communities,11,.72887737
+Picayune,Health Care and Social Assistance,624410,Child Day Care Services,132,3.8663445
+Picayune,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,56,.9651804
+Picayune,Accommodation and Food Services,722511,Full-Service Restaurants,395,1.9543949
+Picayune,Accommodation and Food Services,722513,Limited-Service Restaurants,690,4.4972067
+Picayune,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,18,.72012925
+Picayune,Other Services,811111,General Automotive Repair,33,2.6087761
+Picayune,Other Services,812112,Beauty Salons,21,1.2236043
+Picayune,Other Services,812210,Funeral Homes and Funeral Services,24,7.3041058
+Picayune,Other Services,813110,Religious Organizations,310,4.7079306
+Starkville,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,11,8.148654
+Starkville,Utilities,221310,Water Supply and Irrigation Systems,7,7.7278137
+Starkville,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",66,1.4309227
+Starkville,Construction,238320,Painting and Wall Covering Contractors,14,1.7196976
+Starkville,Retail Trade,441310,Automotive Parts and Accessories Stores,66,3.9676774
+Starkville,Retail Trade,441320,Tire Dealers,36,4.2906566
+Starkville,Retail Trade,444110,Home Centers,208,37.640003
+Starkville,Retail Trade,445310,"Beer, Wine, and Liquor Stores",31,4.1131339
+Starkville,Retail Trade,446110,Pharmacies and Drug Stores,81,2.3118644
+Starkville,Retail Trade,447110,Gasoline Stations with Convenience Stores,218,6.3877373
+Starkville,Retail Trade,448140,Family Clothing Stores,92,2.4607804
+Starkville,Retail Trade,451211,Book Stores,85,32.611115
+Starkville,Retail Trade,452990,All Other General Merchandise Stores,112,6.7441559
+Starkville,Retail Trade,454310,Fuel Dealers,23,8.4746866
+Starkville,Information,517110,Wired Telecommunications Carriers,58,1.70156
+Starkville,Finance and Insurance,522110,Commercial Banking,193,2.8233223
+Starkville,Finance and Insurance,522298,All Other Nondepository Credit Intermediation,27,9.8285999
+Starkville,Finance and Insurance,523120,Securities Brokerage,6,.58019984
+Starkville,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,67,4.0092769
+Starkville,Reale Estate and Rental and Leasing,531311,Residential Property Managers,22,1.0039201
+Starkville,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,45,.78983778
+Starkville,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,27,1.1376752
+Starkville,"Professional, Scientific, and Technical Services",541330,Engineering Services,73,1.4509385
+Starkville,"Professional, Scientific, and Technical Services",541511,Custom Computer Programming Services,12,.33088857
+Starkville,"Professional, Scientific, and Technical Services",541611,Administrative Management and General Management Consulting Services,9,.35808566
+Starkville,"Professional, Scientific, and Technical Services",541940,Veterinary Services,53,3.2255242
+Starkville,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,45,.89056247
+Starkville,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,77,2.6298275
+Starkville,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),213,1.7742913
+Starkville,Health Care and Social Assistance,621210,Offices of Dentists,70,1.4798541
+Starkville,Health Care and Social Assistance,621310,Offices of Chiropractors,14,2.1614652
+Starkville,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",44,2.7011056
+Starkville,Health Care and Social Assistance,624190,Other Individual and Family Services,36,1.9049516
+Starkville,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,21,.63787615
+Starkville,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,198,2.5762534
+Starkville,Accommodation and Food Services,721310,Rooming and Boarding Houses,61,141.04855
+Starkville,Accommodation and Food Services,722511,Full-Service Restaurants,1215,4.5383129
+Starkville,Accommodation and Food Services,722513,Limited-Service Restaurants,924,4.5464106
+Starkville,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,46,1.3893085
+Starkville,Other Services,811111,General Automotive Repair,36,2.1484649
+Starkville,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",21,1.9114869
+Starkville,Other Services,812199,Other Personal Care Services,27,4.5960217
+Starkville,Other Services,813110,Religious Organizations,315,3.6114516
+Starkville,Other Services,813410,Civic and Social Organizations,22,1.9524822
+Tupelo,Utilities,221310,Water Supply and Irrigation Systems,64,9.0259247
+Tupelo,Construction,236118,Residential Remodelers,46,.38864368
+Tupelo,Construction,236220,Commercial and Institutional Building Construction,171,.86067605
+Tupelo,Construction,237110,Water and Sewer Line and Related Structures Construction,54,1.0203294
+Tupelo,Construction,237310,"Highway, Street, and Bridge Construction",83,.91712379
+Tupelo,Construction,237990,Other Heavy and Civil Engineering Construction,12,.63087785
+Tupelo,Construction,238140,Masonry Contractors,6,.12775047
+Tupelo,Construction,238160,Roofing Contractors,68,1.1635448
+Tupelo,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,235,.78554004
+Tupelo,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",226,.62594157
+Tupelo,Construction,238290,Other Building Equipment Contractors,119,2.8362203
+Tupelo,Construction,238320,Painting and Wall Covering Contractors,47,.73752207
+Tupelo,Construction,238990,All Other Specialty Trade Contractors,60,.7150135
+Tupelo,Manufacturing,323111,Commercial Printing (except Screen and Books),97,.76139683
+Tupelo,Manufacturing,326150,Urethane and Other Foam Product (except Polystyrene) Manufacturing,913,148.59592
+Tupelo,Manufacturing,332710,Machine Shops,76,.82084733
+Tupelo,Manufacturing,333111,Farm Machinery and Equipment Manufacturing,60,10.357943
+Tupelo,Manufacturing,337110,Wood Kitchen Cabinet and Countertop Manufacturing,48,2.0052376
+Tupelo,Manufacturing,337121,Upholstered Household Furniture Manufacturing,8814,588.19629
+Tupelo,Manufacturing,337211,Wood Office Furniture Manufacturing,50,19.137161
+Tupelo,Manufacturing,337910,Mattress Manufacturing,129,27.463852
+Tupelo,Manufacturing,339116,Dental Laboratories,26,1.7348945
+Tupelo,Wholesale Trade,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,125,3.0401926
+Tupelo,Wholesale Trade,423210,Furniture Merchant Wholesalers,79,3.3319757
+Tupelo,Wholesale Trade,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",69,1.8437487
+Tupelo,Wholesale Trade,423510,Metal Service Centers and Other Metal Merchant Wholesalers,124,2.2265546
+Tupelo,Wholesale Trade,423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,73,2.5142407
+Tupelo,Wholesale Trade,423830,Industrial Machinery and Equipment Merchant Wholesalers,203,1.3419198
+Tupelo,Wholesale Trade,423840,Industrial Supplies Merchant Wholesalers,39,1.1477389
+Tupelo,Wholesale Trade,423850,Service Establishment Equipment and Supplies Merchant Wholesalers,100,6.4841728
+Tupelo,Wholesale Trade,424310,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",120,13.900788
+Tupelo,Wholesale Trade,424490,Other Grocery and Related Products Merchant Wholesalers,55,.53353971
+Tupelo,Wholesale Trade,424610,Plastics Materials and Basic Forms and Shapes Merchant Wholesalers,11,1.0356138
+Tupelo,Wholesale Trade,424930,"Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers",78,5.0628428
+Tupelo,Wholesale Trade,425120,Wholesale Trade Agents and Brokers,21,.19984896
+Tupelo,Retail Trade,441110,New Car Dealers,293,.68385863
+Tupelo,Retail Trade,441120,Used Car Dealers,128,2.4551153
+Tupelo,Retail Trade,441310,Automotive Parts and Accessories Stores,346,2.6571841
+Tupelo,Retail Trade,441320,Tire Dealers,106,1.6139134
+Tupelo,Retail Trade,442110,Furniture Stores,79,1.034481
+Tupelo,Retail Trade,442299,All Other Home Furnishings Stores,73,1.1096934
+Tupelo,Retail Trade,443141,Household Appliance Stores,28,1.3426743
+Tupelo,Retail Trade,443142,Electronics Stores,152,1.1388959
+Tupelo,Retail Trade,444190,Other Building Material Dealers,202,2.0117426
+Tupelo,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,710,.75817883
+Tupelo,Retail Trade,445310,"Beer, Wine, and Liquor Stores",67,1.1356357
+Tupelo,Retail Trade,446110,Pharmacies and Drug Stores,345,1.2579099
+Tupelo,Retail Trade,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",73,1.3984187
+Tupelo,Retail Trade,446130,Optical Goods Stores,37,1.7033898
+Tupelo,Retail Trade,446199,All Other Health and Personal Care Stores,47,2.0913863
+Tupelo,Retail Trade,447110,Gasoline Stations with Convenience Stores,516,1.931494
+Tupelo,Retail Trade,447190,Other Gasoline Stations,136,3.1011617
+Tupelo,Retail Trade,448120,Women's Clothing Stores,188,1.2857757
+Tupelo,Retail Trade,448130,Children's and Infants' Clothing Stores,43,1.2479185
+Tupelo,Retail Trade,448140,Family Clothing Stores,390,1.3326089
+Tupelo,Retail Trade,448150,Clothing Accessories Stores,57,2.6345019
+Tupelo,Retail Trade,448210,Shoe Stores,147,1.6254697
+Tupelo,Retail Trade,448310,Jewelry Stores,50,1.0101742
+Tupelo,Retail Trade,451110,Sporting Goods Stores,117,1.1609997
+Tupelo,Retail Trade,451120,"Hobby, Toy, and Game Stores",106,2.108634
+Tupelo,Retail Trade,451130,"Sewing, Needlework, and Piece Goods Stores",39,3.2266722
+Tupelo,Retail Trade,453110,Florists,48,2.2602479
+Tupelo,Retail Trade,453210,Office Supplies and Stationery Stores,33,1.4452912
+Tupelo,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",50,.80823278
+Tupelo,Retail Trade,453310,Used Merchandise Stores,170,2.2923987
+Tupelo,Retail Trade,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),38,1.3252962
+Tupelo,Retail Trade,454310,Fuel Dealers,71,3.3420064
+Tupelo,Retail Trade,454390,Other Direct Selling Establishments,33,.91280735
+Tupelo,Transportation and Warehousing,484110,"General Freight Trucking, Local",73,1.0810417
+Tupelo,Transportation and Warehousing,484121,"General Freight Trucking, Long-Distance, Truckload",514,3.077491
+Tupelo,Transportation and Warehousing,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",387,3.8541803
+Tupelo,Transportation and Warehousing,484220,"Specialized Freight (except Used Goods) Trucking, Local",116,1.674583
+Tupelo,Transportation and Warehousing,488510,Freight Transportation Arrangement,103,1.1283613
+Tupelo,Transportation and Warehousing,492110,Couriers and Express Delivery Services,180,1.1856515
+Tupelo,Transportation and Warehousing,493110,General Warehousing and Storage,808,3.9668808
+Tupelo,Information,517110,Wired Telecommunications Carriers,161,.60339022
+Tupelo,Finance and Insurance,522110,Commercial Banking,1453,2.7153254
+Tupelo,Finance and Insurance,522291,Consumer Lending,104,5.5342178
+Tupelo,Finance and Insurance,522292,Real Estate Credit,52,.58808935
+Tupelo,Finance and Insurance,522390,Other Activities Related to Credit Intermediation,221,8.6077871
+Tupelo,Finance and Insurance,524113,Direct Life Insurance Carriers,111,1.095541
+Tupelo,Finance and Insurance,524210,Insurance Agencies and Brokerages,224,.85217214
+Tupelo,Reale Estate and Rental and Leasing,531110,Lessors of Residential Buildings and Dwellings,90,.68799752
+Tupelo,Reale Estate and Rental and Leasing,531120,Lessors of Nonresidential Buildings (excpet Miniwarehouses),53,.81134665
+Tupelo,Reale Estate and Rental and Leasing,531130,Lessors of Miniwarehouses and Self-Storage Units,8,.62310529
+Tupelo,Reale Estate and Rental and Leasing,531210,Offices of Real Estate Agents and Brokers,43,.39806619
+Tupelo,Reale Estate and Rental and Leasing,531320,Offices of Real Estate Appraisers,15,1.5438106
+Tupelo,Reale Estate and Rental and Leasing,532120,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",74,4.9417205
+Tupelo,Reale Estate and Rental and Leasing,532210,Consumer Electronics and Appliances Rental,71,35.330086
+Tupelo,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,305,.68387753
+Tupelo,"Professional, Scientific, and Technical Services",541213,Tax Preparation Services,87,1.4112847
+Tupelo,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,70,.85482824
+Tupelo,"Professional, Scientific, and Technical Services",541330,Engineering Services,154,.39102089
+Tupelo,"Professional, Scientific, and Technical Services",541940,Veterinary Services,133,1.0340205
+Tupelo,Management of Companies and Enterprises,551114,"Corporate, Subsidiary, and Regional Managing Offices",758,.60920799
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561110,Office Administrative Services,6,.036008924
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,3997,3.8316178
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561440,Collection Agencies,173,4.1511779
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561710,Exterminating and Pest Control Services,51,1.3084857
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561720,Janitorial Services,216,.54608309
+Tupelo,Administrative and Support and Waste Management and Remediation Services,561730,Landscaping Services,172,.75044364
+Tupelo,Educational Services,611610,Fine Arts Schools,23,.66773134
+Tupelo,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),1412,1.5025644
+Tupelo,Health Care and Social Assistance,621210,Offices of Dentists,341,.92093366
+Tupelo,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,84,3.3053358
+Tupelo,Health Care and Social Assistance,621511,Medical Laboratories,4,.08365979
+Tupelo,Health Care and Social Assistance,621512,Diagnostic Imaging Centers,27,.93389499
+Tupelo,Health Care and Social Assistance,621610,Home Health Care Services,277,.52988541
+Tupelo,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),1172,1.8811125
+Tupelo,Health Care and Social Assistance,623312,Assisted Living Facilities for the Elderly,255,1.5171449
+Tupelo,Health Care and Social Assistance,623990,Other Residential Care Facilities,79,2.013674
+Tupelo,Health Care and Social Assistance,624190,Other Individual and Family Services,86,.58134371
+Tupelo,Health Care and Social Assistance,624410,Child Day Care Services,467,1.3191662
+Tupelo,"Arts, Entertainment, and Recreation",712110,Museums,26,.76882195
+Tupelo,"Arts, Entertainment, and Recreation",713910,Golf Courses and Country Clubs,103,.89652997
+Tupelo,"Arts, Entertainment, and Recreation",713940,Fitness and Recreational Sports Centers,64,.24834199
+Tupelo,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,453,.75296479
+Tupelo,Accommodation and Food Services,722410,Drinking Places (Alcoholic Beverages),5,.034225754
+Tupelo,Accommodation and Food Services,722511,Full-Service Restaurants,2153,1.0273426
+Tupelo,Accommodation and Food Services,722513,Limited-Service Restaurants,2117,1.3306708
+Tupelo,Accommodation and Food Services,722514,"Cafeterias, Grill Buffets, and Buffets",101,2.4067712
+Tupelo,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,120,.46299383
+Tupelo,Other Services,811111,General Automotive Repair,224,1.7077602
+Tupelo,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",39,.45349211
+Tupelo,Other Services,811192,Car Washes,16,.26963884
+Tupelo,Other Services,812112,Beauty Salons,108,.6068781
+Tupelo,Other Services,812199,Other Personal Care Services,17,.36967522
+Tupelo,Other Services,812210,Funeral Homes and Funeral Services,65,1.9077663
+Tupelo,Other Services,812320,Drycleaning and Laundry Services (except Coin-Operated),84,1.620182
+Tupelo,Other Services,813110,Religious Organizations,950,1.3913871
+Tupelo,Other Services,813410,Civic and Social Organizations,29,.32878765
+Tupelo,Other Services,813910,Business Associations,25,.60022569
+Tupelo,Other Services,813930,Labor Unions and Similar Labor Organizations,23,.39768198
+Vicksburg,"Agriculture, Forestry, Fishing and Hunting",113310,Logging,36,12.995507
+Vicksburg,Utilities,221310,Water Supply and Irrigation Systems,32,17.214966
+Vicksburg,Construction,236118,Residential Remodelers,16,.51565379
+Vicksburg,Construction,238210,Electrical Contractors and Other Wiring Installation Contractors,26,.33152649
+Vicksburg,Construction,238220,"Plumbing, Heating, and Air-Conditioning Contractors",52,.54938036
+Vicksburg,Construction,238910,Site Preparation Contractors,125,4.3503766
+Vicksburg,Manufacturing,332710,Machine Shops,24,.98879093
+Vicksburg,Retail Trade,441110,New Car Dealers,175,1.5580493
+Vicksburg,Retail Trade,441310,Automotive Parts and Accessories Stores,66,1.9334543
+Vicksburg,Retail Trade,441320,Tire Dealers,41,2.3812373
+Vicksburg,Retail Trade,442299,All Other Home Furnishings Stores,15,.86979288
+Vicksburg,Retail Trade,444190,Other Building Material Dealers,42,1.595566
+Vicksburg,Retail Trade,444220,"Nursery, Garden Center, and Farm Supply Stores",37,3.8544674
+Vicksburg,Retail Trade,445110,Supermarkets and Other Grocery (except Convenience) Stores,355,1.4460593
+Vicksburg,Retail Trade,446110,Pharmacies and Drug Stores,134,1.8637159
+Vicksburg,Retail Trade,447110,Gasoline Stations with Convenience Stores,257,3.669621
+Vicksburg,Retail Trade,448120,Women's Clothing Stores,65,1.695763
+Vicksburg,Retail Trade,448130,Children's and Infants' Clothing Stores,28,3.099704
+Vicksburg,Retail Trade,448140,Family Clothing Stores,64,.8341853
+Vicksburg,Retail Trade,448210,Shoe Stores,71,2.9947758
+Vicksburg,Retail Trade,452990,All Other General Merchandise Stores,151,4.4308195
+Vicksburg,Retail Trade,453220,"Gift, Novelty, and Souvenir Stores",19,1.1715599
+Vicksburg,Retail Trade,453991,Tobacco Stores,14,4.4689116
+Vicksburg,Transportation and Warehousing,483211,Inland Water Freight Transportation,537,629.12769
+Vicksburg,Information,511210,Software Publishers,4,.092048049
+Vicksburg,Finance and Insurance,524210,Insurance Agencies and Brokerages,80,1.1609505
+Vicksburg,"Professional, Scientific, and Technical Services",541110,Offices of Lawyers,63,.53884453
+Vicksburg,"Professional, Scientific, and Technical Services",541211,Offices of Certified Public Accountants,46,.94451731
+Vicksburg,"Professional, Scientific, and Technical Services",541219,Other Accounting Services,35,1.6303967
+Vicksburg,"Professional, Scientific, and Technical Services",541330,Engineering Services,10,.096855372
+Vicksburg,"Professional, Scientific, and Technical Services",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)",118,2.3628418
+Vicksburg,Administrative and Support and Waste Management and Remediation Services,561320,Temporary Help Services,234,.85567397
+Vicksburg,Administrative and Support and Waste Management and Remediation Services,561612,Security Guards and Patrol Services,62,.86810529
+Vicksburg,Educational Services,611110,Elementary and Secondary Schools,1747,16.958778
+Vicksburg,Health Care and Social Assistance,621111,Offices of Physicians (except Mental Health Specialists),310,1.258359
+Vicksburg,Health Care and Social Assistance,621210,Offices of Dentists,98,1.0095887
+Vicksburg,Health Care and Social Assistance,621320,Offices of Optometrists,22,1.8944541
+Vicksburg,Health Care and Social Assistance,621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",34,1.017104
+Vicksburg,Health Care and Social Assistance,621399,Offices of All Other Miscellaneous Health Practitioners,6,.90060014
+Vicksburg,Health Care and Social Assistance,621610,Home Health Care Services,312,2.2766759
+Vicksburg,Health Care and Social Assistance,623110,Nursing Care Facilities (Skilled Nursing Facilities),413,2.5286088
+Vicksburg,Health Care and Social Assistance,624190,Other Individual and Family Services,62,1.5987136
+Vicksburg,Health Care and Social Assistance,624410,Child Day Care Services,121,1.3038043
+Vicksburg,Accommodation and Food Services,721110,Hotels (except Casino Hotels) and Motels,426,2.7010369
+Vicksburg,Accommodation and Food Services,721120,Casino Hotels,1817,57.459141
+Vicksburg,Accommodation and Food Services,721191,Bed-and-Breakfast Inns,37,40.684517
+Vicksburg,Accommodation and Food Services,722511,Full-Service Restaurants,574,1.0447866
+Vicksburg,Accommodation and Food Services,722513,Limited-Service Restaurants,868,2.0812006
+Vicksburg,Accommodation and Food Services,722515,Snack and Nonalcoholic Beverage Bars,43,.63285887
+Vicksburg,Other Services,811111,General Automotive Repair,50,1.4540968
+Vicksburg,Other Services,811121,"Automotive Body, Paint, and Interior Repair and Maintenance",44,1.9516513
+Vicksburg,Other Services,812112,Beauty Salons,2,.04286987
+Vicksburg,Other Services,813110,Religious Organizations,296,1.6537144

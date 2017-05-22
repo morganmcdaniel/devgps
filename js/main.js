@@ -4,13 +4,15 @@ var scatter,
     bar,
     network,
     recommended,
+    choroLegend,
     masterMap,
     masterTree,
     selectVar = "ra",
     msTreeEmp,
     msTreeRa,
     msTree,
-    selectData;
+    selectData,
+    masterBar;
 
 loadData();
 
@@ -27,7 +29,8 @@ function loadData() {
         .defer(d3.csv, "data/Tupelo_Tree.csv")
         .defer(d3.json, "data/MS_Tree_Emp.json")
         .defer(d3.json, "data/MS_Tree_RA.json")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR) {
+        .defer(d3.csv, "data/MS_Tree.csv")
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR, msTreeBar) {
 
             if (error) throw error;
 
@@ -64,7 +67,8 @@ function loadData() {
             tree = new Tree("tree", tupelo);
             network = new Network("network");
             recommended = new Recommended("recommended");
-            masterTree = new MasterTree("masterTree", msTreeRa)
+            masterTree = new MasterTree("masterTree", msTreeRa);
+            masterBar = new MasterBar("masterBar", msTreeBar);
         });
 }
 
