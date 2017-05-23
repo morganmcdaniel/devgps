@@ -12,7 +12,9 @@ var scatter,
     msTreeRa,
     msTree,
     selectData,
-    masterBar;
+    masterBar,
+    barKey,
+    barLevel;
 
 loadData();
 
@@ -199,6 +201,10 @@ function changeTreeData() {
 
     console.log(selectData);
 
+    barKey = "Mississippi";
+    barLevel = "top";
+
+    masterBar.wrangleData();
     masterTree = new MasterTree("masterTree", selectData);
 }
 
@@ -212,4 +218,9 @@ function toSectionFour() {
 
 function toSectionFive() {
     console.log("click!")
+}
+
+function passToBar(barKey, barLevel) {
+    console.log(barKey + " " + barLevel);
+    masterBar.passedIn(barKey, barLevel);
 }

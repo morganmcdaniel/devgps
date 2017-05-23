@@ -19,8 +19,6 @@ MasterBar = function(_parentElement, _data) {
 MasterBar.prototype.initVis = function() {
     var vis = this;
 
-    console.log(vis.data);
-
     vis.margin = {top: 50, right: 20, bottom: 40, left: 60};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
@@ -37,51 +35,84 @@ MasterBar.prototype.initVis = function() {
         .range([0, vis.width - 400])
     ;
 
-    var barKey = "Mississippi";
-    var barLevel = "top";
+    vis.y = d3.scale.ordinal()
+        .rangeRoundBands([vis.height, 0], .2)
+    ;
 
-    // pass in the level we're on
-    // pass in the selected value
-    vis.wrangleData(barKey, barLevel);
+    barKey = "Mississippi";
+    barLevel = "top";
+
+    vis.title = vis.svg.append("text")
+        .text("Top Industries")
+        .attr("x", 0)
+        .attr("y", 0)
+        .style("font-weight","bold");
+
+    vis.wrangleData();
 };
 
-MasterBar.prototype.wrangleData = function(barKey, barLevel) {
+MasterBar.prototype.passedIn = function(a,b) {
     var vis = this;
 
+    barKey = a;
+    barLevel = b;
+    console.log("bar level = " + barLevel + ", bar key = " + barKey);
+    vis.wrangleData();
+};
+
+MasterBar.prototype.wrangleData = function() {
+    var vis = this;
+
+    console.log("bar level = " + barLevel + ", bar key = " + barKey);
     // Filter by parent value
 
-    console.log(vis.data);
+    if (barLevel == "top") {
+        vis.inter = d3.nest()
+            .key(function(d) {return d.category })
+            .rollup(function(v) {return d3.sum(v, function(d) { return d[selectVar];})})
+            .entries(vis.data);
+    }
+    else if (barLevel == "middle") {
+        vis.filtered = vis.data.filter(function(d) {
+            return (d.market == [barKey]);
+        });
+        vis.inter = d3.nest()
+            .key(function(d) {return d.category })
+            .rollup(function(v) {return d3.sum(v, function(d) { return d[selectVar];})})
+            .entries(vis.filtered);
+        vis.barKeyMiddle = barKey
+    }
+    else if (barLevel == "bottom") {
+        vis.filtered = vis.data.filter(function(d) {
+            return (d.category == [barKey] && d.market == vis.barKeyMiddle);
+        });
+        vis.inter = vis.filtered.map(function(d,i) {
+            return {
+                key: d.description,
+                values: d[selectVar]
+            };
+        });
+    }
 
-    vis.filtered = vis.data.filter(function(d) {
-        if (barLevel == "top") {
-            return d;
-        }
-        else if (barLevel == "middle") {
-            return (d.market == d[barKey]);
-        }
-        else if (barlevel == "bottom") {
-            return (d.category == d[barKey]);
-        }
-    });
+    console.log(vis.inter);
 
-    vis.filtered.forEach(function(d) {
-        d.emp = +d.emp;
-        d.ra = +d.ra;
-    });
-    console.log(barKey + " " + barLevel);
-    console.log(vis.filtered);
+    // vis.filtered.forEach(function(d) {
+    //     d.emp = +d.emp;
+    //     d.ra = +d.ra;
+    // });
 
     //Sort by selectVar
-    vis.filtered.sort(function(a,b) {
-        return b[selectVar] - a[selectVar];
+    vis.inter.sort(function(a,b) {
+        return b.values - a.values;
     });
+    console.log(vis.inter);
 
     // Shorten
-    vis.dataShort = [];
-
-    for (i = 0; i < 15; i++) {
-        vis.dataShort[i] = vis.filtered[i];
-    }
+    //vis.dataShort = [];
+    //
+    // for (i = 0; i < 15; i++) {
+    //     vis.dataShort[i] = vis.inter[i];
+    // }
 
     vis.updateBar();
 };
@@ -89,35 +120,79 @@ MasterBar.prototype.wrangleData = function(barKey, barLevel) {
 MasterBar.prototype.updateBar = function() {
     var vis = this;
 
-    vis.x.domain([0, d3.max(vis.data, function(d) {return d.ra;  })]);
+    vis.barHeight = 27;
 
-    vis.barChart = vis.svg.selectAll('g.bar')
-        .data(vis.dataShort)
-        .enter().append('g')
-        .attr('class', 'bar')
-        .attr("transform", function(d, i) { return "translate(0," + (15 + (i * 25)) + ")"; });
+    vis.x.domain([0, d3.max(vis.inter, function(d) {return d.values;  })]);
 
-    vis.label = vis.svg.append("text")
-        .text("Top 15 Industries")
-        .attr("x", 0)
-        .attr("y", 0)
-        .style("font-weight","bold");
+    // vis.groups = vis.svg.selectAll(".group")
+    //     .data(vis.dataShort);
+    //
+    // vis.groups
+    //     .enter()
+    //     .append("g")
+    //     .attr("class", "group");
 
-    vis.barChart.append("rect")
-        .attr("x", 410)
-        .attr("width", function(d) { return vis.x(d.ra) ;})
-        .attr("height", 20)
+    vis.bars = vis.svg.selectAll(".rect")
+        .data(vis.inter);
+
+    vis.bars
+        .enter()
+        .append("rect")
+        .attr("class", "rect");
+
+    vis.bars
+        .transition()
+        .duration(300)
+        .attr("x", 415)
+        .attr("y", function(d, index) {
+            return (index * vis.barHeight);
+        })
+        .attr("height", vis.barHeight - 3)
+        .attr("width", function(d) { return vis.x(d.values); })
         .style("fill", "#D3D3D3");
 
-    vis.barChart.append("text")
-        .attr("dy", "0.8em")
+    vis.bars.exit().remove();
+
+    // y-axis labels
+    vis.labels = vis.svg.selectAll(".text")
+        .data(vis.inter);
+
+    vis.labels
+        .enter()
+        .append("text")
+        .attr("class", "text");
+
+    vis.labels
+        .transition()
+        .duration(300)
         .attr("x", 400)
-        .text(function(d) { return d.description })
-        .style("text-anchor","end");
+        .attr("y", function (d, index) {
+            return (index * vis.barHeight + (vis.barHeight + 3) / 2);
+        })
+        .style("text-anchor", "end")
+        .text(function (d) {
+            return d.key;
+        });
 
-    vis.barChart.append("text")
-        .attr("dy", "0.8em")
+    vis.labels.exit().remove();
+
+    vis.numbers = vis.svg.selectAll(".number")
+        .data(vis.inter);
+
+    vis.numbers
+        .enter()
+        .append("text")
+        .attr("class", "number");
+
+    vis.numbers
+        .transition()
+        .duration(300)
         .attr("x", 415)
-        .text(function(d) { return Math.round(d.ra)});
+        .attr("y", function (d, index) {
+            return (index * vis.barHeight + (vis.barHeight + 3) / 2);
+        })
+        //.style("text-anchor", "end")
+        .text(function(d) { return Math.round(d.values)});
 
+    vis.numbers.exit().remove();
 };

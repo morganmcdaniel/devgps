@@ -249,7 +249,7 @@ MasterTree = function(_parentElement, _data) {
                     barLevel = "bottom";
                 }
 
-                masterBar.wrangleData(barKey, barLevel);
+                passToBar(barKey, barLevel);
             }
 
             return g;
