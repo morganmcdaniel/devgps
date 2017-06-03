@@ -49,15 +49,12 @@ MasterBar.prototype.passedIn = function(a,b) {
 
     barKey = a;
     barLevel = b;
-    console.log("bar level = " + barLevel + ", bar key = " + barKey);
     vis.wrangleData();
 };
 
 MasterBar.prototype.wrangleData = function() {
     var vis = this;
 
-    console.log(barData);
-    console.log("bar level = " + barLevel + ", bar key = " + barKey);
     // Filter by parent value
 
     if (barLevel == "top") {
@@ -88,18 +85,10 @@ MasterBar.prototype.wrangleData = function() {
         });
     }
 
-    console.log(vis.inter);
-
-    // vis.filtered.forEach(function(d) {
-    //     d.emp = +d.emp;
-    //     d.ra = +d.ra;
-    // });
-
     //Sort by selectVar
     vis.inter.sort(function(a,b) {
         return b.values - a.values;
     });
-    console.log(vis.inter);
 
     // Shorten
     //vis.dataShort = [];

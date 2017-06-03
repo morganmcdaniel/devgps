@@ -187,7 +187,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
 }
 
-// update visualization to select filter for node coloring
+// update visualization to select filter
 function dataManipulation() {
     var x = $('input[name="options"]:checked', '#type').val();
 

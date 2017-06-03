@@ -90,20 +90,17 @@ nav a {
     padding-right:30px;
 }
 
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
  .select path {
      fill: gray;
      stroke: #D3D3D3;
  }
 
- .states {
-     cursor: pointer;
- }
-
- .states.active {
-     fill: orange;
- }
-
-.states path {
+.statesFill path {
     fill: #d3d3d3;
     stroke: #424242;
 }
