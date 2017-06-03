@@ -7,7 +7,6 @@
 MasterBar = function(_parentElement, _data) {
 
     this.parentElement = _parentElement;
-    this.data = _data;
 
     this.initVis();
 };
@@ -42,12 +41,6 @@ MasterBar.prototype.initVis = function() {
     barKey = "Mississippi";
     barLevel = "top";
 
-    vis.title = vis.svg.append("text")
-        .text("Top Industries")
-        .attr("x", 0)
-        .attr("y", 0)
-        .style("font-weight","bold");
-
     vis.wrangleData();
 };
 
@@ -63,6 +56,7 @@ MasterBar.prototype.passedIn = function(a,b) {
 MasterBar.prototype.wrangleData = function() {
     var vis = this;
 
+    console.log(barData);
     console.log("bar level = " + barLevel + ", bar key = " + barKey);
     // Filter by parent value
 
@@ -70,10 +64,10 @@ MasterBar.prototype.wrangleData = function() {
         vis.inter = d3.nest()
             .key(function(d) {return d.category })
             .rollup(function(v) {return d3.sum(v, function(d) { return d[selectVar];})})
-            .entries(vis.data);
+            .entries(barData);
     }
     else if (barLevel == "middle") {
-        vis.filtered = vis.data.filter(function(d) {
+        vis.filtered = barData.filter(function(d) {
             return (d.market == [barKey]);
         });
         vis.inter = d3.nest()
@@ -83,7 +77,7 @@ MasterBar.prototype.wrangleData = function() {
         vis.barKeyMiddle = barKey
     }
     else if (barLevel == "bottom") {
-        vis.filtered = vis.data.filter(function(d) {
+        vis.filtered = barData.filter(function(d) {
             return (d.category == [barKey] && d.market == vis.barKeyMiddle);
         });
         vis.inter = vis.filtered.map(function(d,i) {
@@ -124,13 +118,27 @@ MasterBar.prototype.updateBar = function() {
 
     vis.x.domain([0, d3.max(vis.inter, function(d) {return d.values;  })]);
 
-    // vis.groups = vis.svg.selectAll(".group")
-    //     .data(vis.dataShort);
+    // vis.title = vis.svg.selectAll(".title")
+    //     .append("text")
+    //     .attr("class", "title")
+    //     .text(function() {
+    //         if (barLevel == "top" && selectLevel == "msa") {
+    //             return "Top Industries in Large Mississippi Cities";
+    //         }
+    //         else if (barLevel == "top" && selectLevel == "county") {
+    //             return "Top Industries in Mississippi Counties";
+    //         }
+    //         else if (barLevel == "middle") {
+    //             return "Top Industries in " + barKey;
+    //         }
+    //         else if (barLevel == "bottom") {
+    //             return "Top Industries in " + barKey;
+    //         }
+    //     })
+    //     .attr("x", 0)
+    //     .attr("y", 0);
     //
-    // vis.groups
-    //     .enter()
-    //     .append("g")
-    //     .attr("class", "group");
+    // vis.title.remove();
 
     vis.bars = vis.svg.selectAll(".rect")
         .data(vis.inter);

@@ -8,13 +8,19 @@ var scatter,
     masterMap,
     masterTree,
     selectVar = "ra",
+    selectLevel = "msa",
     msTreeEmp,
     msTreeRa,
     msTree,
     selectData,
     masterBar,
     barKey,
-    barLevel;
+    barLevel,
+    msCountyTreeEmp,
+    msCountyTreeRa,
+    msTreeBar,
+    msCountyTreeBar,
+    barData;
 
 loadData();
 
@@ -32,13 +38,22 @@ function loadData() {
         .defer(d3.json, "data/MS_Tree_Emp.json")
         .defer(d3.json, "data/MS_Tree_RA.json")
         .defer(d3.csv, "data/MS_Tree.csv")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR, msTreeBar) {
+        .defer(d3.json, "data/MS_County_Tree_Emp.json")
+        .defer(d3.json, "data/MS_County_Tree_RA.json")
+        .defer(d3.csv, "data/MS_County_Tree.csv")
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR, msBar, msCountyTreeE, msCountyTreeR, msCountyBar) {
 
             if (error) throw error;
 
             var treeData = tupelo;
             msTreeEmp = msTreeE;
             msTreeRa = msTreeR;
+            msCountyTreeEmp = msCountyTreeE;
+            msCountyTreeRa = msCountyTreeR;
+            msTreeBar = msBar;
+            msCountyTreeBar = msCountyBar;
+            barData = msTreeBar;
+
 
         // DATA WRANGLING
 
@@ -54,11 +69,6 @@ function loadData() {
 
             wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes);
 
-            // MASTER TREE
-
-            // var nest = d3.nest().key(function(d) { return "Mississippi Industries"; }).key(function(d) { return d.market; }).key(function(d) { return d.category; }).entries(msTree);
-            // console.log(nest);
-
             // INSTANTIATE VISUALIZATIONS
 
             scatter = new Scatter("scatter", enrGdp);
@@ -70,7 +80,7 @@ function loadData() {
             network = new Network("network");
             recommended = new Recommended("recommended");
             masterTree = new MasterTree("masterTree", msTreeRa);
-            masterBar = new MasterBar("masterBar", msTreeBar);
+            masterBar = new MasterBar("masterBar");
         });
 }
 
@@ -186,20 +196,30 @@ function dataManipulation() {
 }
 
 function changeTreeData() {
-    selectVar = $('input[name="options"]:checked', '#treeDisplay').val();
+    selectVar = $('input[name="var"]:checked', '#treeDisplay').val();
+    selectLevel = $('input[name="level"]:checked', '#treeDisplay').val();
 
     d3.select("svg").remove();
 
     console.log(selectVar);
+    console.log(selectLevel);
 
-    if (selectVar == "emp") {
+    if (selectVar == "emp" && selectLevel == "msa") {
         selectData = msTreeEmp;
+        barData = msTreeBar;
     }
-    else if (selectVar == "ra") {
+    else if (selectVar == "ra" && selectLevel == "msa") {
         selectData = msTreeRa;
+        barData = msTreeBar;
     }
-
-    console.log(selectData);
+    else if (selectVar == "emp" && selectLevel == "county") {
+        selectData = msCountyTreeEmp;
+        barData = msCountyTreeBar;
+    }
+    else if (selectVar == "ra" && selectLevel == "county") {
+        selectData = msCountyTreeRa;
+        barData = msCountyTreeBar;
+    }
 
     barKey = "Mississippi";
     barLevel = "top";

@@ -41,18 +41,22 @@
         </ul>
     </nav>
 
-    <div class="banner">
-        <p>Create new jobs and economic growth in your community</p>
-    </div>
-
     <form id="treeDisplay" onchange="changeTreeData()">
         <label>Display: </label>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
-                <input type="radio" name="options" value="ra" autocomplete="off" checked>RA
+                <input type="radio" name="level" value="msa" autocomplete="off" checked>Large Cities
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" value="emp" autocomplete="off">Employees
+                <input type="radio" name="level" value="county" autocomplete="off">Counties
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="var" value="ra" autocomplete="off" checked>RA
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="var" value="emp" autocomplete="off">Employees
             </label>
         </div>
     </form>
@@ -61,7 +65,7 @@
 
     <div id="masterBar" class="svg-container"></div>
 
-    </div>
+</div>
 
 
 <div class="footer">
