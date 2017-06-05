@@ -40,20 +40,36 @@ Scatter.prototype.initVis = function() {
         .domain(["Northeast","Midwest","South","West"])
         .range(['#66c2a5','#fc8d62','#8da0cb','#e78ac3']);
 
-    vis.xAxis = d3.svg.axis()
-        .scale(vis.x)
-        .orient("bottom");
-
-    vis.yAxis = d3.svg.axis()
-        .scale(vis.y)
-        .orient("left");
-
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
         .attr("width", vis.width + vis.margin.left + vis.margin.right)
         .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")")
     ;
+
+    // draw legend
+    vis.legend = vis.svg.selectAll(".legend")
+        .data(vis.color.range())
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    // draw legend colored rectangles
+    vis.legend.append("rect")
+        .attr("x", vis.width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", function(d) {return d;});
+
+    vis.legend.append("text")
+        .attr("dy", ".35em");
+
+    vis.legend.select("text")
+        .data(vis.color.domain())
+        .attr("x", vis.width - 24)
+        .attr("y", 9)
+        .style("text-anchor", "end")
+        .text(function(d) { return d });
 
     vis.wrangleData();
 };
@@ -137,21 +153,18 @@ Scatter.prototype.wrangleData = function() {
 
     });
 
-    vis.updateScatter();
-};
-
-
-function region(d) {
-
-}
-
-Scatter.prototype.updateScatter = function() {
-    var vis = this;
-
     vis.x.domain(d3.extent(vis.wrangleEnr, function(d) { return d.ENI; })).nice();
     vis.y.domain(d3.extent(vis.wrangleEnr, function(d) { return d.Log_PerCapita; })).nice();
 
-    vis.svg.append("g")
+    vis.xAxis = d3.svg.axis()
+        .scale(vis.x)
+        .orient("bottom");
+
+    vis.yAxis = d3.svg.axis()
+        .scale(vis.y)
+        .orient("left");
+
+    vis.xA = vis.svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + vis.height + ")")
         .call(vis.xAxis)
@@ -162,7 +175,7 @@ Scatter.prototype.updateScatter = function() {
         .style("text-anchor", "end")
         .text("ENI");
 
-    vis.svg.append("g")
+    vis.yA = vis.svg.append("g")
         .attr("class", "y axis")
         .call(vis.yAxis)
         .append("text")
@@ -173,17 +186,55 @@ Scatter.prototype.updateScatter = function() {
         .style("text-anchor", "end")
         .text("Log GDP Per Capita");
 
-    vis.svg.selectAll(".dot")
-        .data(vis.wrangleEnr)
+    var x = ["Northeast","Midwest","South","West"];
+
+    vis.filter(x);
+};
+
+Scatter.prototype.filter = function(x) {
+    var vis = this;
+
+    vis.filtered = [];
+    var k = 0;
+    // cycle through data
+    for (i = 0; i < vis.wrangleEnr.length; i++) {
+
+        // cycle through selected regions
+        for (j = 0; j < x.length; j++) {
+            if (vis.wrangleEnr[i].region == x[j]) {
+                vis.filtered[k] = vis.wrangleEnr[i];
+                k++;
+            }
+        }
+
+    }
+
+    console.log(vis.filtered);
+
+    vis.displayData = vis.filtered.sort(function(a,b) {
+        return a.ENI - b.ENI;
+    });
+
+    vis.updateScatter();
+};
+
+Scatter.prototype.updateScatter = function() {
+    var vis = this;
+
+    vis.dot = vis.svg.selectAll(".dot")
+        .data(vis.displayData);
+
+    vis.dot
         .enter().append("circle")
         .attr("class", "dot")
-        .attr("id", function(d) { return "dot" + d.Market; })
+        .attr("id", function(d) { return "dot" + d.Market; });
+
+    vis.dot
         .attr("r", 3.5)
         .attr("cx", function(d) {  return vis.x(d.ENI); })
         .attr("cy", function(d) { return vis.y(d.Log_PerCapita); })
         .style("fill", function(d) { return vis.color(d.region); })
         .style("opacity", 0.8)
-
         .on("mouseover", function(d) {
             d3.select(this)
                 .attr("r", 5)
@@ -205,7 +256,6 @@ Scatter.prototype.updateScatter = function() {
             d3.select("#msa" + vis.s).style('fill', "#ff0000");
 
         })
-
         .on("mouseout", function() {
             d3.select(this)
                 .style("opacity", 0.8)
@@ -225,73 +275,68 @@ Scatter.prototype.updateScatter = function() {
             });
         });
 
-    // $('.dot').bind('mouseover', function(d) {
-    //     d3.select(this)
-    //         .moveToFront()
-    //         .attr("r", 5)
-    //         .attr("opacity", 1)
-    //         .style('fill', "#ff0000")
-    //         .style("stroke", "black");
-    //
-    //     var s = d.Market;
-    //     d3.select("#msa" + s).style('fill', "#ff0000");
-    //
-    //     d3.select(this).transition().duration(300).style("opacity", 1);
-    //     vis.div.transition().duration(300)
-    //         .style("opacity", 1);
-    //     vis.div.text(d.City)
-    //         .style("left", (d3.event.pageX) + "px")
-    //         .style("top", (d3.event.pageY -30) + "px");
-    //
-    // });
-    //
-    // $('.dot').bind('mouseout', function(d) {
-    //     d3.select(this)
-    //         .attr("r", 3.5)
-    //         .attr("opacity", 0.8)
-    //         .style("stroke", "none")
-    //         .style('fill', function(d) { return vis.color(d.region); });
-    //
-    //     d3.select(this)
-    //         .transition().duration(300)
-    //         .style("opacity", 0.8);
-    //     vis.div.transition().duration(300)
-    //         .style("opacity", 0);
-    //
-    // });
+    vis.dot.exit().remove();
 
+    // Trend Line
 
-    // draw legend
-    vis.legend = vis.svg.selectAll(".legend")
-        .data(vis.color.range())
-        .enter().append("g")
-        .attr("class", "legend")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+    var xLabels = vis.displayData.map(function (d) { return d.ENI; });
 
-    // draw legend colored rectangles
-    vis.legend.append("rect")
-        .attr("x", vis.width - 18)
-        .attr("width", 18)
-        .attr("height", 18)
-        .style("fill", function(d) {return d;});
+    // get the x and y values for least squares
+    var xSeries = xLabels;
+    var ySeries = vis.displayData.map(function(d) { return d.Log_PerCapita; });
 
-    // draw legend text
-    // vis.legend.append("text")
-    //     .attr("x", vis.width - 24)
-    //     .attr("y", 9)
-    //     .attr("dy", ".35em")
-    //     .style("text-anchor", "end")
-    //     .text(function(d) { return d;})
+    var leastSquaresCoeff = leastSquares(xSeries, ySeries);
 
-    vis.legend.append("text")
-        .attr("dy", ".35em");
+    console.log(leastSquaresCoeff);
 
-    vis.legend.select("text")
-        .data(vis.color.domain())
-        .attr("x", vis.width - 24)
-        .attr("y", 9)
-        .style("text-anchor", "end")
-        .text(function(d) { return d });
+    // apply the results of the least squares regression
+    var x1 = xLabels[0];
+    var y1 = leastSquaresCoeff[0] * xSeries[0] + leastSquaresCoeff[1];
+    var x2 = xLabels[xLabels.length - 1];
+    var y2 = leastSquaresCoeff[0] * xLabels[xLabels.length - 1] + leastSquaresCoeff[1];
+    var trendData = [[x1,y1,x2,y2]];
+
+    console.log([x1,y1,x2,y2]);
+
+    vis.trendline = vis.svg.selectAll(".trendline")
+        .data(trendData);
+
+    vis.trendline.enter()
+        .append("line")
+        .attr("class", "trendline");
+
+    vis.trendline
+        .attr("x1", function(d) { return vis.x(d[0]); })
+        .attr("y1", function(d) { return vis.y(d[1]); })
+        .attr("x2", function(d) { return vis.x(d[2]); })
+        .attr("y2", function(d) { return vis.y(d[3]); })
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    vis.trendline.exit().remove();
+
+    // returns slope, intercept and r-square of the line
+    function leastSquares(xSeries, ySeries) {
+        var reduceSumFunc = function(prev, cur) { return prev + cur; };
+
+        var xBar = xSeries.reduce(reduceSumFunc) * 1.0 / xSeries.length;
+        var yBar = ySeries.reduce(reduceSumFunc) * 1.0 / ySeries.length;
+
+        var ssXX = xSeries.map(function(d) { return Math.pow(d - xBar, 2); })
+            .reduce(reduceSumFunc);
+
+        var ssYY = ySeries.map(function(d) { return Math.pow(d - yBar, 2); })
+            .reduce(reduceSumFunc);
+
+        var ssXY = xSeries.map(function(d, i) { return (d - xBar) * (ySeries[i] - yBar); })
+            .reduce(reduceSumFunc);
+
+        var slope = ssXY / ssXX;
+        var intercept = yBar - (xBar * slope);
+        var rSquare = Math.pow(ssXY, 2) / (ssXX * ssYY);
+
+        return [slope, intercept, rSquare];
+    }
 
 };
 

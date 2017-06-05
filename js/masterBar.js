@@ -18,7 +18,7 @@ MasterBar = function(_parentElement, _data) {
 MasterBar.prototype.initVis = function() {
     var vis = this;
 
-    vis.margin = {top: 50, right: 20, bottom: 40, left: 60};
+    vis.margin = {top: 5, right: 20, bottom: 20, left: 20};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
         vis.height = 600 - vis.margin.top - vis.margin.bottom;
@@ -90,12 +90,6 @@ MasterBar.prototype.wrangleData = function() {
         return b.values - a.values;
     });
 
-    // Shorten
-    //vis.dataShort = [];
-    //
-    // for (i = 0; i < 15; i++) {
-    //     vis.dataShort[i] = vis.inter[i];
-    // }
 
     vis.updateBar();
 };

@@ -156,13 +156,28 @@ div.tooltip {
     shape-rendering: crispEdges;
 }
 
+.line {
+    stroke: #E4002B;
+    fill: none;
+    stroke-width: 3;
+}
+
 /* Tree Map */
 
 .svg-container-tree {
     display: inline-block;
     position: relative;
     width: 100%;
-    padding-bottom: 45%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-container-masterTree {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
     vertical-align: middle;
     overflow: hidden;
 }
@@ -212,4 +227,14 @@ rect.parent {
 
 .children:hover rect.child {
     fill: #aaa;
+}
+
+/* Scatter Plot */
+.svg-container-bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
 }

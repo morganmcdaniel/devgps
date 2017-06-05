@@ -35,13 +35,14 @@ function loadData() {
         .defer(d3.csv, "data/RNS_CO_Master.csv")
         .defer(d3.csv, "data/state-codes.csv")
         .defer(d3.csv, "data/Tupelo_Tree.csv")
+        .defer(d3.json, "data/Tupelo_Tree.json")
         .defer(d3.json, "data/MS_Tree_Emp.json")
         .defer(d3.json, "data/MS_Tree_RA.json")
         .defer(d3.csv, "data/MS_Tree.csv")
         .defer(d3.json, "data/MS_County_Tree_Emp.json")
         .defer(d3.json, "data/MS_County_Tree_RA.json")
         .defer(d3.csv, "data/MS_County_Tree.csv")
-        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, msTreeE, msTreeR, msBar, msCountyTreeE, msCountyTreeR, msCountyBar) {
+        .await(function(error, enrGdp, msaData, usCounties, enrTime, usNation, usStates, enrTimeCo, stateCodes, tupelo, tupeloJson, msTreeE, msTreeR, msBar, msCountyTreeE, msCountyTreeR, msCountyBar) {
 
             if (error) throw error;
 
@@ -57,7 +58,7 @@ function loadData() {
 
         // DATA WRANGLING
 
-            //SCATTER
+            // TUPELO TREE
 
             //CHOROPLETH
 
@@ -73,14 +74,15 @@ function loadData() {
 
             scatter = new Scatter("scatter", enrGdp);
             choropleth = new Choropleth("choropleth", msa, states, nation);
+            masterTree = new MasterTree("masterTree", msTreeRa);
+            masterBar = new MasterBar("masterBar");
             bar = new Bar("bar", tupelo);
             masterMap = new MasterMap("masterMap", msa, counties, states, nation);
             choroLegend = new ChoroLegend('choroLegend');
-            tree = new Tree("tree", tupelo);
+            tree = new Tree("tree", tupeloJson);
             network = new Network("network");
             recommended = new Recommended("recommended");
-            masterTree = new MasterTree("masterTree", msTreeRa);
-            masterBar = new MasterBar("masterBar");
+
         });
 }
 
@@ -119,6 +121,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
                 msa[j].properties.enr1yr = +enr1yr;
                 msa[j].properties.enr5yr = +enr5yr;
                 msa[j].properties.enr10yr = +enr10yr;
+                msa[j].properties.geoid = +msa[j].properties.geoid
 
                 break;
             }
@@ -241,6 +244,18 @@ function toSectionFive() {
 }
 
 function passToBar(barKey, barLevel) {
-    console.log(barKey + " " + barLevel);
+
+    bar.passedIn(barKey, barLevel);
+}
+
+function passToMasterBar(barKey, barLevel) {
+
     masterBar.passedIn(barKey, barLevel);
+}
+
+function updateScatter() {
+    var x = ($("input[name=v]:checked").map(
+        function () {return this.value;}));
+    console.log(x);
+    scatter.filter(x);
 }

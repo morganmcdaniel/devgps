@@ -23,7 +23,6 @@ MasterTree = function(_parentElement, _data) {
     var defaults = {
         margin: {top: 24, right: 0, bottom: 0, left: 0},
         rootname: "TOP",
-        //format: ",d",
         title: "",
         width: $("#" + vis.parentElement).width(),
         height: 600
@@ -32,12 +31,10 @@ MasterTree = function(_parentElement, _data) {
     function main(o, data) {
         var root,
             opts = $.extend(true, {}, defaults, o),
-            //formatNumber = d3.format(opts.format),
             rname = opts.rootname,
             margin = opts.margin,
             theight = 36 + 16;
 
-        //$("#" + vis.parentElement).width(opts.width).height(opts.height);
         var width = opts.width - margin.left - margin.right,
             height = opts.height - margin.top - margin.bottom - theight,
             transitioning;
@@ -63,8 +60,6 @@ MasterTree = function(_parentElement, _data) {
             .round(false);
 
         var svg = d3.select("#" + vis.parentElement).append("svg")
-            // .attr("width", width + margin.left + margin.right)
-            // .attr("height", height + margin.bottom + margin.top)
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox","0 0 " + width + " " + height)
             .attr("class", "svg-content")
@@ -169,10 +164,6 @@ MasterTree = function(_parentElement, _data) {
                 .call(rect)
                 .append("title")
                 .text(function(d) { return d.key + "(" + d.value.toFixed(2) + ")"; });
-            // children.append("text")
-            //     .attr("class", "ctext")
-            //     .text(function(d) { return d.key; })
-            //     .call(text2);
 
             g.append("rect")
                 .attr("class", "parent")
@@ -249,7 +240,7 @@ MasterTree = function(_parentElement, _data) {
                     barLevel = "bottom";
                 }
 
-                passToBar(barKey, barLevel);
+                passToMasterBar(barKey, barLevel);
             }
 
             return g;
@@ -315,7 +306,6 @@ MasterTree = function(_parentElement, _data) {
         var data = d3.nest().key(function(d) { return d.market; }).key(function(d) { return d.category; }).entries(vis.data);
 
         main({title: "Mississippi"}, {key: "Mississippi", values: data});
-
     }
 
 

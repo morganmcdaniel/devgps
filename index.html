@@ -58,8 +58,24 @@
         <p>In addition to learning about the amount of activity, DevGPS uses an Economic Network Rating (ENR) to measure how "connected" an area is. ENR not only measures the amount of activity, but the relative interconnectedness of those activities as compared to the rest of the country. </p>
 
         <div class="row">
-           <div class="col-md-8" id="choropleth"></div>
-           <div class="col-md-4" id="scatter"></div>
+           <div class="col-md-6" id="choropleth" class="svg-container-choro"></div>
+           <div class="col-md-6">
+               <div class="row" id="scatter" class="svg-container-tree"></div>
+               <div class="row" id="filter" onchange="updateScatter()">
+                   <p><fieldset>
+                       <b>Filter by Region:</b>
+                       <input name='v' value="Northeast" type="checkbox" checked>Northeast
+                       </input>
+                       <input name="v" value="Midwest" type="checkbox" checked >Midwest
+                       </input>
+                       <input name="v" value="South" type="checkbox" checked >South
+                       </input>
+                       <input name="v" value="West" type="checkbox" checked >West
+                       </input>
+                    </fieldset></p>
+               </div>
+
+           </div>
        </div>
 
         <h2 align="center">Takeaway: Cities with higher ENR have higher GDPs per Capita</h2>
@@ -70,9 +86,10 @@
     <div class="section" id="section3">
         <h1>Tupelo, MS: [takeaway]</h1>
 
-        <div id="tree"></div>
-
-        <div id="bar"></div>
+        <div class="row">
+            <div class="col-md-6"  id="tree" class="svg-container-tree"></div>
+            <div class="col-md-6" id="bar" class="svg-container-bar"></div>
+        </div>
 
         <h2 align="center">Takeaway: Tupelo's economy is xyz</h2>
 

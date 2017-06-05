@@ -26,14 +26,15 @@ Choropleth.prototype.initVis = function() {
     vis.margin = {top: 0, right: 0, bottom: 0, left: 0};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-        vis.height = 450- vis.margin.top - vis.margin.bottom;
+        vis.height = 450 - vis.margin.top - vis.margin.bottom;
 
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
-        .attr("width", vis.width + vis.margin.left + vis.margin.right)
-        .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox","0 0 " + vis.width + " " + vis.height)
+        .attr("class", "svg-content")
         .append("g")
-        .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")")
-    ;
+        .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
 
     vis.projection = d3.geo.albers()
         .scale(1000)
@@ -42,8 +43,7 @@ Choropleth.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.threshold()
-        .domain([-2, -1, .1, 2])
+    vis.color = d3.scale.quantile()
         .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
 
     vis.div = d3.select("body").append("div")
@@ -52,26 +52,28 @@ Choropleth.prototype.initVis = function() {
 
     vis.selection = "enr2015";
 
-    // National boundaries
-
-    vis.nationGroup = vis.svg.append("g")
-        .attr("class", "nation")
-        .selectAll('.nation')
-        .data(vis.nation)
-        .enter().append("path")
-        .attr("d", vis.path);
+    // vis.zoom = d3.behavior.zoom()
+    //     .on("zoom",function() {
+    //         vis.svg.attr("transform","translate("+
+    //             d3.event.translate.join(",")+")scale("+d3.event.scale+")");
+    //         vis.svg.selectAll("path")
+    //             .attr("d", vis.path.projection(vis.projection));
+    //     });
+    //
+    // vis.svg.call(vis.zoom);
 
     // State boundaries
 
     vis.statesGroup = vis.svg.append("g")
-        .attr("class", "states")
+        .attr("class", "statesFill")
         .selectAll("path")
         .data(vis.states)
         .enter().append("path")
-        .attr("d", vis.path)
-        .on("click", vis.clicked);
+        .attr("d", vis.path);
 
     // Legend
+
+    // Edit zoom so that legend doesn't zoom
 
     vis.legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
     vis.legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','Gray'];
@@ -96,14 +98,23 @@ Choropleth.prototype.initVis = function() {
         .attr("x", 35)
         .text(function(d) { return d });
 
-    vis.updateChoropleth(vis.selection);
+    vis.updateChoropleth();
 
 };
 
 Choropleth.prototype.updateChoropleth = function() {
     var vis = this;
 
+    vis.domainMsa = [];
+
+    for (i = 0; i < vis.msa.length; i++) {
+        vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
+    }
+
+    vis.color.domain(vis.domainMsa);
+
     vis.selectGroup = vis.svg.append("g")
+        .attr("class", "select")
         .selectAll("path")
         .data(vis.msa);
 
@@ -112,7 +123,7 @@ Choropleth.prototype.updateChoropleth = function() {
     vis.selectGroup
         .attr("d", vis.path)
         .attr("class", "select")
-        .attr("id", function(d) { return "msa" + d.properties.GEOID; })
+        .attr("id", function(d) { return "msa" + d.properties.geoid; })
         .style("fill", function(d) {
             return vis.color(d.properties[vis.selection]);
         })
@@ -121,18 +132,12 @@ Choropleth.prototype.updateChoropleth = function() {
             d3.select(this).transition().duration(300).style("opacity", 1);
             vis.div.transition().duration(300)
                 .style("opacity", 1);
-            vis.div.text(function() {
-                if (d.properties[vis.selection]) {
-                    return (d.properties.NAME + ": " + d.properties[vis.selection]);
-                }
-                else {
-                    return (d.properties.NAME + ": No Data")
-                }
-            })
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY -30) + "px");
+            vis.div.text(function () { return (d.properties.name); })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY -30) + "px");
 
-            vis.s = d.properties.GEOID;
+            vis.s = d.properties.geoid;
+
             d3.select("#dot" + vis.s)
                 .moveToFront()
                 .attr("r", 5)
@@ -155,6 +160,13 @@ Choropleth.prototype.updateChoropleth = function() {
                 });
         });
 
+    vis.statesGroup = vis.svg.append("g")
+        .attr("class", "statesLine")
+        .selectAll("path")
+        .data(vis.states)
+        .enter().append("path")
+        .attr("d", vis.path);
+
     vis.selectGroup.exit().remove();
 
 };
@@ -165,22 +177,3 @@ Choropleth.prototype.highlight = function(market) {
 
 
 };
-
-// Choropleth.prototype.onChange = function() {
-//     var vis = this;
-//
-//     vis.selection = d3.select("#options").property("value");
-//
-//     console.log(selection);
-//
-//     vis.updateChoropleth(selection);
-// };
-
-
-// TO DO
-
-// Handle N/As
-// Add N/A color to legend
-// Background map - state lines
-// Static categories for legend
-// Switch to counties

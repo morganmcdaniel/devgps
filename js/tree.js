@@ -9,8 +9,9 @@ Tree = function(_parentElement, _data) {
     this.parentElement = _parentElement;
     this.data = _data;
 
-    //this.initVis();
+    var vis = this;
 
+    var barLevel, barKey;
 
     window.addEventListener('message', function(e) {
         var opts = e.data.opts,
@@ -22,26 +23,27 @@ Tree = function(_parentElement, _data) {
     var defaults = {
         margin: {top: 24, right: 0, bottom: 0, left: 0},
         rootname: "TOP",
-        //format: ",d",
         title: "",
-        width: $("#tree").width(),
-        height: 500
+        width: $("#" + vis.parentElement).width(),
+        height: 600
     };
 
     function main(o, data) {
         var root,
             opts = $.extend(true, {}, defaults, o),
-            //formatNumber = d3.format(opts.format),
             rname = opts.rootname,
             margin = opts.margin,
             theight = 36 + 16;
 
-        $('#tree').width(opts.width).height(opts.height);
         var width = opts.width - margin.left - margin.right,
             height = opts.height - margin.top - margin.bottom - theight,
             transitioning;
 
         var color = d3.scale.category20c();
+
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
         var x = d3.scale.linear()
             .domain([0, width])
@@ -57,9 +59,10 @@ Tree = function(_parentElement, _data) {
             .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
             .round(false);
 
-        var svg = d3.select("#tree").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.bottom + margin.top)
+        var svg = d3.select("#" + vis.parentElement).append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox","0 0 " + width + " " + height)
+            .attr("class", "svg-content")
             .style("margin-left", -margin.left + "px")
             .style("margin.right", -margin.right + "px")
             .append("g")
@@ -79,9 +82,6 @@ Tree = function(_parentElement, _data) {
             .attr("y", 6 - margin.top)
             .attr("dy", ".75em");
 
-        if (opts.title) {
-            $("#tree").prepend("<p class='title'>" + opts.title + "</p>");
-        }
         if (data instanceof Array) {
             root = { key: rname, values: data };
         } else {
@@ -164,24 +164,31 @@ Tree = function(_parentElement, _data) {
                 .call(rect)
                 .append("title")
                 .text(function(d) { return d.key + " (" + d.value.toFixed(2) + ")"; });
-            children.append("text")
-                .attr("class", "ctext")
-                .text(function(d) { return d.key; })
-                .call(text2);
 
             g.append("rect")
                 .attr("class", "parent")
-                .call(rect);
+                .call(rect)
+                .on("mouseover", function(d) {
+                    div.transition().duration(300)
+                        .style("opacity", 1);
+                    div.text(function() { return (d.key + ", " + Math.round((d.value/d.parent.value)*100) + "%"); })
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY) + "px")
+                })
+                .on("mouseout", function() {
+                    div.transition().duration(300)
+                        .style("opacity", 0);
+                });
 
             var t = g.append("text")
                 .attr("class", "ptext")
                 .attr("dy", ".75em");
 
             t.append("tspan")
-                .text(function(d) { return d.key; });
+                .text(function(d) { return (d.key + ", " + Math.round((d.value/d.parent.value)*100) + "%"); });
             t.append("tspan")
                 .attr("dy", "1.0em")
-                .text(function(d) { return d.value.toFixed(2); });
+                .text(function(d) { return Math.round(d.value); });
             t.call(text);
 
             g.selectAll("rect")
@@ -223,6 +230,17 @@ Tree = function(_parentElement, _data) {
                 });
             }
 
+            barKey = d.key;
+            if (d.depth == 0) {
+                barLevel = "top";
+            }
+
+            else {
+                barLevel = "bottom";
+            }
+
+            passToBar(barKey, barLevel);
+
             return g;
         }
 
@@ -231,31 +249,27 @@ Tree = function(_parentElement, _data) {
                 .attr("x", function(d) { return x(d.x) + 6; });
             text.attr("x", function(d) { return x(d.x) + 6; })
                 .attr("y", function(d) { return y(d.y) + 6; })
-                .each(function(d) {
-                    var tspan = this.childNodes[0];
-                    var w = x(d.x + d.dx) - x(d.x);
-                    wrap(tspan, w, x(d.x) + 6);
-                })
+                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) && y(d.y + d.dy) - y(d.y) > 40 ? 1 : 0; })
         }
 
         function text2(text) {
             text.attr("x", function(d) { return x(d.x + d.dx) - this.getComputedTextLength() - 6; })
                 .attr("y", function(d) { return y(d.y + d.dy) - 6; })
-                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; })
+                .style("opacity", function(d) { return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) && y(d.y + d.dy) - y(d.y) > 40 ? 1 : 0; })
         }
 
         function rect(rect) {
             rect.attr("x", function(d) { return x(d.x); })
                 .attr("y", function(d) { return y(d.y); })
                 .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
-                .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); });
+                .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); })
+                .style("opacity", .7);
         }
 
         function name(d) {
             return d.parent
-                ? "< Back     |        " + name(d.parent) + " / " + d.key + " (" + d.value.toFixed(2) + ")"
-                : d.key + " (" + d.value.toFixed(2) + ")";
-
+                ? "< Back"
+                : d.key ;
         }
 
         function wrap(tspan, width, x) {
@@ -282,17 +296,13 @@ Tree = function(_parentElement, _data) {
     }
 
     if (window.location.hash === "") {
-        d3.json("data/Tupelo_Tree.json", function(err, res) {
-            if (!err) {
-                for (i = 0; i < res.length; i++) {
-                    res[i].value = +res[i].value;
-                }
+        for (i = 0; i < vis.data.length; i++) {
+            vis.data[i].value = +vis.data[i].value;
+        }
 
-                var data = d3.nest().key(function(d) { return d.category; }).entries(res);
+        var data = d3.nest().key(function(d) { return d.category; }).entries(vis.data);
 
-                main({title: "Tupelo Industries"}, {key: "Industries", values: data});
-            }
-        });
+        main({title: "Tupelo"}, {key: "Tupelo", values: data});
     }
 
 };
