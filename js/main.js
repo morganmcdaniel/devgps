@@ -23,9 +23,15 @@ var scatter,
     barData;
 
 var legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
-var mapColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c'];
 var legendColor = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641','#ebebeb'];
-var mapDomain = [-0.1297516,0.2535231,0.6643976,1.233179];
+
+var choroColor = d3.scale.threshold()
+    .domain([-0.1297516,0.2535231,0.6643976,1.233179])
+    .range(['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c']);
+
+var regionColor = d3.scale.ordinal()
+    .domain(["Northeast","Midwest","South","West"])
+    .range(['#66c2a5','#fc8d62','#8da0cb','#e78ac3']);
 
 loadData();
 
@@ -34,10 +40,10 @@ function loadData() {
         .defer(d3.csv, "data/enr_gdp.csv")
         .defer(d3.json, "data/msawithAKHI.geojson")
         .defer(d3.json, "data/gz_2010_us_050_00_5m.json")
-        .defer(d3.csv, "data/RNS_MSA_Master.csv")
+        .defer(d3.csv, "data/RNS_MSA_Master_0606.csv")
         .defer(d3.json, "data/gz_2010_us_outline_5m.json")
         .defer(d3.json, "data/gz_2010_us_040_00_5m.json")
-        .defer(d3.csv, "data/RNS_CO_Master.csv")
+        .defer(d3.csv, "data/RNS_CO_Master_0606.csv")
         .defer(d3.csv, "data/state-codes.csv")
         .defer(d3.csv, "data/Tupelo_Tree.csv")
         .defer(d3.json, "data/Tupelo_Tree.json")
@@ -99,7 +105,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
 
     // copy ENR data into MSA geoJson
     for (var i = 0; i < enrTime.length; i++) {
-
+        
         // Grab State Name
         var enrMarket = enrTime[i].Market;
 
@@ -126,7 +132,7 @@ function wrangleMapData(msa, counties, enrTime, enrTimeCo, stateCodes) {
                 msa[j].properties.enr1yr = +enr1yr;
                 msa[j].properties.enr5yr = +enr5yr;
                 msa[j].properties.enr10yr = +enr10yr;
-                msa[j].properties.geoid = +msa[j].properties.geoid
+                msa[j].properties.geoid = +msa[j].properties.geoid;
 
                 break;
             }

@@ -36,10 +36,6 @@ MasterMap.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.threshold()
-        .domain(mapDomain)
-        .range(mapColor);
-
     /* Initialize Vars */
     vis.selection = "enr2015";
     vis.selectData = "counties";
@@ -135,7 +131,7 @@ MasterMap.prototype.drawCounties = function() {
 
     vis.selectGroup
         .attr("d", vis.path)
-        .style("fill", function(d) { return vis.color(d.properties[vis.selection]); })
+        .style("fill", function(d) { return choroColor(d.properties[vis.selection]); })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
             d3.select(this).transition().duration(300).style("opacity", 1);
@@ -209,7 +205,7 @@ MasterMap.prototype.drawMSA = function() {
 
     vis.selectGroup
         .attr("d", vis.path)
-        .style("fill", function(d) { return vis.color(d.properties[vis.selection]); })
+        .style("fill", function(d) { return choroColor(d.properties[vis.selection]); })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
             d3.select(this).transition().duration(300).style("opacity", 1);

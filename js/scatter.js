@@ -36,9 +36,9 @@ Scatter.prototype.initVis = function() {
         .style("opacity", 0);
 
     // Update this later when decided how to color
-    vis.color = d3.scale.ordinal()
-        .domain(["Northeast","Midwest","South","West"])
-        .range(['#66c2a5','#fc8d62','#8da0cb','#e78ac3']);
+    // vis.color = d3.scale.ordinal()
+    //     .domain(["Northeast","Midwest","South","West"])
+    //     .range(['#66c2a5','#fc8d62','#8da0cb','#e78ac3']);
 
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
         .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -49,7 +49,7 @@ Scatter.prototype.initVis = function() {
 
     // draw legend
     vis.legend = vis.svg.selectAll(".legend")
-        .data(vis.color.range())
+        .data(regionColor.range())
         .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
@@ -65,7 +65,7 @@ Scatter.prototype.initVis = function() {
         .attr("dy", ".35em");
 
     vis.legend.select("text")
-        .data(vis.color.domain())
+        .data(regionColor.domain())
         .attr("x", vis.width - 24)
         .attr("y", 9)
         .style("text-anchor", "end")
@@ -206,10 +206,7 @@ Scatter.prototype.filter = function(x) {
                 k++;
             }
         }
-
     }
-
-    console.log(vis.filtered);
 
     vis.displayData = vis.filtered.sort(function(a,b) {
         return a.ENI - b.ENI;
@@ -233,7 +230,7 @@ Scatter.prototype.updateScatter = function() {
         .attr("r", 3.5)
         .attr("cx", function(d) {  return vis.x(d.ENI); })
         .attr("cy", function(d) { return vis.y(d.Log_PerCapita); })
-        .style("fill", function(d) { return vis.color(d.region); })
+        .style("fill", function(d) { return regionColor(d.region); })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
             d3.select(this)
@@ -253,7 +250,7 @@ Scatter.prototype.updateScatter = function() {
                 .style("top", (d3.event.pageY -30) + "px");
 
             vis.s = d.Market;
-            d3.select("#msa" + vis.s).style('fill', "#ff0000");
+            d3.select("#msa" + vis.s).style('fill', "#551A8B");
 
         })
         .on("mouseout", function() {
@@ -262,14 +259,14 @@ Scatter.prototype.updateScatter = function() {
                 .attr("r", 3.5)
                 .style("stroke", "none")
                 .style('fill', function (d) {
-                    return vis.color(d.region);
+                    return regionColor(d.region);
                 });
 
             vis.div.transition().duration(300)
                 .style("opacity", 0);
 
             d3.select("#msa" + vis.s).style("fill", function (d) {
-                return vis.color(d.properties[vis.selection]);
+                return choroColor(d.properties.enr2015);
 
                 // d3.selectAll(".select").style("fill", function(d) { return scatter.color(d.region); });
             });

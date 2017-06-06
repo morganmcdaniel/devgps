@@ -42,10 +42,6 @@ Choropleth.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.threshold()
-        .domain(mapDomain)
-        .range(mapColor);
-
     vis.div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
@@ -122,7 +118,7 @@ Choropleth.prototype.updateChoropleth = function() {
         .attr("class", "select")
         .attr("id", function(d) { return "msa" + d.properties.geoid; })
         .style("fill", function(d) {
-            return vis.color(d.properties[vis.selection]);
+            return choroColor(d.properties[vis.selection]);
         })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
@@ -153,7 +149,9 @@ Choropleth.prototype.updateChoropleth = function() {
                 .attr("r", 3.5)
                 .style("stroke", "none")
                 .style('fill', function (d) {
-                    return vis.color(d.region);
+                    console.log("mouseout!");
+                    console.log(regionColor(d.region));
+                    return regionColor(d.region);
                 });
         });
 
