@@ -35,7 +35,6 @@ Choropleth.prototype.initVis = function() {
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-
     vis.projection = d3.geo.albers()
         .scale(1000)
         .translate([vis.width / 2, vis.height / 2]);
@@ -43,8 +42,9 @@ Choropleth.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.quantile()
-        .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
+    vis.color = d3.scale.threshold()
+        .domain(mapDomain)
+        .range(mapColor);
 
     vis.div = d3.select("body").append("div")
         .attr("class", "tooltip")
@@ -75,11 +75,8 @@ Choropleth.prototype.initVis = function() {
 
     // Edit zoom so that legend doesn't zoom
 
-    vis.legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
-    vis.legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','Gray'];
-
     vis.legend = vis.svg.selectAll('g.legend')
-        .data(vis.legendColor)
+        .data(legendColor)
         .enter().append('g')
         .attr('class', 'legend')
         .attr("transform", function(d, i) { return "translate(20," + (350 + (i * 20)) + ")"; });
@@ -94,7 +91,7 @@ Choropleth.prototype.initVis = function() {
         .attr("dy", "0.8em");
 
     vis.legend.select("text")
-        .data(vis.legendText)
+        .data(legendText)
         .attr("x", 35)
         .text(function(d) { return d });
 
@@ -105,13 +102,13 @@ Choropleth.prototype.initVis = function() {
 Choropleth.prototype.updateChoropleth = function() {
     var vis = this;
 
-    vis.domainMsa = [];
-
-    for (i = 0; i < vis.msa.length; i++) {
-        vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
-    }
-
-    vis.color.domain(vis.domainMsa);
+    // vis.domainMsa = [];
+    //
+    // for (i = 0; i < vis.msa.length; i++) {
+    //     vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
+    // }
+    //
+    // vis.color.domain(vis.domainMsa);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")

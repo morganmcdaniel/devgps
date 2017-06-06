@@ -24,11 +24,8 @@ ChoroLegend.prototype.initVis = function() {
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-    vis.legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
-    vis.legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','Gray'];
-
     vis.legend = vis.svg.selectAll('g.legend')
-        .data(vis.legendColor)
+        .data(legendColor)
         .enter().append('g')
         .attr('class', 'legend')
         .attr("transform", function(d, i) { return "translate(15," + (30 + (i * 20)) + ")"; });
@@ -43,14 +40,14 @@ ChoroLegend.prototype.initVis = function() {
         .attr("width", 10)
         .attr("height", 10)
         .attr("class", "legendRect")
-        .style("fill", function(d) {return d;})
-        .attr("stroke", "#424242");
+        .style("fill", function(d) {return d;});
+        //.attr("stroke", "#525252");
 
     vis.legend.append("text")
         .attr("dy", "0.8em");
 
     vis.legend.select("text")
-        .data(vis.legendText)
+        .data(legendText)
         .attr("x", 35)
         .text(function(d) { return d });
 

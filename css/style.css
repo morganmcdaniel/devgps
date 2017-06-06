@@ -66,6 +66,12 @@ nav a {
     color: black;
 }
 
+/* Choropleth Legend */
+
+.legendRect {
+    stroke: #525252;
+}
+
 /* Choropleth */
 
 .svg-container-choro {
@@ -90,23 +96,18 @@ nav a {
     padding-right:30px;
 }
 
-.overlay {
-    fill: none;
-    pointer-events: all;
-}
-
  .select path {
-     fill: gray;
-     stroke: #D3D3D3;
+     fill:  #ebebeb;
+     stroke: #525252;
  }
 
 .statesFill path {
-    fill: #d3d3d3;
-    stroke: #424242;
+    fill: #ebebeb;
+    stroke: #525252;
 }
 
 .statesLine {
-    stroke: #424242;
+    stroke: #525252;
     fill: none;
     stroke-width: .5px;
 }
@@ -122,7 +123,8 @@ nav a {
 #masterMap {
     border-right: solid;
     margin: 5px;
-    border-width: 3px;
+    border-right-color: #525252;
+    border-width: 1px;
 }
 
 div.tooltip {

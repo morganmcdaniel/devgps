@@ -36,8 +36,9 @@ MasterMap.prototype.initVis = function() {
     vis.path = d3.geo.path()
         .projection(vis.projection);
 
-    vis.color = d3.scale.quantile()
-        .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
+    vis.color = d3.scale.threshold()
+        .domain(mapDomain)
+        .range(mapColor);
 
     /* Initialize Vars */
     vis.selection = "enr2015";
@@ -117,13 +118,13 @@ MasterMap.prototype.updateMap = function() {
 MasterMap.prototype.drawCounties = function() {
     var vis = this;
 
-    vis.domainCounty = [];
-
-    for (i = 0; i < vis.counties.length; i++) {
-        vis.domainCounty[i] = vis.counties[i].properties[vis.selection];
-    }
-
-    vis.color.domain(vis.domainCounty);
+    // vis.domainCounty = [];
+    //
+    // for (i = 0; i < vis.counties.length; i++) {
+    //     vis.domainCounty[i] = vis.counties[i].properties[vis.selection];
+    // }
+    //
+    // vis.color.domain(vis.domainCounty);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
@@ -182,11 +183,11 @@ MasterMap.prototype.drawCounties = function() {
 MasterMap.prototype.drawMSA = function() {
     var vis = this;
 
-    vis.domainMsa = [];
-
-    for (i = 0; i < vis.msa.length; i++) {
-        vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
-    }
+    // vis.domainMsa = [];
+    //
+    // for (i = 0; i < vis.msa.length; i++) {
+    //     vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
+    // }
 
     /* State Fill under Select Group*/
 
@@ -197,7 +198,7 @@ MasterMap.prototype.drawMSA = function() {
         .enter().append("path")
         .attr("d", vis.path);
 
-    vis.color.domain(vis.domainMsa);
+    // vis.color.domain(vis.domainMsa);
 
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")

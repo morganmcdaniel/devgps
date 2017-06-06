@@ -22,6 +22,11 @@ var scatter,
     msCountyTreeBar,
     barData;
 
+var legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
+var mapColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c'];
+var legendColor = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641','#ebebeb'];
+var mapDomain = [-0.1297516,0.2535231,0.6643976,1.233179];
+
 loadData();
 
 function loadData() {
