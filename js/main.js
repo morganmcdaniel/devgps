@@ -23,11 +23,11 @@ var scatter,
     barData;
 
 var legendText = ["High","Above Average","Average","Below Average","Low","No Data"];
-var legendColor = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641','#ebebeb'];
+var legendColor = ['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c','#ebebeb'];
 
 var choroColor = d3.scale.threshold()
     .domain([-0.1297516,0.2535231,0.6643976,1.233179])
-    .range(['#1a9641','#a6d96a','#ffffbf','#fdae61','#d7191c']);
+    .range(['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641']);
 
 var regionColor = d3.scale.ordinal()
     .domain(["Northeast","Midwest","South","West"])
