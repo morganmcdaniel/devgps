@@ -35,11 +35,6 @@ Scatter.prototype.initVis = function() {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    // Update this later when decided how to color
-    // vis.color = d3.scale.ordinal()
-    //     .domain(["Northeast","Midwest","South","West"])
-    //     .range(['#66c2a5','#fc8d62','#8da0cb','#e78ac3']);
-
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
         .attr("width", vis.width + vis.margin.left + vis.margin.right)
         .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
@@ -235,14 +230,12 @@ Scatter.prototype.updateScatter = function() {
         .on("mouseover", function(d) {
             d3.select(this)
                 .attr("r", 5)
-                .style('fill', "#ff0000")
+                .style('fill', highlight)
                 .style("stroke", "black")
                 .style("opacity", 1);
                 // .moveToFront();
 
             vis.div.transition().duration(300)
-                .style('fill', "#ff0000")
-                .attr("r", 5)
                 .style("opacity", 1);
 
             vis.div.text(d.City)
@@ -250,10 +243,13 @@ Scatter.prototype.updateScatter = function() {
                 .style("top", (d3.event.pageY -30) + "px");
 
             vis.s = d.Market;
-            d3.select("#msa" + vis.s).style('fill', "#551A8B");
+            d3.select("#msa" + vis.s)
+                .style('fill', highlight)
+                .style("stroke", "white")
+                .style("opacity", 1);
 
         })
-        .on("mouseout", function() {
+        .on("mouseout", function(d) {
             d3.select(this)
                 .style("opacity", 0.8)
                 .attr("r", 3.5)
@@ -265,11 +261,12 @@ Scatter.prototype.updateScatter = function() {
             vis.div.transition().duration(300)
                 .style("opacity", 0);
 
-            d3.select("#msa" + vis.s).style("fill", function (d) {
+            d3.select("#msa" + vis.s)
+                .style("fill", function (d) {
                 return choroColor(d.properties.enr2015);
-
-                // d3.selectAll(".select").style("fill", function(d) { return scatter.color(d.region); });
-            });
+                })
+                .style("stroke","525252")
+                .style("opacity", 0.8);
         });
 
     vis.dot.exit().remove();
@@ -284,16 +281,12 @@ Scatter.prototype.updateScatter = function() {
 
     var leastSquaresCoeff = leastSquares(xSeries, ySeries);
 
-    console.log(leastSquaresCoeff);
-
     // apply the results of the least squares regression
     var x1 = xLabels[0];
     var y1 = leastSquaresCoeff[0] * xSeries[0] + leastSquaresCoeff[1];
     var x2 = xLabels[xLabels.length - 1];
     var y2 = leastSquaresCoeff[0] * xLabels[xLabels.length - 1] + leastSquaresCoeff[1];
     var trendData = [[x1,y1,x2,y2]];
-
-    console.log([x1,y1,x2,y2]);
 
     vis.trendline = vis.svg.selectAll(".trendline")
         .data(trendData);

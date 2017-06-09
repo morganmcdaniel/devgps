@@ -26,7 +26,7 @@ Choropleth.prototype.initVis = function() {
     vis.margin = {top: 0, right: 0, bottom: 0, left: 0};
 
     vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-        vis.height = 450 - vis.margin.top - vis.margin.bottom;
+        vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
@@ -35,8 +35,8 @@ Choropleth.prototype.initVis = function() {
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-    vis.projection = d3.geo.albers()
-        .scale(1000)
+    vis.projection = d3.geo.albersUsa()
+        .scale(850)
         .translate([vis.width / 2, vis.height / 2]);
 
     vis.path = d3.geo.path()
@@ -47,16 +47,6 @@ Choropleth.prototype.initVis = function() {
         .style("opacity", 0);
 
     vis.selection = "enr2015";
-
-    // vis.zoom = d3.behavior.zoom()
-    //     .on("zoom",function() {
-    //         vis.svg.attr("transform","translate("+
-    //             d3.event.translate.join(",")+")scale("+d3.event.scale+")");
-    //         vis.svg.selectAll("path")
-    //             .attr("d", vis.path.projection(vis.projection));
-    //     });
-    //
-    // vis.svg.call(vis.zoom);
 
     // State boundaries
 
@@ -75,7 +65,7 @@ Choropleth.prototype.initVis = function() {
         .data(legendColor)
         .enter().append('g')
         .attr('class', 'legend')
-        .attr("transform", function(d, i) { return "translate(20," + (350 + (i * 20)) + ")"; });
+        .attr("transform", function(d, i) { return "translate(" + (vis.width - 125) + "," + (350 + (i * 20)) + ")"; });
 
     vis.legend.append("rect")
         .attr("width", 10)
@@ -98,14 +88,6 @@ Choropleth.prototype.initVis = function() {
 Choropleth.prototype.updateChoropleth = function() {
     var vis = this;
 
-    // vis.domainMsa = [];
-    //
-    // for (i = 0; i < vis.msa.length; i++) {
-    //     vis.domainMsa[i] = vis.msa[i].properties[vis.selection];
-    // }
-    //
-    // vis.color.domain(vis.domainMsa);
-
     vis.selectGroup = vis.svg.append("g")
         .attr("class", "select")
         .selectAll("path")
@@ -122,7 +104,12 @@ Choropleth.prototype.updateChoropleth = function() {
         })
         .style("opacity", 0.8)
         .on("mouseover", function(d) {
-            d3.select(this).transition().duration(300).style("opacity", 1);
+            d3.select(this)
+                .transition()
+                .duration(300)
+                .style('fill', highlight)
+                .style("stroke", "white")
+                .style("opacity", 1);
             vis.div.transition().duration(300)
                 .style("opacity", 1);
             vis.div.text(function () { return (d.properties.name); })
@@ -130,27 +117,28 @@ Choropleth.prototype.updateChoropleth = function() {
                 .style("top", (d3.event.pageY -30) + "px");
 
             vis.s = d.properties.geoid;
-
             d3.select("#dot" + vis.s)
                 .moveToFront()
                 .attr("r", 5)
-                .style('fill', "#ff0000")
+                .style('fill', highlight)
                 .style("stroke", "black")
                 .style("opacity", 1);
         })
         .on("mouseout", function() {
             d3.select(this)
                 .transition().duration(300)
-                .style("opacity", 0.8);
+                .style("opacity", 0.8)
+                .style("stroke","525252")
+                .style('fill', function (d) {
+                    return choroColor(d.properties[vis.selection]);
+                });
             vis.div.transition().duration(300)
                 .style("opacity", 0);
-
             d3.select("#dot" + vis.s)
+                .style("opacity", 0.8)
                 .attr("r", 3.5)
                 .style("stroke", "none")
                 .style('fill', function (d) {
-                    console.log("mouseout!");
-                    console.log(regionColor(d.region));
                     return regionColor(d.region);
                 });
         });
