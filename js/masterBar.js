@@ -99,7 +99,10 @@ MasterBar.prototype.updateBar = function() {
 
     vis.barHeight = 27;
 
-    vis.x.domain([0, d3.max(vis.inter, function(d) {return d.values;  })]);
+    console.log(vis.inter[0].values);
+    vis.x.domain([0, vis.inter[0].values]);
+
+    console.log("Domain: " + vis.x.domain());
 
     // vis.title = vis.svg.selectAll(".title")
     //     .append("text")
